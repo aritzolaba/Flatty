@@ -1,0 +1,287 @@
+/*
+Theme Name: Flatty
+Theme URI: http://www.olabaworks.com/products/flatty/
+Author: Aritz Olabarrieta
+Author URI: http://www.olabaworks.com
+Description: A minimal HTML5 responsive theme created using Bootstrap 3.0.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, right-sidebar, custom-header, custom-background, translation-ready, featured-images
+Text Domain: flatty
+*/
+
+/*********************************************************************
+* BOOTSTRAP OVERRIDES
+*/
+a,
+a:hover {
+    text-decoration: none;
+}
+code {
+    display: block;
+    padding: 1em;
+    white-space: normal;
+}
+audio,
+canvas,
+iframe,
+img,
+video {
+    max-width: 100%;
+}
+iframe {
+    width: 100%;
+}
+label {
+    display: block;
+}
+
+/*********************************************************************
+* MEDIA QUERIES
+*/
+@media (max-width:767px){div.navbar-text{float: none; display: block;}}
+@media (max-width:460px){a.navbar-brand {float: none; display: block;}}
+
+/*********************************************************************
+* DROPDOWN SUBMENU
+*/
+.navbar .sub-menu {display: none;}
+.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-submenu:hover>a,.dropdown-submenu:focus>a{text-decoration:none;color:#ffffff;background-color:#0081c2;background-image:-moz-linear-gradient(top, #0088cc, #0077b3);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));background-image:-webkit-linear-gradient(top, #0088cc, #0077b3);background-image:-o-linear-gradient(top, #0088cc, #0077b3);background-image:linear-gradient(to bottom, #0088cc, #0077b3);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);}
+.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus{color:#ffffff;text-decoration:none;outline:0;background-color:#0081c2;background-image:-moz-linear-gradient(top, #0088cc, #0077b3);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));background-image:-webkit-linear-gradient(top, #0088cc, #0077b3);background-image:-o-linear-gradient(top, #0088cc, #0077b3);background-image:linear-gradient(to bottom, #0088cc, #0077b3);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);}
+.dropdown-menu>.disabled>a,.dropdown-menu>.disabled>a:hover,.dropdown-menu>.disabled>a:focus{color:#999999;}
+.dropdown-menu>.disabled>a:hover,.dropdown-menu>.disabled>a:focus{text-decoration:none;background-color:transparent;background-image:none;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false);cursor:default;}
+.open{*z-index:1000;}.open>.dropdown-menu{display:block;}
+.pull-right>.dropdown-menu{right:0;left:auto;}
+.dropup .caret,.navbar-fixed-bottom .dropdown .caret{border-top:0;border-bottom:4px solid #000000;content:"";}
+.dropup .dropdown-menu,.navbar-fixed-bottom .dropdown .dropdown-menu{top:auto;bottom:100%;margin-bottom:1px;}
+.dropdown-submenu{position:relative;}
+.dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
+.dropdown-submenu:hover>.dropdown-menu{display:block;}
+.dropup .dropdown-submenu>.dropdown-menu{top:auto;bottom:0;margin-top:0;margin-bottom:-2px;-webkit-border-radius:5px 5px 5px 0;-moz-border-radius:5px 5px 5px 0;border-radius:5px 5px 5px 0;}
+.dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;}
+.dropdown-submenu:hover>a:after{border-left-color:#ffffff;}
+.dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
+
+/*********************************************************************
+* REQUIRED WORDPRESS STYLES
+*/
+.wp-caption,
+.gallery-caption {
+    margin-top: .4em;
+    margin-bottom: 1.625em;
+    max-width: 96%;
+    padding: 9px;
+}
+.bypostauthor {
+    font-family: inherit;
+}
+.sticky {
+    border: 2px dashed #ffffee;
+}
+.alignleft {
+    display: inline;
+    float: left;
+    margin-right: 1em;
+    margin-top: 0.5em;
+}
+.alignright {
+    display: inline;
+    float: right;
+    margin-left: 1.625em;
+}
+.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+}
+
+/*********************************************************************
+* COMMENTS
+*/
+#comments ul, #comments ol, #comments li {
+    list-style-type: none;
+}
+#comments .comment .comment-body {
+    margin-bottom: 5px;
+    padding: 10px;
+}
+#comments ul.children {
+    margin: auto;
+    padding-left: 15px;
+}
+#comments .comment .comment-body p {
+    clear: both;
+    display: block;
+    font-size: 1em;
+    margin: 1em 0em;
+    word-wrap: break-word;
+}
+#comments .comment .comment-body .comment-meta {
+    font-size: .85em;
+}
+#comments .comment-author.vcard img {
+    background: #fff;
+    border: 1px solid #999;
+    border-radius: 3px;
+    float: left;
+    margin: 2px 10px 4px 2px;
+    padding: 5px;
+}
+#comments .comment-details {
+    float: left;
+    margin-top: 1em;
+}
+#comments .comment-reply-link {
+    font-size: .85em;
+}
+#comments #cancel-comment-reply-link {
+    float: right;
+    font-size: .85em;
+    font-weight: normal;
+    margin-top: .5em;
+}
+#comments .page-numbers {
+    margin: 0em .2em;
+    overflow: hidden;
+    padding: 4px 8px;
+}
+#comments .nav-previous {
+    float: left;
+    margin-right: 20px;
+}
+#comments .nav-next {
+    float: left;
+}
+#comment-nav-above,
+#comment-nav-below {
+    font-size: .8em;
+    padding: 6px 0px;
+    margin: 20px 0px;
+}
+form#commentform textarea#comment {
+    margin-bottom: 1em;
+    resize: none;
+    width: 100%;
+    height: 80px;
+}
+form#commentform input {
+    margin-bottom: 1em;
+}
+form#commentform #comment-submit,
+form#commentform p.form-submit {
+    margin:0;
+}
+form#commentform p.logged-in-as,
+.comment-notes {
+    font-size: .8em;
+    margin: .5em 0em;
+    margin-bottom: 1em;
+    padding: .5em;
+}
+.form-allowed-tags {
+    font-size: 11px;
+}
+.form-allowed-tags code {
+    font-size: 11px;
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 8px;
+}
+div#respond {
+    margin-bottom: 5px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+h3#reply-title {
+    margin: 0px;
+    padding-bottom: 5px;
+}
+select.postform {
+    width: 100%;
+    margin: auto;
+}
+select.postform option {
+    padding: 2px;
+    margin: 2px;
+}
+
+/*********************************************************************
+* WORDPRESS DEFAULT WIDGETS
+*/
+
+/* GENERAL */
+.widget {
+    margin: 0em 0em 1em 0em;
+}
+.widget li,
+.widget ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.widget ul {
+    margin-left: .5em;
+}
+.widget ul.children {
+    margin-left: 1em;
+}
+.widgettitle {
+    margin: -10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* CALENDAR WIDGET */
+.widget_calendar {
+    font-size: .9em;
+    padding: 5px;
+}
+.widget_calendar table {
+    width: 100%;
+}
+.widget_calendar table caption {
+    padding: 6px 2px;
+}
+.widget_calendar table thead th {
+    padding: 3px;
+    text-align: center;
+}
+.widget_calendar table td {
+    padding: 4px;
+    text-align: center;
+}
+.widget_calendar table td.pad {
+    background: transparent;
+    border: none;
+}
+.widget_calendar table td#prev {
+    border: none;
+    text-align: left;
+}
+.widget_calendar table td#next {
+    border: none;
+    text-align: right;
+}
+.widget_calendar table tfoot td {
+    padding: 10px 0px 5px 0px;
+}
+.widget_calendar table tfoot a {
+    margin: 0px 5px;
+}
+
+/* Thickbox and iframe adjustments */
+div#TB_window, div#TB_overlay {
+    z-index: 2000;
+}
+div#TB_caption {
+    height: auto;
+}
+div#TB_closeWindow {
+    float: right;
+    height: auto;
+    padding: 5px 14px;
+}

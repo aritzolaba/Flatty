@@ -1,0 +1,185 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Flatty 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-11-16 04:32+0100\n"
+"PO-Revision-Date: 2013-11-16 04:32+0100\n"
+"Last-Translator: \n"
+"Language-Team: flatty\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-Country: SPAIN\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../comments.php:10
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "Este post es privado. Introduce la contrase&ntilde;a para ver los comentarios."
+
+#: ../comments.php:19
+#: ../partials/article.php:31
+msgid "1 comment"
+msgstr "1 comentario"
+
+#: ../comments.php:19
+#: ../partials/article.php:31
+#, php-format
+msgid "%s comments"
+msgstr "%s comentarios"
+
+#: ../comments.php:50
+msgid "Name"
+msgstr "Nombre"
+
+#: ../comments.php:52
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: ../comments.php:58
+#, php-format
+msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
+msgstr "Identificado como <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Desconectar?</a>"
+
+#: ../comments.php:59
+msgid "Your email address will not be published. Fields with * are mandatory."
+msgstr "Tu direcci&oacute;n de correo no ser&aacute; publicada. Los campos con * son obligatorios."
+
+#: ../functions.php:35
+msgid "Widgets placed here will display in the right sidebar"
+msgstr "Los widgets que dejes aqu&iacute; se mostrar&aacute;n en la sidebar derecha"
+
+#: ../functions.php:43
+msgid "Widgets placed here will display in the header block"
+msgstr "Los widgets que dejes aqu&iacute; se mostrar&aacute;n en el tercer bloque del footer"
+
+#: ../functions.php:51
+msgid "Widgets placed here will display in the first footer block"
+msgstr "Los widgets que dejes aqu&iacute; se mostrar&aacute;n en el primer bloque del footer"
+
+#: ../functions.php:59
+msgid "Widgets placed here will display in the second footer block"
+msgstr "Los widgets que dejes aqu&iacute; se mostrar&aacute;n en el segundo bloque del footer"
+
+#: ../functions.php:67
+msgid "Widgets placed here will display in the third footer block"
+msgstr "Los widgets que dejes aqu&iacute; se mostrar&aacute;n en el tercer bloque del footer"
+
+#: ../functions.php:75
+msgid "Flatty Primary Menu"
+msgstr "Men&uacute; principal de flatty"
+
+#: ../functions.php:110
+#, php-format
+msgid "Read more on %s"
+msgstr "Leer m&aacute;s sobre %s"
+
+#: ../functions.php:110
+msgid "Continue Reading"
+msgstr "Continuar Leyendo"
+
+#: ../header.php:19
+#, php-format
+msgid "Page %s"
+msgstr "P&aacute;gina %s"
+
+#: ../index.php:21
+msgid "<i class=\"icon-circle-arrow-left\"></i> OLDER POSTS"
+msgstr "<i class=\"icon-circle-arrow-left\"></i> ANTERIORES"
+
+#: ../index.php:22
+msgid "NEWER POSTS <i class=\"icon-circle-arrow-right\"></i>"
+msgstr "SIGUIENTES <i class=\"icon-circle-arrow-right\"></i>"
+
+#: ../searchform.php:6
+msgid "Search"
+msgstr "Buscar"
+
+#: ../sidebar.php:5
+msgid "add widgets here"
+msgstr "A&ntilde;ade widgets aqu&iacute;"
+
+#: ../inc/theme-options.php:58
+msgid "Theme Options"
+msgstr "Opciones del tema"
+
+#: ../inc/theme-options.php:105
+#, php-format
+msgid "%s Theme Options"
+msgstr "%s, Opciones del tema"
+
+#: ../inc/theme-options.php:117
+msgid "Save Changes"
+msgstr "Guardar cambios"
+
+#: ../inc/theme-options.php:119
+msgid "Theme options have been succesfully updated."
+msgstr "Las opciones se han guardado correctamente."
+
+#: ../partials/article-related.php:6
+msgid "Related articles"
+msgstr "Art&iacute;culos relacionados"
+
+#: ../partials/article.php:30
+msgid "Comments"
+msgstr "Comentarios"
+
+#: ../partials/article.php:31
+msgid "no comments"
+msgstr "sin comentarios"
+
+#: ../partials/article.php:44
+msgid "Edit"
+msgstr "Editar"
+
+#: ../partials/article.php:76
+msgid "Next page"
+msgstr "Siguiente"
+
+#: ../partials/article.php:77
+msgid "Previous page"
+msgstr "Anterior"
+
+#: ../partials/article.php:81
+msgid "Pages:"
+msgstr "P&aacute;ginas:"
+
+#: ../partials/breadcrumb.php:5
+msgid "Home"
+msgstr "Inicio"
+
+#: ../partials/breadcrumb.php:18
+msgid "About the author"
+msgstr "Sobre el autor"
+
+#: ../partials/breadcrumb.php:20
+msgid "Search results"
+msgstr "Resultados de la b&uacute;squeda"
+
+#: ../partials/breadcrumb.php:29
+msgid "Browsing posts tagged:"
+msgstr "Mostrando posts con la etiqueta:"
+
+#: ../partials/breadcrumb.php:33
+msgid "Browsing archived posts:"
+msgstr "Mostrando posts archivados:"
+
+#: ../partials/navbar.php:7
+msgid "Toggle Navigation"
+msgstr "Mostrar Men&uacute;"
+
+#: ../partials/nothing-found.php:8
+msgid "Nothing found"
+msgstr "No se ha encontrado nada"
+
+#: ../partials/nothing-found.php:16
+msgid "Ops! there is nothing here..."
+msgstr "Vaya!, parece que no hay nada aqu&iacute;..."
+
+#: ../partials/nothing-found.php:24
+msgid "Take me home"
+msgstr "Volver al inicio"
+

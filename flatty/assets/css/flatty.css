@@ -1,0 +1,152 @@
+/*********************************************************************
+* FLATTY STYLE
+*/
+
+/*********************************************************************
+* GOOGLE FONTS, locally loaded, no Google dependant
+* Compatible with Chrome, Firefox, Opera, Safari and IE 8,9 and 10
+*/
+@font-face {
+    font-family:'Lily Script One';
+    src: url('../fonts/lily-script-one.eot');
+    src: local('Lily Script One'), local('LilyScriptOne-Regular'), url('../fonts/lily-script-one.eot') format('embedded-opentype'), url('../fonts/lily-script-one.woff') format('woff');
+}
+@font-face {
+    font-family:'Rosario';
+    src: url('../fonts/rosario.eot');
+    src: local('Rosario'), local('Rosario-Regular'), url('../fonts/rosario.eot') format('embedded-opentype'), url('../fonts/rosario.woff') format('woff');
+}
+
+/* Article */
+article section {
+    font-family: 'Rosario';
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0em 1em;
+}
+
+/* Article Author */
+.article-author .lead {
+    margin-bottom: 0px;
+}
+.article-author-avatar {
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+/* Article Related */
+.article-related h4 {
+    margin-bottom: 0px;
+}
+
+/* Footer */
+body>footer {
+    background: #000 url('../imgs/tactile_noise_@2X.png') repeat;
+    box-shadow: 0 -1px 0 rgba(0,0,0,.1);
+    color: #f5f5f5;
+    margin-top: 4em;
+    padding: 1em 0em 3em 0em;
+}
+body>footer .widgettitle {
+    background: none;
+    color: inherit;
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+}
+
+/* Code */
+code {
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    color: #398439;
+}
+
+/* Comments body */
+#comments .comment .comment-body {
+    background: #fbfbfb;
+    border: 2px solid #f5f5f5;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rosario';
+    margin-top: 0px;
+}
+
+/* Navbar */
+.navbar {
+    background: #000 url('../imgs/tactile_noise_@2X.png') repeat;
+    border-bottom: 4px solid #38c;
+    box-shadow: none;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.35);
+}
+.navbar-brand {
+    font-family: 'Lily Script One';
+    font-size: 34px;
+    padding: 14px 10px 10px 10px;
+}
+.navbar-text {
+    font-family: 'Rosario';
+    margin-left: 4px;
+}
+button.navbar-toggle {
+    margin-bottom: 0px;
+}
+
+/* Style current menu item */
+.navbar-nav>li.current-menu-item>a,
+.navbar-nav>li.current-page-ancestor>a,
+.navbar-nav>li.current-menu-item>a:hover,
+.navbar-nav>li.current-page-ancestor>a:hover {
+    color: #fff;
+    background: #38c;
+}
+
+/* Respond */
+#respond {
+    background: #f5f5f5;
+    border-radius: 3px;
+    box-shadow: 0px 1px 4px #999;
+}
+
+/* Wells */
+.well {
+    background: #fff;
+}
+
+/* Widget Title */
+.widgettitle {
+    background: #333;
+    color: #f5f5f5;
+    font-size: 16px;
+}
+
+/* Widget Calendar */
+.widget_calendar.well {
+    border: 1px solid #111;
+    background: url('../imgs/vertical_cloth.png') repeat;
+}
+.widget_calendar table caption {
+    background: #f5f5f5;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.widget_calendar table thead {
+    background: #0081c2;
+    color: #fff;
+}
+.widget_calendar table td {
+    background: none;
+    color: #eaeaea;
+}
+.widget_calendar table td a {
+    color: #FFBD69;
+}
+.widget_calendar td a {
+    color: #333;
+    font-size: 1em;
+}
+.widget_calendar td a:hover {
+    color: #08c;
+}
