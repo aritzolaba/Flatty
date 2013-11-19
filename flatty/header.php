@@ -22,10 +22,8 @@ if ($paged >= 2 || $page >= 2) echo ' - ' . sprintf(__('Page %s', 'flatty'), max
 <?php
 // Enqueue comment-reply script if comments_open and singular
 if (is_singular() && comments_open()) wp_enqueue_script('comment-reply');
-
 // WordPress Head
 wp_head();
-
 // Load respond.min.js if browser version is < IE9
 echo '
 <!--[if lt IE 9]>

@@ -1,7 +1,7 @@
 <?php // Exit if accessed directly
 if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} ?>
 
-<article class="media">
+<article class="media well">
 
     <header class="media-body">
         <h2 class="media-heading">

@@ -6,6 +6,7 @@ Features
 ==========
 - Bootstrap 3.0 and Font Awesome 4.1 included.
 - HTML5shiv.js and respond.min.js are used for IE8 compatibility.
+- Retina ready.
 - Custom background support.
 - Custom menu support with three-level dropdowns.
 - Category and page hierarchy support in the breadcrumb.
