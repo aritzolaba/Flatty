@@ -6,6 +6,10 @@
 // Exit if accessed directly
 if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();}
 
+// Get Theme Options
+global $flatty_theme_options;
+$flatty_theme_options = get_option('flatty_theme_options');
+
 /*********************************************************************
 * THEME SETUP
 */
@@ -22,6 +26,9 @@ function ft_setup() {
 
     // Editor style (editor-style.css)
     add_editor_style(array('assets/css/editor-style.css'));
+
+    // Load up our theme options page and related code.
+    require( get_template_directory() . '/inc/theme-options.php' );
 
     // Widget areas
     if (function_exists('register_sidebar')) :
@@ -100,7 +107,7 @@ function load_theme_assets() {
     // Do not know any method to enqueue a script with conditional tags!
     echo '
     <!--[if lt IE 9]>
-      <script src="'. get_template_directory_uri() .'/assets/libs/html5shiv.js"></script>
+      <script src="'. get_template_directory_uri() .'/assets/libs/html5shiv.min.js"></script>
     <![endif]-->
     ';
 
@@ -125,7 +132,7 @@ function load_theme_assets() {
     wp_enqueue_style('thickbox');
 
     // Enqueue Retina.js
-    wp_enqueue_script('retina-js', get_template_directory_uri() . '/assets/libs/retina.js', array(), FALSE, TRUE);
+    wp_enqueue_script('retina-js', get_template_directory_uri() . '/assets/libs/retina.min.js', array(), FALSE, TRUE);
 }
 add_action( 'wp_enqueue_scripts', 'load_theme_assets' );
 

@@ -95,11 +95,16 @@ button.navbar-toggle {
 
 /* Style current menu item */
 .navbar-nav>li.current-menu-item>a,
+.navbar-nav>li.current-post-ancestor>a,
 .navbar-nav>li.current-page-ancestor>a,
 .navbar-nav>li.current-menu-item>a:hover,
+.navbar-nav>li.current-post-ancestor>a:hover,
 .navbar-nav>li.current-page-ancestor>a:hover {
     color: #fff;
     background: #38c;
+}
+.dropdown-menu li a {
+    text-shadow: none;
 }
 
 /* Respond */
@@ -109,14 +114,37 @@ button.navbar-toggle {
     box-shadow: 0px 1px 4px #999;
 }
 
+/* Sidebar Admin */
+.sidebar-admin .lead {
+    margin-bottom: 0px;
+}
+.sidebar-admin-avatar {
+    margin-bottom: .25em;
+    margin-right: 1em;
+}
+.sidebar-admin-social {
+    text-align: center;
+    font-size: 32px;
+    margin: 0px;
+    margin-top: 10px;
+}
+.sidebar-admin-social a i {
+    text-shadow: 3px 3px 1px #ddd;
+}
+
 /* Wells */
 .well {
     background: #fff;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    box-shadhow: none;
+    -webkit-box-shadow: none;
 }
 
 /* Widget Title */
 .widgettitle {
     background: #333;
+    border-bottom: 5px solid #38c;
     color: #f5f5f5;
     font-size: 16px;
 }

@@ -1,8 +1,13 @@
 jQuery(document).ready(function($) {
 
+    /* No custom menu? Style default */
+    if ($('.navbar .menu').length>0) {
+        $('.navbar .menu').addClass('collapse navbar-collapse').children('ul').addClass('nav navbar-nav');
+        $('li.page_item_has_children').addClass('dropdown').children('a').addClass('dropdown-toggle').attr('data-toggle','dropdown').append(' <i class="icon-caret-down"></i>').next('ul').addClass('dropdown-menu');
+    }
+
     /* Navbar Dropdowns */
     if ($('nav ul.navbar-nav').length>0) {
-
         /* Level 1 */
         $('nav ul.navbar-nav > li').each(function() {
             if ($(this).children().hasClass('sub-menu')) {
@@ -46,6 +51,6 @@ jQuery(document).ready(function($) {
     if ($('div.gallery .gallery-icon a').length>0) $('div.gallery .gallery-icon a').addClass('thickbox');
 
     // Adds thickbox class to post images
-    if ($('article.media a > img').length>0) $('article.media a > img').addClass('img-thumbnail').parent().addClass('thickbox');
+    if ($('article.media a > img').length>0) $('article.media a:not(\'.media-object\') > img').addClass('img-thumbnail').parent().addClass('thickbox');
 
 });

@@ -6,8 +6,6 @@
 // Exit if accessed directly
 if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} get_header(); ?>
 
-<?php get_template_part('partials/breadcrumb'); ?>
-
 <?php if (have_posts()) : ?>
 
     <?php while (have_posts()) : the_post(); ?>

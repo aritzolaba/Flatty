@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flatty 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-16 04:32+0100\n"
-"PO-Revision-Date: 2013-11-16 04:32+0100\n"
+"POT-Creation-Date: 2013-11-26 02:25+0100\n"
+"PO-Revision-Date: 2013-11-26 02:25+0100\n"
 "Last-Translator: \n"
 "Language-Team: flatty\n"
 "MIME-Version: 1.0\n"
@@ -37,47 +37,43 @@ msgstr "Nombre"
 
 #: ../comments.php:52
 msgid "Email"
-msgstr "Correo electrónico"
+msgstr "Correo electr&oacute;nico"
 
 #: ../comments.php:58
 #, php-format
 msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
-msgstr "Identificado como <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Desconectar?</a>"
+msgstr "Identificado como <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Desconectar\">Desconectar?</a>"
 
 #: ../comments.php:59
 msgid "Your email address will not be published. Fields with * are mandatory."
 msgstr "Tu direcci&oacute;n de correo no ser&aacute; publicada. Los campos con * son obligatorios."
 
-#: ../functions.php:35
+#: ../functions.php:39
 msgid "Widgets placed here will display in the right sidebar"
 msgstr "Los widgets que dejes aqu&iacute; se mostrar&aacute;n en la sidebar derecha"
 
-#: ../functions.php:43
-msgid "Widgets placed here will display in the header block"
-msgstr "Los widgets que dejes aqu&iacute; se mostrar&aacute;n en el tercer bloque del footer"
-
-#: ../functions.php:51
+#: ../functions.php:47
 msgid "Widgets placed here will display in the first footer block"
 msgstr "Los widgets que dejes aqu&iacute; se mostrar&aacute;n en el primer bloque del footer"
 
-#: ../functions.php:59
+#: ../functions.php:55
 msgid "Widgets placed here will display in the second footer block"
 msgstr "Los widgets que dejes aqu&iacute; se mostrar&aacute;n en el segundo bloque del footer"
 
-#: ../functions.php:67
+#: ../functions.php:63
 msgid "Widgets placed here will display in the third footer block"
 msgstr "Los widgets que dejes aqu&iacute; se mostrar&aacute;n en el tercer bloque del footer"
 
-#: ../functions.php:75
+#: ../functions.php:71
 msgid "Flatty Primary Menu"
 msgstr "Men&uacute; principal de flatty"
 
-#: ../functions.php:110
+#: ../functions.php:97
 #, php-format
 msgid "Read more on %s"
 msgstr "Leer m&aacute;s sobre %s"
 
-#: ../functions.php:110
+#: ../functions.php:97
 msgid "Continue Reading"
 msgstr "Continuar Leyendo"
 
@@ -102,24 +98,72 @@ msgstr "Buscar"
 msgid "add widgets here"
 msgstr "A&ntilde;ade widgets aqu&iacute;"
 
-#: ../inc/theme-options.php:58
+#: ../inc/theme-options.php:60
 msgid "Theme Options"
 msgstr "Opciones del tema"
 
-#: ../inc/theme-options.php:105
+#: ../inc/theme-options.php:95
 #, php-format
 msgid "%s Theme Options"
-msgstr "%s, Opciones del tema"
+msgstr "Opciones del tema %s"
 
-#: ../inc/theme-options.php:117
+#: ../inc/theme-options.php:104
+msgid "Article options"
+msgstr "Opciones de los art&iacute;culos"
+
+#: ../inc/theme-options.php:109
+msgid "Display author info?"
+msgstr "Mostrar info del autor?"
+
+#: ../inc/theme-options.php:113
+msgid "Display related articles?"
+msgstr "Mostrar art&iacute;culos relacionados?"
+
+#: ../inc/theme-options.php:121
+msgid "General options"
+msgstr "Opciones generales"
+
+#: ../inc/theme-options.php:126
+msgid "Display breadcrumb?"
+msgstr "Mostrar breadcrumb?"
+
+#: ../inc/theme-options.php:134
+msgid "Sidebar options"
+msgstr "Opciones del panel lateral"
+
+#: ../inc/theme-options.php:139
+msgid "Sidebar position"
+msgstr "Posici&oacute;n del panel lateral"
+
+#: ../inc/theme-options.php:142
+msgid "Left"
+msgstr "Izquierda"
+
+#: ../inc/theme-options.php:143
+msgid "Right"
+msgstr "Derecha"
+
+#: ../inc/theme-options.php:148
+msgid "Display admin info in sidebar?"
+msgstr "Mostrar info del administrador en el panel lateral?"
+
+#: ../inc/theme-options.php:156
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: ../inc/theme-options.php:161
+msgid "Google Analytics account"
+msgstr "Cuenta de Google Analytics"
+
+#: ../inc/theme-options.php:164
+msgid "Type your \"UA-12345\" account or leave it blank"
+msgstr "Escribe tu cuenta \"UA-12345\" o d&eacute;jalo en blanco"
+
+#: ../inc/theme-options.php:171
 msgid "Save Changes"
 msgstr "Guardar cambios"
 
-#: ../inc/theme-options.php:119
-msgid "Theme options have been succesfully updated."
-msgstr "Las opciones se han guardado correctamente."
-
-#: ../partials/article-related.php:6
+#: ../partials/article-related.php:7
 msgid "Related articles"
 msgstr "Art&iacute;culos relacionados"
 

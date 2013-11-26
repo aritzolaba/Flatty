@@ -20,7 +20,7 @@ Features:
 
 Change log
 ----------
-19-11-2013 - Version 1.0.1
+19-11-2013 - Version 1.0.0
 
 - Added Retina image support.
 

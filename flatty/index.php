@@ -3,9 +3,9 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} get_header(); ?>
 
 <div class="row">
 
-    <div class="col-md-9">
+    <div class="col-md-9 <?php if ($flatty_theme_options['sidebar_position'] == 'left') echo 'pull-right'; ?>">
 
-        <?php get_template_part('partials/breadcrumb'); ?>
+        <?php if ($flatty_theme_options['breadcrumb'] == 1) get_template_part('partials/breadcrumb'); ?>
 
         <?php if (have_posts()) : ?>
 
@@ -35,7 +35,8 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} get_header(); ?>
 
     </div>
 
-    <aside class="col-md-3">
+    <aside class="col-md-3 <?php if ($flatty_theme_options['sidebar_position'] == 'left') echo 'pull-left'; ?>">
+        <?php if ($flatty_theme_options['sidebar_admin'] == 1) get_template_part('partials/sidebar-admin'); ?>
         <?php get_sidebar(); ?>
     </aside>
 

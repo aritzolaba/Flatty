@@ -19,6 +19,19 @@ Features
 
 Change log
 ==========
+26-11-2013 - Version 1.0.0
+
+- Added a Theme options page with these options:
+-- Display related articles (yes/no)
+-- Display author info in articles (yes/no)
+-- Display breadcrumb (yes/no)
+-- Display admin info in sidebar (yes/no)
+-- Sidebar position (left/right)
+
+19-11-2013 - Version 1.0.0
+
+- Added Retina image support.
+
 17-11-2013 - Version 1.0.0
 
 - First release.
