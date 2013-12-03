@@ -11,12 +11,22 @@ class flatty_theme_options_page {
 
         // Initialize default options
         $def_theme_options = array();
+        $def_theme_options['css_style'] = 'blue';
         $def_theme_options['google_analytics_account'] = '';
         $def_theme_options['sidebar_position'] = 'right';
+        $def_theme_options['footer_social'] = 1;
         $def_theme_options['sidebar_admin'] = 1;
         $def_theme_options['article_author'] = 1;
         $def_theme_options['article_related'] = 1;
         $def_theme_options['breadcrumb'] = 1;
+        $def_theme_options['pagination_type'] = 'buttons';
+
+        // Social buttons
+        $def_theme_options['social_facebook'] = '';
+        $def_theme_options['social_github'] = '';
+        $def_theme_options['social_googleplus'] = '';
+        $def_theme_options['social_twitter'] = '';
+        $def_theme_options['social_linkedin'] = '';
 
         global $flatty_theme_options;
 
@@ -101,6 +111,40 @@ class flatty_theme_options_page {
 
             <form method="post" action="">
 
+                <h3 class="title"><?php _e('General options', 'flatty'); ?></h3>
+
+                <table class="form-table">
+                    <tbody>
+                        <tr valign="top">
+                            <th scope="row"><label for="breadcrumb"><?php _e('Display breadcrumb?','flatty'); ?></label></th>
+                            <td><input name="breadcrumb" type="checkbox" id="breadcrumb" value="1" <?php if ($flatty_theme_options['breadcrumb'] == 1) echo 'checked="checked"'; ?>></td>
+                        </tr>
+                        <tr valign="top">
+                            <th scope="row"><label for="css_style"><?php _e('CSS Style','flatty'); ?></label></th>
+                            <td>
+                                <select name="css_style" id="css_style">
+                                    <option value="black_white" <?php if ($flatty_theme_options['css_style'] == 'black_white') echo 'selected="selected"'; ?>><?php _e('Black and White','flatty'); ?></option>
+                                    <option value="blue" <?php if ($flatty_theme_options['css_style'] == 'blue') echo 'selected="selected"'; ?>><?php _e('Blue','flatty'); ?></option>
+                                    <option value="green" <?php if ($flatty_theme_options['css_style'] == 'green') echo 'selected="selected"'; ?>><?php _e('Green','flatty'); ?></option>
+                                    <option value="red" <?php if ($flatty_theme_options['css_style'] == 'red') echo 'selected="selected"'; ?>><?php _e('Red','flatty'); ?></option>
+                                    <option value="salmon" <?php if ($flatty_theme_options['css_style'] == 'salmon') echo 'selected="selected"'; ?>><?php _e('Salmon','flatty'); ?></option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr valign="top">
+                            <th scope="row"><label for="pagination_type"><?php _e('Pagination type','flatty'); ?></label></th>
+                            <td>
+                                <select name="pagination_type" id="sidebar_position">
+                                    <option value="buttons" <?php if ($flatty_theme_options['pagination_type'] == 'buttons') echo 'selected="selected"'; ?>><?php _e('Buttons','flatty'); ?></option>
+                                    <option value="numbers" <?php if ($flatty_theme_options['pagination_type'] == 'numbers') echo 'selected="selected"'; ?>><?php _e('Numbers','flatty'); ?></option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br />
+
                 <h3 class="title"><?php _e('Article options', 'flatty'); ?></h3>
 
                 <table class="form-table">
@@ -112,19 +156,6 @@ class flatty_theme_options_page {
                         <tr valign="top">
                             <th scope="row"><label for="article_related"><?php _e('Display related articles?','flatty'); ?></label></th>
                             <td><input name="article_related" type="checkbox" id="article_related" value="1" <?php if ($flatty_theme_options['article_related'] == 1) echo 'checked="checked"'; ?>></td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <br />
-
-                <h3 class="title"><?php _e('General options', 'flatty'); ?></h3>
-
-                <table class="form-table">
-                    <tbody>
-                        <tr valign="top">
-                            <th scope="row"><label for="breadcrumb"><?php _e('Display breadcrumb?','flatty'); ?></label></th>
-                            <td><input name="breadcrumb" type="checkbox" id="breadcrumb" value="1" <?php if ($flatty_theme_options['breadcrumb'] == 1) echo 'checked="checked"'; ?>></td>
                         </tr>
                     </tbody>
                 </table>
@@ -147,6 +178,39 @@ class flatty_theme_options_page {
                         <tr valign="top">
                             <th scope="row"><label for="sidebar_admin"><?php _e('Display admin info in sidebar?','flatty'); ?></label></th>
                             <td><input name="sidebar_admin" type="checkbox" id="sidebar_admin" value="1" <?php if ($flatty_theme_options['sidebar_admin'] == 1) echo 'checked="checked"'; ?>></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br />
+
+                <h3 class="title"><?php _e('Social URLs', 'flatty'); ?></h3>
+
+                <table class="form-table">
+                    <tbody>
+                        <tr valign="top">
+                            <th scope="row"><label for="footer_social"><?php _e('Display social links in footer?','flatty'); ?></label></th>
+                            <td><input name="footer_social" type="checkbox" id="footer_social" value="1" <?php if ($flatty_theme_options['footer_social'] == 1) echo 'checked="checked"'; ?>></td>
+                        </tr>
+                        <tr valign="top">
+                            <th scope="row"><label for="social_facebook">Facebook</label></th>
+                            <td><input name="social_facebook" type="text" id="social_facebook" value="<?php if (!empty($flatty_theme_options['social_facebook'])) echo $flatty_theme_options['social_facebook']; ?>" class="regular-text" placeholder="http://"></td>
+                        </tr>
+                        <tr valign="top">
+                            <th scope="row"><label for="social_github">GitHub</label></th>
+                            <td><input name="social_github" type="text" id="social_github" value="<?php if (!empty($flatty_theme_options['social_github'])) echo $flatty_theme_options['social_github']; ?>" class="regular-text" placeholder="http://"></td>
+                        </tr>
+                        <tr valign="top">
+                            <th scope="row"><label for="social_googleplus">Google+</label></th>
+                            <td><input name="social_googleplus" type="text" id="social_googleplus" value="<?php if (!empty($flatty_theme_options['social_googleplus'])) echo $flatty_theme_options['social_googleplus']; ?>" class="regular-text" placeholder="http://"></td>
+                        </tr>
+                        <tr valign="top">
+                            <th scope="row"><label for="social_twitter">Twitter</label></th>
+                            <td><input name="social_twitter" type="text" id="social_twitter" value="<?php if (!empty($flatty_theme_options['social_twitter'])) echo $flatty_theme_options['social_twitter']; ?>" class="regular-text" placeholder="http://"></td>
+                        </tr>
+                        <tr valign="top">
+                            <th scope="row"><label for="social_linkedin">LinkedIn</label></th>
+                            <td><input name="social_linkedin" type="text" id="social_linkedin" value="<?php if (!empty($flatty_theme_options['social_linkedin'])) echo $flatty_theme_options['social_linkedin']; ?>" class="regular-text" placeholder="http://"></td>
                         </tr>
                     </tbody>
                 </table>

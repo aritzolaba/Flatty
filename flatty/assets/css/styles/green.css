@@ -1,0 +1,28 @@
+/* GREEN STYLE */
+a {
+    color: #8caa46;
+}
+a:hover {
+    color: #097365;
+}
+.navbar,
+.widgettitle {
+    border-color: #8caa46;
+}
+.navbar-nav>li.current-menu-item>a,
+.navbar-nav>li.current-post-ancestor>a,
+.navbar-nav>li.current-page-ancestor>a,
+.navbar-nav>li.current-menu-item>a:hover,
+.navbar-nav>li.current-post-ancestor>a:hover,
+.navbar-nav>li.current-page-ancestor>a:hover,
+.widget_calendar table thead {
+    background: #8caa46;
+}
+a.btn, button.btn {
+    background: #8caa46;
+    border-color: #8caa46;
+}
+a.btn:hover, button.btn:hover, a.btn.active, button.btn.active {
+    background: #097365;
+    border-color: #097365;
+}

@@ -20,21 +20,21 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} ?>
         </h1>
 
         <?php if (!is_page()) : ?>
-            <div class="media-heading">
+            <div class="media-heading text-muted">
                 <?php
                 // Date
-                $output = '<i class="icon-calendar"></i>&nbsp;'.get_the_date('M, d - Y');
+                $output = '<strong><i class="icon-calendar"></i></strong>&nbsp;'.get_the_date('M, d - Y');
 
                 // Comment number
                 if (comments_open()) :
-                    $output .= '&nbsp;&nbsp;<i class="icon-comments"></i>&nbsp;<a href="'.get_permalink().'#comments" title="'.__('Comments','flatty').'">';
+                    $output .= '&nbsp;&nbsp;<strong><i class="icon-comments"></i></strong>&nbsp;<a href="'.get_permalink().'#comments" title="'.__('Comments','flatty').'">';
                     $ncom=get_comments_number(); if ($ncom==0) $output .= __('no comments', 'flatty'); elseif ($ncom==1) $output .= __('1 comment', 'flatty'); else $output .= sprintf (__('%s comments','flatty'), $ncom);
                     $output .= '</a>';
                 endif;
 
                 // Categories
                 if (get_the_category()) :
-                    $output .= '&nbsp;&nbsp;<i class="icon-folder-open"></i>&nbsp;'.get_the_category_list(',&nbsp;');
+                    $output .= '&nbsp;&nbsp;<strong><i class="icon-folder-open"></i></strong>&nbsp;'.get_the_category_list(',&nbsp;');
                 endif;
 
                 // Output all

@@ -1,0 +1,28 @@
+/* SALMON STYLE */
+a {
+    color: #FA8072;
+}
+a:hover {
+    color: #8caa46;
+}
+.navbar,
+.widgettitle {
+    border-color: #FA8072;
+}
+.navbar-nav>li.current-menu-item>a,
+.navbar-nav>li.current-post-ancestor>a,
+.navbar-nav>li.current-page-ancestor>a,
+.navbar-nav>li.current-menu-item>a:hover,
+.navbar-nav>li.current-post-ancestor>a:hover,
+.navbar-nav>li.current-page-ancestor>a:hover,
+.widget_calendar table thead {
+    background: #FA8072;
+}
+a.btn, button.btn {
+    background: #FA8072;
+    border-color: #FA8072;
+}
+a.btn:hover, button.btn:hover, a.btn.active, button.btn.active {
+    background: #8caa46;
+    border-color: #8caa46;
+}

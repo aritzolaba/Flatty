@@ -103,6 +103,8 @@ add_filter('the_excerpt', 'custom_excerpt');
  */
 function load_theme_assets() {
 
+    global $flatty_theme_options;
+
     // HTML5shiv
     // Do not know any method to enqueue a script with conditional tags!
     echo '
@@ -127,6 +129,11 @@ function load_theme_assets() {
     wp_enqueue_style('flatty-css', get_template_directory_uri().'/assets/css/flatty.css');
     wp_enqueue_script('flatty-js', get_template_directory_uri().'/assets/js/flatty.js', array(), FALSE, TRUE);
 
+    // Enqueue CSS Style
+    if (!empty($flatty_theme_options['css_style'])) :
+        wp_enqueue_style('flatty-style-css', get_template_directory_uri().'/assets/css/styles/'.$flatty_theme_options['css_style'].'.css');
+    endif;
+
     // Enqueue Wordpress Thickbox
     wp_enqueue_script('thickbox', FALSE, array(), FALSE, TRUE);
     wp_enqueue_style('thickbox');
@@ -141,6 +148,10 @@ add_action( 'wp_enqueue_scripts', 'load_theme_assets' );
  */
 add_filter( 'wp_generate_attachment_metadata', 'retina_support_attachment_meta', 10, 2 );
 function retina_support_attachment_meta($metadata, $attachment_id) {
+
+    // Create first image @2
+    retina_support_create_images(get_attached_file($attachment_id), 0, 0, false);
+
     foreach ($metadata as $key => $value) {
         if (is_array($value)) {
             foreach ($value as $image => $attr) {
@@ -154,23 +165,27 @@ function retina_support_attachment_meta($metadata, $attachment_id) {
 }
 
 function retina_support_create_images($file, $width, $height, $crop = false) {
-    if ($width || $height) {
-        $resized_file = wp_get_image_editor($file);
-        if (!is_wp_error($resized_file)) {
+
+    $resized_file = wp_get_image_editor($file);
+    if (!is_wp_error($resized_file)) {
+
+        if ($width || $height) {
             $filename = $resized_file->generate_filename($width . 'x' . $height . '@2x');
-
             $resized_file->resize($width * 2, $height * 2, $crop);
-            $resized_file->save($filename);
-
-            $info = $resized_file->get_size();
-
-            return array(
-                'file' => wp_basename($filename),
-                'width' => $info['width'],
-                'height' => $info['height'],
-            );
+        } else {
+            $filename = str_replace('-@2x','@2x',$resized_file->generate_filename('@2x'));
         }
+        $resized_file->save($filename);
+
+        $info = $resized_file->get_size();
+
+        return array(
+            'file' => wp_basename($filename),
+            'width' => $info['width'],
+            'height' => $info['height'],
+        );
     }
+
     return false;
 }
 
@@ -179,6 +194,12 @@ function delete_retina_support_images($attachment_id) {
     $meta = wp_get_attachment_metadata($attachment_id);
     $upload_dir = wp_upload_dir();
     $path = pathinfo($meta['file']);
+
+    // First image (without width-height specified
+    $original_filename = $upload_dir['basedir'] . '/' . $path['dirname'] . '/' . wp_basename($meta['file']);
+    $retina_filename = substr_replace($original_filename, '@2x.', strrpos($original_filename, '.'), strlen('.'));
+    if (file_exists($retina_filename)) unlink($retina_filename);
+
     foreach ($meta as $key => $value) {
         if ('sizes' === $key) {
             foreach ($value as $sizes => $size) {
@@ -193,9 +214,9 @@ function delete_retina_support_images($attachment_id) {
 
 // GALLERY SHORTCODE FILTER FOR CAROUSEL
 /* To automatically execute carousel shortcode when post type is "gallery" */
-add_shortcode('ol_carousel','ol_shortcode_carousel');
-add_action('post_gallery', 'ol_shortcode_carousel', 10, 2);
-function ol_shortcode_carousel ($output, $attr) {
+add_shortcode('ft_carousel','ft_shortcode_carousel');
+add_action('post_gallery', 'ft_shortcode_carousel', 10, 2);
+function ft_shortcode_carousel ($output, $attr) {
     global $post;
 
     // OrderBy
@@ -223,42 +244,55 @@ function ol_shortcode_carousel ($output, $attr) {
     // If images are found, proceed
     if ( $images ) :
 
-        $output = '<div class="clearfix"></div>';
+        $output = '<div class="clearfix"></div><br />';
+        $indicators = '';
+        $items = '';
 
+        $i=0; foreach ($images as $image) :
+
+            $act = ($i==0) ? 'active' : '';
+
+            $indicators .= '
+                <li data-target="#slideshow-'.$post->ID.'" data-slide-to="'.$i.'" class="'.$act.'"></li>
+            ';
+
+            $items .= '
+            <div class="item '.$act.'">
+                <a rel="attached-to-'.$image->post_parent.'" class="thickbox" href="'.$image->guid.'" title="'. get_the_title($image->ID).'">
+                    <img src="'. $image->guid.'" alt="'.get_the_title($image->ID).'"/>
+                </a>
+                <div class="carousel-caption">
+                    <h4>'. get_the_title($image->ID).'</h4>
+                    <br />
+                </div>
+            </div>
+            ';
+
+            $i++;
+        endforeach;
+
+        $output .= '<div id="slideshow-'.$post->ID.'" class="carousel slide" data-ride="carousel">';
+
+        // INDICATORS
+        $output .= '<ol class="carousel-indicators">'. $indicators .'</ol>';
+
+        // ITEMS
+        $output .= '<div class="carousel-inner">' .$items. '</div>';
+
+        // CONTROLS
+        /*
         $output .= '
-            <div id="slideshow" class="carousel slide">
-                <div class="carousel-inner">';
-
-                $i=0;
-                foreach ($images as $image) :
-                    $i++;
-                    $act = '';
-                    if ($i==1) $act = 'active';
-
-                    $output .= '<div class="item '.$act.'" style="text-align: center;">
-                        <a rel="attached-to-'.$image->post_parent.'" class="thickbox" href="'.$image->guid.'" title="'. get_the_title($image->ID).'">
-                            <img style="width: 100%; margin: auto;" src="'. $image->guid.'" alt="'.get_the_title($image->ID).'"/>
-                        </a>
-                        <div class="carousel-caption">
-                            <h4>'. get_the_title($image->ID).'</h4>
-                            <br />
-                        </div>
-                    </div>';
-
-                endforeach;
-
-                $output .= '</div>';
-                $output .= '
-                <a class="left carousel-control" href="#slideshow" data-slide="prev">
-                <span class="icon-prev"></span>
-                </a>
-                <a class="right carousel-control" href="#slideshow" data-slide="next">
-                <span class="icon-next"></span>
-                </a>
-                ';
+        <a class="left carousel-control" href="#slideshow-'.$post->ID.'" data-slide="prev">
+        <span class="icon-prev icon-caret-left"></span>
+        </a>
+        <a class="right carousel-control" href="#slideshow-'.$post->ID.'" data-slide="next">
+        <span class="icon-next icon-caret-right"></span>
+        </a>
+        ';
+        */
         $output .= '</div>';
 
-        $output .= '<div class="clearfix"></div>';
+        $output .= '<div class="clearfix"></div><br />';
 
         return $output;
 
@@ -267,3 +301,77 @@ function ol_shortcode_carousel ($output, $attr) {
     // Return nothing
     return;
 }
+
+// Flatty Pagination
+// Code taken from: http://wp-snippets.com/pagination-for-twitter-bootstrap/
+function flatty_pagination ($before = '', $after = '') {
+
+    global $flatty_theme_options;
+
+    echo $before;
+
+    if ($flatty_theme_options['pagination_type'] == 'buttons') :
+
+        $next_posts_link = str_replace('<a', '<a class="btn btn-lg btn-primary pull-left"',get_next_posts_link(__('<i class="icon-circle-arrow-left"></i> OLDER POSTS', 'flatty')));
+        $prev_posts_link = str_replace('<a', '<a class="btn btn-lg btn-primary pull-right"',get_previous_posts_link(__('NEWER POSTS <i class="icon-circle-arrow-right"></i>', 'flatty')));
+
+        echo '<div class="clearfix"></div><br />';
+        echo $next_posts_link.$prev_posts_link;
+        echo '<div class="clearfix"></div><br />';
+
+    else :
+
+        global $wpdb, $wp_query;
+
+        $request = $wp_query->request;
+        $posts_per_page = intval(get_query_var('posts_per_page'));
+        $paged = intval(get_query_var('paged'));
+        $numposts = $wp_query->found_posts;
+        $max_page = $wp_query->max_num_pages;
+
+        if ($numposts <= $posts_per_page) {
+            return;
+        }
+        if (empty($paged) || $paged == 0) {
+            $paged = 1;
+        }
+        $pages_to_show = 7;
+        $pages_to_show_minus_1 = $pages_to_show - 1;
+        $half_page_start = floor($pages_to_show_minus_1 / 2);
+        $half_page_end = ceil($pages_to_show_minus_1 / 2);
+        $start_page = $paged - $half_page_start;
+        if ($start_page <= 0) {
+            $start_page = 1;
+        }
+        $end_page = $paged + $half_page_end;
+        if (($end_page - $start_page) != $pages_to_show_minus_1) {
+            $end_page = $start_page + $pages_to_show_minus_1;
+        }
+        if ($end_page > $max_page) {
+            $start_page = $max_page - $pages_to_show_minus_1;
+            $end_page = $max_page;
+        }
+        if ($start_page <= 0) {
+            $start_page = 1;
+        }
+
+        echo '<div class="btn-toolbar text-center" role="toolbar">';
+
+        for ($i = $start_page; $i <= $end_page; $i++) {
+            if ($i == $paged) {
+                echo '<button class="active btn btn-info" type="button">' . $i . '</button>';
+            } else {
+                echo '<a class="btn btn-default" href="' . get_pagenum_link($i) . '">' . $i . '</a>';
+            }
+        }
+
+        echo '</div>';
+
+    endif;
+
+    echo $after;
+
+    return;
+}
+
+?>

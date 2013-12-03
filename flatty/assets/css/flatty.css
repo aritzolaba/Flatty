@@ -24,7 +24,9 @@ article section {
     line-height: 24px;
     padding: 0em 1em;
 }
-
+article code {
+    margin: 5px 20px;
+}
 /* Article Author */
 .article-author .lead {
     margin-bottom: 0px;
@@ -34,9 +36,35 @@ article section {
     margin-right: 1em;
 }
 
-/* Article Related */
-.article-related h4 {
-    margin-bottom: 0px;
+/* Bootstrap Carousel */
+body article .carousel-inner img {
+    margin: auto;
+    max-height: 380px;
+    width: auto;
+}
+body.single article .carousel-inner img {
+    margin: auto;
+    max-height: 440px;
+    width: auto;
+}
+body.page-template-tpl-one-column-empty-php article .carousel-inner img {
+    margin: auto;
+    max-height: 580px;
+    width: auto;
+}
+.carousel-indicators {
+    bottom: 0px;
+}
+.carousel-indicators li {
+    border: 1px solid #999;
+    background: #fff;
+}
+.carousel-indicators li.active {
+    background: #38c;
+}
+.carousel-control.left,
+.carousel-control.right {
+    background: transparent;
 }
 
 /* Footer */
@@ -51,7 +79,10 @@ body>footer .widgettitle {
     background: none;
     color: inherit;
     margin: 0px 0px 10px 0px;
-    padding: 0px;
+    padding: 10px;
+}
+body>footer .sidebar-admin-social {
+    text-align: left;
 }
 
 /* Code */
@@ -92,8 +123,6 @@ h1, h2, h3, h4, h5, h6 {
 button.navbar-toggle {
     margin-bottom: 0px;
 }
-
-/* Style current menu item */
 .navbar-nav>li.current-menu-item>a,
 .navbar-nav>li.current-post-ancestor>a,
 .navbar-nav>li.current-page-ancestor>a,
@@ -115,6 +144,11 @@ button.navbar-toggle {
 }
 
 /* Sidebar Admin */
+.sidebar-admin.well {
+    color: #fff;
+    border: 1px solid #111;
+    background: url('../imgs/vertical_cloth.png') repeat;
+}
 .sidebar-admin .lead {
     margin-bottom: 0px;
 }
@@ -129,16 +163,19 @@ button.navbar-toggle {
     margin-top: 10px;
 }
 .sidebar-admin-social a i {
-    text-shadow: 3px 3px 1px #ddd;
+    text-shadow: 3px 3px 1px #000;
 }
 
 /* Wells */
 .well {
     background: #fff;
     border: 1px solid #fff;
-    border-radius: 0px;
-    box-shadhow: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
     -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadhow: none;
 }
 
 /* Widget Title */

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flatty 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-11-26 02:25+0100\n"
-"PO-Revision-Date: 2013-11-26 02:25+0100\n"
+"POT-Creation-Date: 2013-12-03 13:39+0100\n"
+"PO-Revision-Date: 2013-12-03 13:39+0100\n"
 "Last-Translator: \n"
 "Language-Team: flatty\n"
 "MIME-Version: 1.0\n"
@@ -21,30 +21,35 @@ msgid "This post is password protected. Enter the password to view any comments.
 msgstr "Este post es privado. Introduce la contrase&ntilde;a para ver los comentarios."
 
 #: ../comments.php:19
+#: ../partials/article.php:30
+msgid "Comments"
+msgstr "Comentarios"
+
+#: ../comments.php:21
 #: ../partials/article.php:31
 msgid "1 comment"
 msgstr "1 comentario"
 
-#: ../comments.php:19
+#: ../comments.php:21
 #: ../partials/article.php:31
 #, php-format
 msgid "%s comments"
 msgstr "%s comentarios"
 
-#: ../comments.php:50
+#: ../comments.php:54
 msgid "Name"
 msgstr "Nombre"
 
-#: ../comments.php:52
+#: ../comments.php:56
 msgid "Email"
 msgstr "Correo electr&oacute;nico"
 
-#: ../comments.php:58
+#: ../comments.php:62
 #, php-format
 msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
 msgstr "Identificado como <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Desconectar\">Desconectar?</a>"
 
-#: ../comments.php:59
+#: ../comments.php:63
 msgid "Your email address will not be published. Fields with * are mandatory."
 msgstr "Tu direcci&oacute;n de correo no ser&aacute; publicada. Los campos con * son obligatorios."
 
@@ -77,99 +82,139 @@ msgstr "Leer m&aacute;s sobre %s"
 msgid "Continue Reading"
 msgstr "Continuar Leyendo"
 
+#: ../functions.php:315
+msgid "<i class=\"icon-circle-arrow-left\"></i> OLDER POSTS"
+msgstr "<i class=\"icon-circle-arrow-left\"></i> ANTERIORES"
+
+#: ../functions.php:316
+msgid "NEWER POSTS <i class=\"icon-circle-arrow-right\"></i>"
+msgstr "SIGUIENTES <i class=\"icon-circle-arrow-right\"></i>"
+
 #: ../header.php:19
 #, php-format
 msgid "Page %s"
 msgstr "P&aacute;gina %s"
 
-#: ../index.php:21
-msgid "<i class=\"icon-circle-arrow-left\"></i> OLDER POSTS"
-msgstr "<i class=\"icon-circle-arrow-left\"></i> ANTERIORES"
-
-#: ../index.php:22
-msgid "NEWER POSTS <i class=\"icon-circle-arrow-right\"></i>"
-msgstr "SIGUIENTES <i class=\"icon-circle-arrow-right\"></i>"
-
 #: ../searchform.php:6
 msgid "Search"
 msgstr "Buscar"
 
-#: ../sidebar.php:5
+#: ../sidebar.php:6
 msgid "add widgets here"
 msgstr "A&ntilde;ade widgets aqu&iacute;"
 
-#: ../inc/theme-options.php:60
+#: ../inc/theme-options.php:70
 msgid "Theme Options"
 msgstr "Opciones del tema"
 
-#: ../inc/theme-options.php:95
+#: ../inc/theme-options.php:105
 #, php-format
 msgid "%s Theme Options"
 msgstr "Opciones del tema %s"
 
-#: ../inc/theme-options.php:104
-msgid "Article options"
-msgstr "Opciones de los art&iacute;culos"
-
-#: ../inc/theme-options.php:109
-msgid "Display author info?"
-msgstr "Mostrar info del autor?"
-
-#: ../inc/theme-options.php:113
-msgid "Display related articles?"
-msgstr "Mostrar art&iacute;culos relacionados?"
-
-#: ../inc/theme-options.php:121
+#: ../inc/theme-options.php:114
 msgid "General options"
 msgstr "Opciones generales"
 
-#: ../inc/theme-options.php:126
+#: ../inc/theme-options.php:119
 msgid "Display breadcrumb?"
 msgstr "Mostrar breadcrumb?"
 
-#: ../inc/theme-options.php:134
+#: ../inc/theme-options.php:123
+msgid "CSS Style"
+msgstr "Estilo CSS"
+
+#: ../inc/theme-options.php:126
+msgid "Black and White"
+msgstr "Blanco y Negro"
+
+#: ../inc/theme-options.php:127
+msgid "Blue"
+msgstr "Az&uacute;l"
+
+#: ../inc/theme-options.php:128
+msgid "Green"
+msgstr "Verde"
+
+#: ../inc/theme-options.php:129
+msgid "Red"
+msgstr "Rojo"
+
+#: ../inc/theme-options.php:130
+msgid "Salmon"
+msgstr "Salm&oacute;n"
+
+#: ../inc/theme-options.php:135
+msgid "Pagination type"
+msgstr "Tipo de paginaci&oacute;n"
+
+#: ../inc/theme-options.php:138
+msgid "Buttons"
+msgstr "Botones"
+
+#: ../inc/theme-options.php:139
+msgid "Numbers"
+msgstr "N&uacute;meros"
+
+#: ../inc/theme-options.php:148
+msgid "Article options"
+msgstr "Opciones de los art&iacute;culos"
+
+#: ../inc/theme-options.php:153
+msgid "Display author info?"
+msgstr "Mostrar info del autor?"
+
+#: ../inc/theme-options.php:157
+msgid "Display related articles?"
+msgstr "Mostrar art&iacute;culos relacionados?"
+
+#: ../inc/theme-options.php:165
 msgid "Sidebar options"
 msgstr "Opciones del panel lateral"
 
-#: ../inc/theme-options.php:139
+#: ../inc/theme-options.php:170
 msgid "Sidebar position"
 msgstr "Posici&oacute;n del panel lateral"
 
-#: ../inc/theme-options.php:142
+#: ../inc/theme-options.php:173
 msgid "Left"
 msgstr "Izquierda"
 
-#: ../inc/theme-options.php:143
+#: ../inc/theme-options.php:174
 msgid "Right"
 msgstr "Derecha"
 
-#: ../inc/theme-options.php:148
+#: ../inc/theme-options.php:179
 msgid "Display admin info in sidebar?"
 msgstr "Mostrar info del administrador en el panel lateral?"
 
-#: ../inc/theme-options.php:156
+#: ../inc/theme-options.php:187
+msgid "Social URLs"
+msgstr "URLs sociales"
+
+#: ../inc/theme-options.php:192
+msgid "Display social links in footer?"
+msgstr "Mostrar enlaces sociales en el pi&eacute; de p&aacute;gina?"
+
+#: ../inc/theme-options.php:220
 msgid "Google Analytics"
 msgstr "Google Analytics"
 
-#: ../inc/theme-options.php:161
+#: ../inc/theme-options.php:225
 msgid "Google Analytics account"
 msgstr "Cuenta de Google Analytics"
 
-#: ../inc/theme-options.php:164
+#: ../inc/theme-options.php:228
 msgid "Type your \"UA-12345\" account or leave it blank"
 msgstr "Escribe tu cuenta \"UA-12345\" o d&eacute;jalo en blanco"
 
-#: ../inc/theme-options.php:171
+#: ../inc/theme-options.php:235
 msgid "Save Changes"
 msgstr "Guardar cambios"
 
 #: ../partials/article-related.php:7
 msgid "Related articles"
 msgstr "Art&iacute;culos relacionados"
-
-#: ../partials/article.php:30
-msgid "Comments"
-msgstr "Comentarios"
 
 #: ../partials/article.php:31
 msgid "no comments"

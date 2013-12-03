@@ -3,7 +3,7 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} ?>
 
 <?php if (comments_open()) : ?>
 
-    <section id="comments" class="well">
+    <section id="comments" class="well well-sm">
 
         <?php if ( post_password_required() ) : ?>
             <p class="nopassword">
@@ -15,9 +15,11 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} ?>
         $ncom = get_comments_number();
         if ($ncom>0) :
 
-            echo '<h3><i class="icon-comments"></i>&nbsp;';
+            echo '<h3 class="widgettitle"><i class="icon-comments"></i>&nbsp;';
+            _e('Comments','flatty');
+            echo '&nbsp;<em class="text-muted">';
             if ($ncom==1) _e('1 comment', 'flatty'); else echo sprintf (__('%s comments','flatty'), $ncom);
-            echo '</h3>';
+            echo '</em></h3>';
 
             if ($ncom >= get_option('comments_per_page') && get_option('page_comments')) : ?>
                 <nav id="comment-nav-above">
@@ -42,6 +44,8 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} ?>
             <?php endif; ?>
 
         <?php endif; ?>
+
+        <div class="clearfix"></div><br />
 
         <?php
         // Comment Form

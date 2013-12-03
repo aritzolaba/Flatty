@@ -12,7 +12,9 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} ?>
         <a class="navbar-brand" href="<?php echo site_url(); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>">
             <?php echo esc_attr(get_bloginfo('name')); ?>
         </a>
-        <div class="navbar-text"><?php echo esc_attr(get_bloginfo('description')); ?></div>
+        <?php $site_description = esc_attr(get_bloginfo('description')); if (!empty($site_description)) : ?>
+            <div class="navbar-text"><?php echo $site_description; ?></div>
+        <?php endif; ?>
         <?php
         // Wordpress wp_nav_menu
         $args = array(

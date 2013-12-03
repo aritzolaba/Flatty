@@ -1,11 +1,13 @@
 Flatty
-==========
-A clean HTML5 responsive theme created using Bootstrap 3.0.
+======
 
-Features
-==========
+A clean HTML5, responsive and retina-ready theme created using Bootstrap 3.0. Customizable layout with two columns (left or right), custom background and a theme options page.
+
+Features:
+
 - Bootstrap 3.0 and Font Awesome 4.1 included.
 - HTML5shiv.js and respond.min.js are used for IE8 compatibility.
+- Four different styles to choose from.
 - Retina ready.
 - Custom background support.
 - Custom menu support with three-level dropdowns.
@@ -16,9 +18,16 @@ Features
 - Google Fonts included locally, no Google dependancy!.
 - Widgets: 1 widget in the sidebar and 3 in the footer.
 - Featured images support for posts and pages. Two thumbnail sizes: 'post-thumbnail' and 'loop-thumbnail'.
+- Theme options page with several options such as sidebar position (left/right), display breadcrumb, etc.
 
 Change log
-==========
+----------
+03-12-2013 - Version 1.0.0
+
+- Included 4 different styles to choose from.
+- Improved carousel design.
+- Various style fixes and improvements.
+
 26-11-2013 - Version 1.0.0
 
 - Added a Theme options page with these options:
@@ -34,4 +43,4 @@ Change log
 
 17-11-2013 - Version 1.0.0
 
-- First release.
+- First official theme release.

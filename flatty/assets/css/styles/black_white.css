@@ -1,0 +1,42 @@
+/* BLACK AND WHITE STYLE */
+body {
+    color: #222;
+}
+.breadcrumb,
+.well {
+    background: #222;
+    border: #222;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+}
+a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.navbar,
+.widgettitle {
+    border-color: #fff;
+}
+.navbar-nav>li.current-menu-item>a,
+.navbar-nav>li.current-post-ancestor>a,
+.navbar-nav>li.current-page-ancestor>a,
+.navbar-nav>li.current-menu-item>a:hover,
+.navbar-nav>li.current-post-ancestor>a:hover,
+.navbar-nav>li.current-page-ancestor>a:hover,
+.widget_calendar table thead {
+    color: #222;
+    background: #fff;
+}
+a.btn, button.btn {
+    color: #222;
+    background: #f0f0f0;
+    border-color: #f0f0f0;
+}
+a.btn:hover, button.btn:hover, a.btn.active, button.btn.active {
+    color: #fff;
+    background: #38c;
+    border-color: #38c;
+}

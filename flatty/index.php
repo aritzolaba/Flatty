@@ -15,17 +15,11 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} get_header(); ?>
 
             <?php endwhile; ?>
 
-            <?php // Display navigation to next/previous pages when applicable
-            if ( $wp_query->max_num_pages > 1 ) :
+            <?php if ($wp_query->max_num_pages>1) : ?>
 
-                $next_posts_link = str_replace('<a', '<a class="btn btn-lg btn-primary pull-left"',get_next_posts_link(__('<i class="icon-circle-arrow-left"></i> OLDER POSTS', 'flatty')));
-                $prev_posts_link = str_replace('<a', '<a class="btn btn-lg btn-primary pull-right"',get_previous_posts_link(__('NEWER POSTS <i class="icon-circle-arrow-right"></i>', 'flatty')));
+                <?php flatty_pagination(); ?>
 
-                echo '<div class="clearfix"></div><br />';
-                echo $next_posts_link.$prev_posts_link;
-                echo '<div class="clearfix"></div><br />';
-
-            endif; ?>
+            <?php endif; ?>
 
         <?php else : ?>
 

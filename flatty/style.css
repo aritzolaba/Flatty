@@ -1,13 +1,13 @@
 /*
 Theme Name: Flatty
-Theme URI: http://www.olabaworks.com/products/flatty/
+Theme URI: http://www.olabaworks.com/productos/flatty/
 Author: Aritz Olabarrieta
 Author URI: http://www.olabaworks.com
-Description: A minimal HTML5 responsive theme created using Bootstrap 3.0.
+Description: A clean HTML5, responsive and retina-ready theme created using Bootstrap 3.0 and Font Awesome 4. Customizable layout with two columns (left or right), custom background and a theme options page. Gallery post types displayed using Bootstrap's Carousel and thickbox.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: two-columns, right-sidebar, custom-header, custom-background, translation-ready, featured-images
+Tags: white, black, blue, two-columns, right-sidebar, custom-header, custom-background, translation-ready, featured-images
 Text Domain: flatty
 */
 
@@ -18,17 +18,17 @@ a,
 a:hover {
     text-decoration: none;
 }
-code {
-    display: block;
-    padding: 1em;
-    white-space: normal;
-}
 audio,
 canvas,
 iframe,
 img,
 video {
     max-width: 100%;
+}
+code {
+    display: block;
+    padding: 1em;
+    white-space: normal;
 }
 iframe {
     width: 100%;
