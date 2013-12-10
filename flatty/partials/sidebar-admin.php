@@ -10,6 +10,6 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} ?>
     </p>
     <?php echo get_user_meta($user->ID, 'description', TRUE); ?>
 
-    <?php get_template_part('social-block'); ?>
-    
+    <?php get_template_part('partials/social-block'); ?>
+
 </div>

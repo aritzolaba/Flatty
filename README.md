@@ -3,8 +3,8 @@ Flatty
 
 A clean HTML5, responsive and retina-ready theme created using Bootstrap 3.0. Customizable layout with two columns (left or right), custom background and a theme options page.
 
-Features:
-
+Features
+--------
 - Bootstrap 3.0 and Font Awesome 4.1 included.
 - HTML5shiv.js and respond.min.js are used for IE8 compatibility.
 - Four different styles to choose from.
@@ -22,7 +22,14 @@ Features:
 
 Change log
 ----------
-03-12-2013 - Version 1.0.0
+10-12-2013 - Version 1.0.2
+
+- Added "license.txt" with all the licenses used in the theme.
+- Added "page.php" for displaying of pages with comments enabled.
+- Fixed 404 error when selecting "blue" style.
+- Updated the screenshot with the allowed size.
+
+03-12-2013 - Version 1.0.1
 
 - Included 4 different styles to choose from.
 - Improved carousel design.

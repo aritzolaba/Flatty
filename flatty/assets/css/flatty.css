@@ -114,6 +114,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-brand {
     font-family: 'Lily Script One';
     font-size: 34px;
+    margin-right: 10px;
     padding: 14px 10px 10px 10px;
 }
 .navbar-text {
@@ -146,8 +147,8 @@ button.navbar-toggle {
 /* Sidebar Admin */
 .sidebar-admin.well {
     color: #fff;
-    border: 1px solid #111;
     background: url('../imgs/vertical_cloth.png') repeat;
+    border: 1px solid #111;
 }
 .sidebar-admin .lead {
     margin-bottom: 0px;
@@ -157,10 +158,10 @@ button.navbar-toggle {
     margin-right: 1em;
 }
 .sidebar-admin-social {
-    text-align: center;
     font-size: 32px;
     margin: 0px;
     margin-top: 10px;
+    text-align: center;
 }
 .sidebar-admin-social a i {
     text-shadow: 3px 3px 1px #000;
@@ -188,8 +189,8 @@ button.navbar-toggle {
 
 /* Widget Calendar */
 .widget_calendar.well {
-    border: 1px solid #111;
     background: url('../imgs/vertical_cloth.png') repeat;
+    border: 1px solid #111;
 }
 .widget_calendar table caption {
     background: #f5f5f5;

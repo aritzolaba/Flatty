@@ -130,7 +130,7 @@ function load_theme_assets() {
     wp_enqueue_script('flatty-js', get_template_directory_uri().'/assets/js/flatty.js', array(), FALSE, TRUE);
 
     // Enqueue CSS Style
-    if (!empty($flatty_theme_options['css_style'])) :
+    if (!empty($flatty_theme_options['css_style']) && $flatty_theme_options['css_style'] != 'blue') :
         wp_enqueue_style('flatty-style-css', get_template_directory_uri().'/assets/css/styles/'.$flatty_theme_options['css_style'].'.css');
     endif;
 

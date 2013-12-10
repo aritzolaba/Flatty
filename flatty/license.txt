@@ -1,0 +1,30 @@
+Licenses
+--------
+
+Fonts:
+
+    Font: Lily Script One
+    Author: Julia Petretta
+    License: SIL Open Font License, 1.1
+    License URI: http://scripts.sil.org/OFL
+
+    Font: Rosario
+    Author: Omnibus-Type
+    License: SIL Open Font License, 1.1
+    License URI: http://scripts.sil.org/OFL
+
+Flatty:
+
+    License: GNU General Public License v3 or later
+    License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+Bootstrap:
+
+    License: GNU General Public License v3 or later
+    License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+Font Awesome:
+
+    Font Awesome by Dave Gandy - http://fontawesome.io
+    License: SIL Open Font License, 1.1
+    License URI: http://scripts.sil.org/OFL
