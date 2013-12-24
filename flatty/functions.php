@@ -13,7 +13,7 @@ $flatty_theme_options = get_option('flatty_theme_options');
 /*********************************************************************
 * THEME SETUP
 */
-function ft_setup() {
+function flatty_setup() {
 
     // Translations support. Find language files in flatty/languages
     load_theme_textdomain('flatty', get_template_directory().'/languages');
@@ -90,18 +90,18 @@ function ft_setup() {
     // Theme Features: Post Formats
     add_theme_support('post-formats', array( 'aside', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video', 'audio'));
 }
-add_action('after_setup_theme', 'ft_setup');
+add_action('after_setup_theme', 'flatty_setup');
 
 // The excerpt "more" button
-function custom_excerpt($text) {
+function flatty_excerpt($text) {
     return str_replace('[&hellip;]', '[&hellip;]<div class="clearfix"></div><br /><a class="btn btn-sm btn-info" title="'. sprintf (__('Read more on %s','flatty'), get_the_title()).'" href="'.get_permalink().'">' . __('Continue Reading','flatty') . '</a>', $text);
 }
-add_filter('the_excerpt', 'custom_excerpt');
+add_filter('the_excerpt', 'flatty_excerpt');
 
 /*********************************************************************
  * Function to load all theme assets (scripts and styles) in header
  */
-function load_theme_assets() {
+function flatty_load_theme_assets() {
 
     global $flatty_theme_options;
 
@@ -141,22 +141,22 @@ function load_theme_assets() {
     // Enqueue Retina.js
     wp_enqueue_script('retina-js', get_template_directory_uri() . '/assets/libs/retina.min.js', array(), FALSE, TRUE);
 }
-add_action( 'wp_enqueue_scripts', 'load_theme_assets' );
+add_action( 'wp_enqueue_scripts', 'flatty_load_theme_assets' );
 
 /*********************************************************************
  * RETINA SUPPORT
  */
-add_filter( 'wp_generate_attachment_metadata', 'retina_support_attachment_meta', 10, 2 );
-function retina_support_attachment_meta($metadata, $attachment_id) {
+add_filter( 'wp_generate_attachment_metadata', 'flatty_retina_support_attachment_meta', 10, 2 );
+function flatty_retina_support_attachment_meta($metadata, $attachment_id) {
 
     // Create first image @2
-    retina_support_create_images(get_attached_file($attachment_id), 0, 0, false);
+    flatty_retina_support_create_images(get_attached_file($attachment_id), 0, 0, false);
 
     foreach ($metadata as $key => $value) {
         if (is_array($value)) {
             foreach ($value as $image => $attr) {
                 if (is_array($attr))
-                    retina_support_create_images(get_attached_file($attachment_id), $attr['width'], $attr['height'], true);
+                    flatty_retina_support_create_images(get_attached_file($attachment_id), $attr['width'], $attr['height'], true);
             }
         }
     }
@@ -164,7 +164,7 @@ function retina_support_attachment_meta($metadata, $attachment_id) {
     return $metadata;
 }
 
-function retina_support_create_images($file, $width, $height, $crop = false) {
+function flatty_retina_support_create_images($file, $width, $height, $crop = false) {
 
     $resized_file = wp_get_image_editor($file);
     if (!is_wp_error($resized_file)) {
@@ -189,8 +189,8 @@ function retina_support_create_images($file, $width, $height, $crop = false) {
     return false;
 }
 
-add_filter( 'delete_attachment', 'delete_retina_support_images' );
-function delete_retina_support_images($attachment_id) {
+add_filter( 'delete_attachment', 'flatty_delete_retina_support_images' );
+function flatty_delete_retina_support_images($attachment_id) {
     $meta = wp_get_attachment_metadata($attachment_id);
     $upload_dir = wp_upload_dir();
     $path = pathinfo($meta['file']);

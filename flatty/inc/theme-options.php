@@ -4,7 +4,7 @@
  */
 class flatty_theme_options_page {
 
-    function init() {
+    public static function init() {
 
         // Add menu
         add_action('admin_menu', array('flatty_theme_options_page', 'add_flatty_options_page'));
@@ -12,7 +12,6 @@ class flatty_theme_options_page {
         // Initialize default options
         $def_theme_options = array();
         $def_theme_options['css_style'] = 'blue';
-        $def_theme_options['google_analytics_account'] = '';
         $def_theme_options['sidebar_position'] = 'right';
         $def_theme_options['footer_social'] = 1;
         $def_theme_options['sidebar_admin'] = 1;
@@ -216,20 +215,6 @@ class flatty_theme_options_page {
                 </table>
 
                 <br />
-
-                <h3 class="title"><?php _e('Google Analytics', 'flatty'); ?></h3>
-
-                <table class="form-table">
-                    <tbody>
-                        <tr valign="top">
-                            <th scope="row"><label for="google_analytics_account"><?php _e('Google Analytics account','flatty'); ?></label></th>
-                            <td>
-                                <input name="google_analytics_account" type="text" placeholder="UA-" id="google_analytics_account" value="<?php echo $flatty_theme_options['google_analytics_account']; ?>" class="regular-text" style="width: 100px;" size="15" maxlength="10">
-                                <p class="description"><?php _e('Type your "UA-12345" account or leave it blank', 'flatty'); ?></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
 
                 <p class="submit">
                     <button type="submit" class="button button-primary menu-save" id="submit" name="submit"><i class="icon-save"></i> <?php _e('Save Changes','flatty'); ?></button>

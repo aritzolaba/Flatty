@@ -22,6 +22,11 @@ Features
 
 Change log
 ----------
+24-12-2013 - Version 1.0.4
+
+- Added license details for images
+- Renamed all theme functions to "flatty_"[function_name]
+
 10-12-2013 - Version 1.0.2
 
 - Added "license.txt" with all the licenses used in the theme.

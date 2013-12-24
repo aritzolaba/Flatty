@@ -39,19 +39,9 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} ?>
 
         <?php wp_footer(); ?>
 
-        <?php global $flatty_theme_options; if (!empty($flatty_theme_options['google_analytics_account'])) : ?>
-            <!-- Google Analytics -->
-            <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-            </script>
-            <script type="text/javascript">
-            try{
-            var pageTracker = _gat._getTracker("<?php echo $flatty_theme_options['google_analytics_account']; ?>");
-            pageTracker._trackPageview();
-            } catch(err) {console.log('%o', err);}
-            </script>
-            <!-- END Google Analytics -->
-        <?php endif; ?>
+        <!--[if lt IE 9]>
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/libs/respond.min.js"></script>
+	<![endif]-->
+
     </body>
 </html>

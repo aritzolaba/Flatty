@@ -13,6 +13,18 @@ Fonts:
     License: SIL Open Font License, 1.1
     License URI: http://scripts.sil.org/OFL
 
+Images:
+
+    All images from subtlepatterns.com.
+    License: Creative Commons Attribution-ShareAlike 3.0 Unported License
+    License URI: http://creativecommons.org/licenses/by-sa/3.0/deed.en_US
+
+    Image: Tactile Noise, http://subtlepatterns.com/tactile-noise/
+    Author: Atle Mo, http://www.atlemo.com/
+
+    Image: Vertical Cloth, http://subtlepatterns.com/vertical-cloth/
+    Author: Krisp Designs, http://dribbble.com/krisp
+
 Flatty:
 
     License: GNU General Public License v3 or later
@@ -20,8 +32,8 @@ Flatty:
 
 Bootstrap:
 
-    License: GNU General Public License v3 or later
-    License URI: http://www.gnu.org/licenses/gpl-3.0.html
+    License: Apache License v2.0
+    License URI: http://www.apache.org/licenses/LICENSE-2.0
 
 Font Awesome:
 
