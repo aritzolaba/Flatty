@@ -69,7 +69,7 @@ body.page-template-tpl-one-column-empty-php article .carousel-inner img {
 
 /* Footer */
 body>footer {
-    background: #000 url('../imgs/tactile_noise_@2X.png') repeat;
+    background: #111;
     box-shadow: 0 -1px 0 rgba(0,0,0,.1);
     color: #f5f5f5;
     margin-top: 4em;
@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Navbar */
 .navbar {
-    background: #000 url('../imgs/tactile_noise_@2X.png') repeat;
+    background: #111;
     border-bottom: 4px solid #38c;
     box-shadow: none;
     text-shadow: 0 -1px 0 rgba(0,0,0,.35);
@@ -147,7 +147,7 @@ button.navbar-toggle {
 /* Sidebar Admin */
 .sidebar-admin.well {
     color: #fff;
-    background: url('../imgs/vertical_cloth.png') repeat;
+    background: #111;
     border: 1px solid #111;
 }
 .sidebar-admin .lead {
@@ -189,7 +189,7 @@ button.navbar-toggle {
 
 /* Widget Calendar */
 .widget_calendar.well {
-    background: url('../imgs/vertical_cloth.png') repeat;
+    background: #222;
     border: 1px solid #111;
 }
 .widget_calendar table caption {
