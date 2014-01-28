@@ -22,19 +22,42 @@ article section {
     font-family: 'Rosario';
     font-size: 16px;
     line-height: 24px;
+    margin-top: 20px;
     padding: 0em 1em;
 }
 article code {
     margin: 5px 20px;
 }
 /* Article Author */
+.article-author {
+    overflow: hidden;
+}
 .article-author .lead {
     margin-bottom: 0px;
 }
 .article-author-avatar {
-    margin-bottom: 1em;
     margin-right: 1em;
 }
+article.media .media-object.pull-left {
+    margin-right: 20px;
+}
+article.media .media-object.pull-right {
+    margin-left: 20px;
+}
+/*
+article.media {
+    border: 0px;
+}
+
+article.media header .media-heading.text-muted {
+    margin-top: 10px;
+}
+article.media header a {
+    color: #f0f0f0;
+}
+article.media header a:hover {
+    color: #fff;
+}*/
 
 /* Bootstrap Carousel */
 body article .carousel-inner img {
@@ -44,12 +67,12 @@ body article .carousel-inner img {
 }
 body.single article .carousel-inner img {
     margin: auto;
-    max-height: 440px;
+    max-height: 540px;
     width: auto;
 }
 body.page-template-tpl-one-column-empty-php article .carousel-inner img {
     margin: auto;
-    max-height: 580px;
+    max-height: 100%;
     width: auto;
 }
 .carousel-indicators {
@@ -93,7 +116,7 @@ code {
 }
 
 /* Comments body */
-#comments .comment .comment-body {
+#comments li .comment-body {
     background: #fbfbfb;
     border: 2px solid #f5f5f5;
 }
@@ -117,12 +140,15 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 10px;
     padding: 14px 10px 10px 10px;
 }
+.navbar-collapse.collapsing,
+.navbar-collapse.in {
+    border: 0px;
+    box-shadow: none;
+    clear: both;
+}
 .navbar-text {
     font-family: 'Rosario';
     margin-left: 4px;
-}
-button.navbar-toggle {
-    margin-bottom: 0px;
 }
 .navbar-nav>li.current-menu-item>a,
 .navbar-nav>li.current-post-ancestor>a,

@@ -4,7 +4,7 @@ Theme URI: http://www.olabaworks.com/productos/flatty/
 Author: Aritz Olabarrieta
 Author URI: http://www.olabaworks.com
 Description: A clean HTML5, responsive and retina-ready theme created using Bootstrap 3.0 and Font Awesome 4. Customizable layout with two columns (left or right), custom background and a theme options page. Gallery post types displayed using Bootstrap's Carousel and thickbox.
-Version: 1.0.5
+Version: 1.1.0
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: white, black, blue, two-columns, right-sidebar, custom-header, custom-background, translation-ready, featured-images
@@ -36,12 +36,6 @@ iframe {
 label {
     display: block;
 }
-
-/*********************************************************************
-* MEDIA QUERIES
-*/
-@media (max-width:767px){div.navbar-text{float: none; display: block;}}
-@media (max-width:460px){a.navbar-brand {float: none; display: block;}}
 
 /*********************************************************************
 * DROPDOWN SUBMENU
@@ -105,7 +99,7 @@ label {
 #comments ul, #comments ol, #comments li {
     list-style-type: none;
 }
-#comments .comment .comment-body {
+#comments li .comment-body {
     margin-bottom: 5px;
     padding: 10px;
 }
@@ -113,14 +107,14 @@ label {
     margin: auto;
     padding-left: 15px;
 }
-#comments .comment .comment-body p {
+#comments li .comment-body p {
     clear: both;
     display: block;
     font-size: 1em;
     margin: 1em 0em;
     word-wrap: break-word;
 }
-#comments .comment .comment-body .comment-meta {
+#comments li .comment-body .comment-meta {
     font-size: .85em;
 }
 #comments .comment-author.vcard img {
@@ -273,7 +267,7 @@ select.postform option {
     margin: 0px 5px;
 }
 
-/* Thickbox and iframe adjustments */
+/* Thickbox adjustments */
 div#TB_window, div#TB_overlay {
     z-index: 2000;
 }
@@ -285,3 +279,9 @@ div#TB_closeWindow {
     height: auto;
     padding: 5px 14px;
 }
+
+/*********************************************************************
+* MEDIA QUERIES
+*/
+@media (max-width:767px){div.navbar-text{float: none; display: block;}}
+@media (max-width:460px){a.navbar-brand {float: none; display: block;}}

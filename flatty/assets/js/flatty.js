@@ -47,8 +47,12 @@ jQuery(document).ready(function($) {
     /* Carousels */
     if ($('.carousel').length>0) $('.carousel').carousel({interval: 7000});
 
-    // Adds thickbox class to gallery images
-    if ($('div.gallery .gallery-icon a').length>0) $('div.gallery .gallery-icon a').addClass('thickbox');
+    // Adds thickbox class to WordPress default gallery images
+    if ($('div.gallery .gallery-icon a').length>0) {
+        $('div.gallery .gallery-icon a').each(function(){
+            $(this).addClass('thickbox').attr('rel','attached-to-'+$(this).closest('article').attr('id').replace( /^\D+/g, ''));
+        });
+    }
 
     // Adds thickbox class to post images
     if ($('article.media a > img').length>0) $('article.media a:not(\'.media-object\') > img').addClass('img-thumbnail').parent().addClass('thickbox');

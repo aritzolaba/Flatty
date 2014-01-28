@@ -18,11 +18,15 @@ a:hover {
 .widget_calendar table thead {
     background: #C00;
 }
-a.btn, button.btn {
+a.btn,
+button.btn {
     background: #C00;
     border-color: #C00;
 }
-a.btn:hover, button.btn:hover, a.btn.active, button.btn.active {
-    background: #DF4926;
-    border-color: #DF4926;
+a.btn:hover,
+button.btn:hover,
+a.btn.active,
+button.btn.active {
+    background: #B00;
+    border-color: #B00;
 }

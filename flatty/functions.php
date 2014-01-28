@@ -28,7 +28,7 @@ function flatty_setup() {
     add_editor_style(array('assets/css/editor-style.css'));
 
     // Load up our theme options page and related code.
-    require( get_template_directory() . '/inc/theme-options.php' );
+    require(get_template_directory() . '/inc/theme-options.php');
 
     // Widget areas
     if (function_exists('register_sidebar')) :
@@ -74,21 +74,17 @@ function flatty_setup() {
     // Theme Features: Automatic Feed Links
     add_theme_support('automatic-feed-links');
 
+    // Theme Features: Post Thumbnails and custom image sizes for post-thumbnails
+    add_theme_support('post-thumbnails', array('post', 'page'));
+
+    // Theme Features: Post Formats
+    add_theme_support('post-formats', array('aside', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video', 'audio'));
+
     // Theme Features: Custom Background
     $custom_background_args = array(
         'default-color' => 'f5f5f5',
     );
     add_theme_support('custom-background', $custom_background_args);
-
-    // Theme Features: Post Thumbnails and custom image sizes for post-thumbnails
-    add_theme_support('post-thumbnails', array('post', 'page'));
-    if (function_exists('add_image_size')) {
-        add_image_size('post-thumbnail', 720, 400, true);
-        add_image_size('loop-thumbnail', 120, 120, true);
-    }
-
-    // Theme Features: Post Formats
-    add_theme_support('post-formats', array( 'aside', 'chat', 'gallery', 'image', 'link', 'quote', 'status', 'video', 'audio'));
 }
 add_action('after_setup_theme', 'flatty_setup');
 
@@ -97,6 +93,19 @@ function flatty_excerpt($text) {
     return str_replace('[&hellip;]', '[&hellip;]<div class="clearfix"></div><br /><a class="btn btn-sm btn-info" title="'. sprintf (__('Read more on %s','flatty'), get_the_title()).'" href="'.get_permalink().'">' . __('Continue Reading','flatty') . '</a>', $text);
 }
 add_filter('the_excerpt', 'flatty_excerpt');
+
+// wp_title filter
+function flatty_title($output) {
+    echo $output;
+    // Add the blog name
+    bloginfo('name');
+    // Add the blog description for the home/front page
+    $site_description = get_bloginfo('description', 'display');
+    if ($site_description && (is_home() || is_front_page())) echo ' - '.$site_description;
+    // Add a page number if necessary
+    if (!empty($paged) && ($paged >= 2 || $page >= 2)) echo ' - ' . sprintf(__('Page %s', 'olabaworks'), max($paged, $page));
+}
+add_filter('wp_title', 'flatty_title');
 
 /*********************************************************************
  * Function to load all theme assets (scripts and styles) in header
@@ -141,12 +150,12 @@ function flatty_load_theme_assets() {
     // Enqueue Retina.js
     wp_enqueue_script('retina-js', get_template_directory_uri() . '/assets/libs/retina.min.js', array(), FALSE, TRUE);
 }
-add_action( 'wp_enqueue_scripts', 'flatty_load_theme_assets' );
+add_action('wp_enqueue_scripts', 'flatty_load_theme_assets');
 
 /*********************************************************************
  * RETINA SUPPORT
  */
-add_filter( 'wp_generate_attachment_metadata', 'flatty_retina_support_attachment_meta', 10, 2 );
+add_filter('wp_generate_attachment_metadata', 'flatty_retina_support_attachment_meta', 10, 2);
 function flatty_retina_support_attachment_meta($metadata, $attachment_id) {
 
     // Create first image @2
@@ -189,7 +198,7 @@ function flatty_retina_support_create_images($file, $width, $height, $crop = fal
     return false;
 }
 
-add_filter( 'delete_attachment', 'flatty_delete_retina_support_images' );
+add_filter('delete_attachment', 'flatty_delete_retina_support_images');
 function flatty_delete_retina_support_images($attachment_id) {
     $meta = wp_get_attachment_metadata($attachment_id);
     $upload_dir = wp_upload_dir();
@@ -212,26 +221,38 @@ function flatty_delete_retina_support_images($attachment_id) {
     }
 }
 
-// GALLERY SHORTCODE FILTER FOR CAROUSEL
-/* To automatically execute carousel shortcode when post type is "gallery" */
+/* GALLERY SHORTCODE FILTER FOR CAROUSEL
+
+Usage: [ft_carousel include="123,456,789"]content[/ft_carousel]
+
+*/
 add_shortcode('ft_carousel','ft_shortcode_carousel');
-add_action('post_gallery', 'ft_shortcode_carousel', 10, 2);
-function ft_shortcode_carousel ($output, $attr) {
+function ft_shortcode_carousel ($attr, $content) {
+
     global $post;
+
+    // Little fix as the order of arguments is not the same when
+    // in "gallery" post formats
+    if (!empty($content) && is_array($content)) {
+        $attr = $content;
+        $content = $attr[0];
+    }
+
+    $output = $content;
 
     // OrderBy
     $orderby = 'menu_order';
-    if (isset($attr['orderby']) && !empty($attr['orderby']))
+    if (!empty($attr['orderby']))
         $orderby = sanitize_sql_orderby ($attr['orderby']);
 
     // If we got an include attr
-    if (isset($attr['include']))
-        $images = get_posts( array('include' => $attr['include'], 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => $orderby) );
+    if (!empty($attr['include']))
+        $images = get_posts(array('include' => $attr['include'], 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => $orderby));
 
     // If we do not have images yet...
-    if (!isset($images) OR empty($images)) :
+    if (empty($images)) :
         // Get Post Images
-        $images = get_children( array(
+        $images = get_children(array(
             'post_parent' => $post->ID,
             'post_type' => 'attachment',
             'post_mime_type' => 'image',
@@ -242,9 +263,8 @@ function ft_shortcode_carousel ($output, $attr) {
     endif;
 
     // If images are found, proceed
-    if ( $images ) :
+    if (!empty($images)) :
 
-        $output = '<div class="clearfix"></div><br />';
         $indicators = '';
         $items = '';
 
@@ -258,7 +278,7 @@ function ft_shortcode_carousel ($output, $attr) {
 
             $items .= '
             <div class="item '.$act.'">
-                <a rel="attached-to-'.$image->post_parent.'" class="thickbox" href="'.$image->guid.'" title="'. get_the_title($image->ID).'">
+                <a rel="attached-to-slider-'.$post->ID.'" class="thickbox" href="'.$image->guid.'" title="'. get_the_title($image->ID).'">
                     <img src="'. $image->guid.'" alt="'.get_the_title($image->ID).'"/>
                 </a>
                 <div class="carousel-caption">
@@ -268,31 +288,27 @@ function ft_shortcode_carousel ($output, $attr) {
             </div>
             ';
 
-            $i++;
-        endforeach;
+        $i++; endforeach;
+
+        // BEGIN OUTPUT
+
+        // Clearfix
+        $output .= '<div class="clearfix"></div>';
 
         $output .= '<div id="slideshow-'.$post->ID.'" class="carousel slide" data-ride="carousel">';
 
-        // INDICATORS
-        $output .= '<ol class="carousel-indicators">'. $indicators .'</ol>';
+            // INDICATORS
+            $output .= '<ol class="carousel-indicators">'. $indicators .'</ol>';
 
-        // ITEMS
-        $output .= '<div class="carousel-inner">' .$items. '</div>';
+            // ITEMS
+            $output .= '<div class="carousel-inner">' .$items. '</div>';
 
-        // CONTROLS
-        /*
-        $output .= '
-        <a class="left carousel-control" href="#slideshow-'.$post->ID.'" data-slide="prev">
-        <span class="icon-prev icon-caret-left"></span>
-        </a>
-        <a class="right carousel-control" href="#slideshow-'.$post->ID.'" data-slide="next">
-        <span class="icon-next icon-caret-right"></span>
-        </a>
-        ';
-        */
         $output .= '</div>';
 
+        // Clearfix
         $output .= '<div class="clearfix"></div><br />';
+
+        // END OUTPUT
 
         return $output;
 
@@ -301,6 +317,9 @@ function ft_shortcode_carousel ($output, $attr) {
     // Return nothing
     return;
 }
+
+/* To automatically execute carousel shortcode when post type is "gallery" */
+add_action('post_gallery', 'ft_shortcode_carousel', 10, 2);
 
 // Flatty Pagination
 // Code taken from: http://wp-snippets.com/pagination-for-twitter-bootstrap/
@@ -329,20 +348,16 @@ function flatty_pagination ($before = '', $after = '') {
         $numposts = $wp_query->found_posts;
         $max_page = $wp_query->max_num_pages;
 
-        if ($numposts <= $posts_per_page) {
-            return;
-        }
-        if (empty($paged) || $paged == 0) {
-            $paged = 1;
-        }
+        if ($numposts <= $posts_per_page) return;
+        if (empty($paged) || $paged == 0) $paged = 1;
+
         $pages_to_show = 7;
         $pages_to_show_minus_1 = $pages_to_show - 1;
         $half_page_start = floor($pages_to_show_minus_1 / 2);
         $half_page_end = ceil($pages_to_show_minus_1 / 2);
         $start_page = $paged - $half_page_start;
-        if ($start_page <= 0) {
-            $start_page = 1;
-        }
+
+        if ($start_page <= 0) $start_page = 1;
         $end_page = $paged + $half_page_end;
         if (($end_page - $start_page) != $pages_to_show_minus_1) {
             $end_page = $start_page + $pages_to_show_minus_1;
@@ -351,18 +366,15 @@ function flatty_pagination ($before = '', $after = '') {
             $start_page = $max_page - $pages_to_show_minus_1;
             $end_page = $max_page;
         }
-        if ($start_page <= 0) {
-            $start_page = 1;
-        }
+        if ($start_page <= 0) $start_page = 1;
 
         echo '<div class="btn-toolbar text-center" role="toolbar">';
 
         for ($i = $start_page; $i <= $end_page; $i++) {
-            if ($i == $paged) {
+            if ($i == $paged)
                 echo '<button class="active btn btn-info" type="button">' . $i . '</button>';
-            } else {
+            else
                 echo '<a class="btn btn-default" href="' . get_pagenum_link($i) . '">' . $i . '</a>';
-            }
         }
 
         echo '</div>';
@@ -374,4 +386,57 @@ function flatty_pagination ($before = '', $after = '') {
     return;
 }
 
-?>
+/*********************************************************************
+ * UTILITIES
+ */
+
+/**
+ * flatty_limit_media ($params)
+ *
+ * Resizes any uploaded image to the dimensions specified in
+ * WordPress settings for large images, rather than keeping the
+ * original image. By default, WordPress uploads the file and saves it
+ * "as is", and then creates the thumbs for large,medium and thumb
+ * sizes. With this hook enabled, WordPress also resizes the original
+ * image, saving disk space and making your site load faster.
+ *
+ * @param type $params
+ * @return type
+ */
+function flatty_limit_media ($params) {
+
+    // For Retina support, we must allow the double of the large size
+    $maxLargeWidth = get_option('large_size_w')*2;
+    $maxLargeHeight = get_option('large_size_h')*2;
+    $jpegQuality = 75;
+
+    $filePath = $params['file'];
+
+    if ((!is_wp_error($params)) && file_exists($filePath) && in_array($params['type'], array('image/png','image/gif','image/jpeg'))) {
+        // Calculate Dimensions
+        list($largeWidth, $largeHeight) = array($MaxlargeWidth, $maxLargeHeight);
+        list($oldWidth, $oldHeight)     = getimagesize($filePath);
+        list($newWidth, $newHeight)     = wp_constrain_dimensions($oldWidth, $oldHeight, $largeWidth, $largeHeight);
+        // Resize
+        $resizeImageResult = image_resize($filePath, $newWidth, $newHeight, false, null, null, $jpegQuality);
+        // Delete tmp file
+        unlink($filePath);
+
+        if (!is_wp_error($resizeImageResult)) {
+            $newFilePath = $resizeImageResult;
+            rename($newFilePath, $filePath);
+        } else {
+            $params = wp_handle_upload_error
+            (
+                $filePath,
+                $resizeImageResult->get_error_message()
+            );
+        }
+    }
+
+    return $params;
+}
+add_filter('wp_handle_upload', 'flatty_limit_media');
+
+// Override JPEG Compression Quality
+add_filter('jpeg_quality', create_function('', 'return 75;'));

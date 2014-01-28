@@ -30,13 +30,23 @@ a:hover {
     color: #222;
     background: #fff;
 }
-a.btn, button.btn {
+a.btn,
+button.btn {
     color: #222;
     background: #f0f0f0;
     border-color: #f0f0f0;
 }
-a.btn:hover, button.btn:hover, a.btn.active, button.btn.active {
+a.btn:hover,
+button.btn:hover,
+a.btn.active,
+button.btn.active {
     color: #fff;
-    background: #38c;
-    border-color: #38c;
+    background: #222;
+    border-color: #111;
+}
+#comments,
+#comments a,
+div#respond,
+div#respond a {
+    color: #333;
 }

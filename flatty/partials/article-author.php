@@ -8,5 +8,7 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} ?>
     <p class="lead">
         <?php the_author(); ?>
     </p>
-    <?php the_author_meta('description'); ?>
+    <p>
+        <?php the_author_meta('description'); ?>
+    </p>
 </div>
