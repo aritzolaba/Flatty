@@ -8,20 +8,32 @@ Features
 - Bootstrap 3.0 and Font Awesome 4.1 included.
 - HTML5shiv.js and respond.min.js are used for IE8 compatibility.
 - Four different styles to choose from.
+- Translation ready. Spanish and Basque translations included.
 - Retina ready.
 - Custom background support.
 - Custom menu support with three-level dropdowns.
+- Featured images support for posts and pages.
+- Related articles functionality.
 - Category and page hierarchy support in the breadcrumb.
 - Display the author avatar, name and description at the footer of single posts.
-- Related articles functionality.
 - Thickbox used to display images. Galleries are also displayed with this method.
 - Google Fonts included locally, no Google dependancy!.
 - Widgets: 1 widget in the sidebar and 3 in the footer.
-- Featured images support for posts and pages. Two thumbnail sizes: 'post-thumbnail' and 'loop-thumbnail'.
 - Theme options page with several options such as sidebar position (left/right), display breadcrumb, etc.
 
 Change log
 ----------
+31-12-2013 - Version 1.1.0 [VERSION NOT UPLOADED TO OFFICIAL REPO BUT FULL WORKING]
+
+- Added option for displaying article featured images: left/right/none
+- Added option for including Google Analytics code.
+- Added thickbox gallery support to WordPress default galleries, you can now navigate through all images in the gallery using thickbox.
+- Added a custom filter in functions.php to customize the site_title and make it more SEO friendly.
+- Added translation to Basque (Euskera) language.
+- Corrected various styles and added styling for pingbacks in the comment list.
+- Limited media image sizes to the three default WordPress sizes and activated jpeg compression to 75% of quality.
+[EXPERIMENTAL]
+
 24-12-2013 - Version 1.0.4
 
 - Added license details for images
