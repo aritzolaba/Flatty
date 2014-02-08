@@ -7,19 +7,33 @@
 * Compatible with Chrome, Firefox, Opera, Safari and IE 8,9 and 10
 */
 @font-face {
-    font-family:'Lily Script One';
-    src: url('../fonts/lily-script-one.eot');
-    src: local('Lily Script One'), local('LilyScriptOne-Regular'), url('../fonts/lily-script-one.eot') format('embedded-opentype'), url('../fonts/lily-script-one.woff') format('woff');
+  font-family: 'Lily Script One';
+  src: url('../fonts/lilyscriptone-regular-webfont.eot');
+  src: url('../fonts/lilyscriptone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/lilyscriptone-regular-webfont.woff') format('woff'),
+    url('../fonts/lilyscriptone-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
+
 @font-face {
-    font-family:'Rosario';
-    src: url('../fonts/rosario.eot');
-    src: local('Rosario'), local('Rosario-Regular'), url('../fonts/rosario.eot') format('embedded-opentype'), url('../fonts/rosario.woff') format('woff');
+  font-family: 'Rosario';
+  src: url('../fonts/rosario-regular-webfont.eot');
+  src: url('../fonts/rosario-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/rosario-regular-webfont.woff') format('woff'),
+    url('../fonts/rosario-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
+
 @font-face {
-    font-family:'Abel';
-    src: url('../fonts/abel-regular-webfont.eot');
-    src: local('Abel'), local('Abel-Regular'), url('../fonts/abel-regular-webfont.eot') format('embedded-opentype'), url('../fonts/abel-regular-webfont.woff') format('woff');
+  font-family: 'Abel';
+  src: url('../fonts/abel-regular-webfont.eot');
+  src: url('../fonts/abel-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/abel-regular-webfont.woff') format('woff'),
+    url('../fonts/abel-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Article */
