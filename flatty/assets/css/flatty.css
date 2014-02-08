@@ -16,6 +16,11 @@
     src: url('../fonts/rosario.eot');
     src: local('Rosario'), local('Rosario-Regular'), url('../fonts/rosario.eot') format('embedded-opentype'), url('../fonts/rosario.woff') format('woff');
 }
+@font-face {
+    font-family:'Abel';
+    src: url('../fonts/abel-regular-webfont.eot');
+    src: local('Abel'), local('Abel-Regular'), url('../fonts/abel-regular-webfont.eot') format('embedded-opentype'), url('../fonts/abel-regular-webfont.woff') format('woff');
+}
 
 /* Article */
 article section {
@@ -132,7 +137,16 @@ h1, h2, h3, h4, h5, h6 {
     background: #111;
     border-bottom: 4px solid #38c;
     box-shadow: none;
+    font-family: 'Abel';
     text-shadow: 0 -1px 0 rgba(0,0,0,.35);
+}
+.navbar ul.navbar-nav li a {
+    text-transform: uppercase;
+}
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus {
+    background: #38c;
 }
 .navbar-brand {
     font-family: 'Lily Script One';
@@ -161,6 +175,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .dropdown-menu li a {
     text-shadow: none;
+}
+.navbar-nav>li>.dropdown-menu {
+    border-top: 4px solid #38c;
 }
 
 /* Respond */
@@ -211,6 +228,16 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 5px solid #38c;
     color: #f5f5f5;
     font-size: 16px;
+}
+
+/* Widget Categories */
+li.cat-item {
+    clear: both;
+    text-align: right;
+}
+li.cat-item a {
+    float: left;
+    font-weight: bold;
 }
 
 /* Widget Calendar */

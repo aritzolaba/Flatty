@@ -1,14 +1,10 @@
 /* BLACK AND WHITE STYLE */
-body {
-    color: #222;
-}
 .breadcrumb,
 .well {
     background: #222;
     border: #222;
     color: #fff;
 }
-
 a {
     color: #fff;
 }
@@ -26,27 +22,48 @@ a:hover {
 .navbar-nav>li.current-menu-item>a:hover,
 .navbar-nav>li.current-post-ancestor>a:hover,
 .navbar-nav>li.current-page-ancestor>a:hover,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus,
 .widget_calendar table thead {
     color: #222;
     background: #fff;
 }
+.navbar-nav>li>.dropdown-menu {
+    border-top: 4px solid #fff;
+}
+.dropdown-menu>li>a:hover {
+    background: #222;
+    color: #fff;
+}
 a.btn,
 button.btn {
     color: #222;
-    background: #f0f0f0;
-    border-color: #f0f0f0;
+    background: #eee;
+    border-color: #ccc;
 }
 a.btn:hover,
 button.btn:hover,
 a.btn.active,
 button.btn.active {
     color: #fff;
-    background: #222;
-    border-color: #111;
+    background: #999;
+    border-color: #888;
 }
 #comments,
 #comments a,
 div#respond,
 div#respond a {
+    color: #333;
+}
+#comments a.btn,
+div#respond a.btn {
+    color: #333;
+}
+#comments a.btn:hover,
+div#respond a.btn:hover {
+    color: #fff;
+}
+.widget_calendar table caption {
     color: #333;
 }

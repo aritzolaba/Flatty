@@ -27,8 +27,8 @@ jQuery(document).ready(function($) {
     }
 
     /* Add "form-control" class to form elements */
-    if ($('textarea').length>0 || $('input[type="email"]').length>0 || $('input[type="text"]').length>0) {
-        $('textarea,input[type="email"],input[type="text"]').addClass('form-control');
+    if ($('textarea').length>0 || $('input[type="email"]').length>0 || $('select').length>0 || $('input[type="text"]').length>0) {
+        $('textarea,input[type="email"],input[type="text"],select').addClass('form-control');
     }
 
     /* Comments pager buttons */

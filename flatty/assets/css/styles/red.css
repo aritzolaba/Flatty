@@ -15,7 +15,16 @@ a:hover {
 .navbar-nav>li.current-menu-item>a:hover,
 .navbar-nav>li.current-post-ancestor>a:hover,
 .navbar-nav>li.current-page-ancestor>a:hover,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus,
 .widget_calendar table thead {
+    background: #C00;
+}
+.navbar-nav>li>.dropdown-menu {
+    border-top: 4px solid #C00;
+}
+.dropdown-menu>li>a:hover {
     background: #C00;
 }
 a.btn,

@@ -3,7 +3,7 @@ a {
     color: #FA8072;
 }
 a:hover {
-    color: #8caa46;
+    color: #DA6052;
 }
 .navbar,
 .widgettitle {
@@ -15,7 +15,16 @@ a:hover {
 .navbar-nav>li.current-menu-item>a:hover,
 .navbar-nav>li.current-post-ancestor>a:hover,
 .navbar-nav>li.current-page-ancestor>a:hover,
+.navbar-inverse .navbar-nav>.open>a,
+.navbar-inverse .navbar-nav>.open>a:hover,
+.navbar-inverse .navbar-nav>.open>a:focus,
 .widget_calendar table thead {
+    background: #FA8072;
+}
+.navbar-nav>li>.dropdown-menu {
+    border-top: 4px solid #FA8072;
+}
+.dropdown-menu>li>a:hover {
     background: #FA8072;
 }
 a.btn,

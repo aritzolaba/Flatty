@@ -23,6 +23,12 @@ Features
 
 Change log
 ----------
+30-01-2014 - Version 1.1.0 [VERSION NOT UPLOADED TO OFFICIAL REPO BUT FULL WORKING]
+
+- Added styling for the default WordPress widget Categories.
+- Added styling for the navbar dropdowns for all the available color schemes.
+- Fixed calls to style.css and flatty.css to make them overridable by child themes.
+
 31-12-2013 - Version 1.1.0 [VERSION NOT UPLOADED TO OFFICIAL REPO BUT FULL WORKING]
 
 - Added option for displaying article featured images: left/right/none

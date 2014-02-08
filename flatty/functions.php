@@ -132,15 +132,15 @@ function flatty_load_theme_assets() {
     wp_enqueue_script('bootstrap', get_template_directory_uri().'/assets/libs/bootstrap/js/bootstrap.min.js', array(), FALSE, TRUE);
 
     // Enqueue Main CSS (style.css)
-    wp_enqueue_style('theme-style', get_template_directory_uri().'/style.css');
+    wp_enqueue_style('theme-style', get_stylesheet_directory_uri().'/style.css');
 
     // Enqueue Flatty CSS and JS
-    wp_enqueue_style('flatty-css', get_template_directory_uri().'/assets/css/flatty.css');
+    wp_enqueue_style('flatty-css', get_stylesheet_directory_uri().'/assets/css/flatty.css');
     wp_enqueue_script('flatty-js', get_template_directory_uri().'/assets/js/flatty.js', array(), FALSE, TRUE);
 
-    // Enqueue CSS Style
+    // Enqueue CSS Style for colors
     if (!empty($flatty_theme_options['css_style']) && $flatty_theme_options['css_style'] != 'blue') :
-        wp_enqueue_style('flatty-style-css', get_template_directory_uri().'/assets/css/styles/'.$flatty_theme_options['css_style'].'.css');
+        wp_enqueue_style('flatty-style-css', get_stylesheet_directory_uri().'/assets/css/styles/'.$flatty_theme_options['css_style'].'.css');
     endif;
 
     // Enqueue Wordpress Thickbox
@@ -224,6 +224,7 @@ function flatty_delete_retina_support_images($attachment_id) {
 /* GALLERY SHORTCODE FILTER FOR CAROUSEL
 
 Usage: [ft_carousel include="123,456,789"]content[/ft_carousel]
+(*) 123,456,789 are the Media attachments IDs you want to be displayed
 
 */
 add_shortcode('ft_carousel','ft_shortcode_carousel');
@@ -235,7 +236,8 @@ function ft_shortcode_carousel ($attr, $content) {
     // in "gallery" post formats
     if (!empty($content) && is_array($content)) {
         $attr = $content;
-        $content = $attr[0];
+        if (!empty($attr[0])) $content = $attr[0];
+        else $content = '';
     }
 
     $output = $content;
@@ -408,8 +410,10 @@ function flatty_limit_media ($params) {
     // For Retina support, we must allow the double of the large size
     $maxLargeWidth = get_option('large_size_w')*2;
     $maxLargeHeight = get_option('large_size_h')*2;
-    $jpegQuality = 75;
+    $jpegQuality = 75; // JPEG compression quality
+    $crop = TRUE; // if TRUE, image will be cropped, if FALSE, it will be resized
 
+    // Get File
     $filePath = $params['file'];
 
     if ((!is_wp_error($params)) && file_exists($filePath) && in_array($params['type'], array('image/png','image/gif','image/jpeg'))) {
@@ -418,7 +422,7 @@ function flatty_limit_media ($params) {
         list($oldWidth, $oldHeight)     = getimagesize($filePath);
         list($newWidth, $newHeight)     = wp_constrain_dimensions($oldWidth, $oldHeight, $largeWidth, $largeHeight);
         // Resize
-        $resizeImageResult = image_resize($filePath, $newWidth, $newHeight, false, null, null, $jpegQuality);
+        $resizeImageResult = image_resize($filePath, $newWidth, $newHeight, $crop, null, null, $jpegQuality);
         // Delete tmp file
         unlink($filePath);
 

@@ -180,6 +180,7 @@ form#commentform p.logged-in-as,
     font-size: 11px;
 }
 .form-allowed-tags code {
+    border-style: dotted;
     font-size: 11px;
     margin: 10px;
     margin-bottom: 20px;

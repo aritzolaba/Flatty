@@ -120,15 +120,11 @@ class flatty_theme_options_page {
                 <table class="form-table">
                     <tbody>
                         <tr valign="top">
-                            <th scope="row"><label for="breadcrumb"><?php _e('Display breadcrumb?','flatty'); ?></label></th>
-                            <td><input name="breadcrumb" type="checkbox" id="breadcrumb" value="1" <?php if ($flatty_theme_options['breadcrumb'] == 1) echo 'checked="checked"'; ?>></td>
-                        </tr>
-                        <tr valign="top">
                             <th scope="row"><label for="css_style"><?php _e('CSS Style','flatty'); ?></label></th>
                             <td>
                                 <select name="css_style" id="css_style">
                                     <option value="black_white" <?php if ($flatty_theme_options['css_style'] == 'black_white') echo 'selected="selected"'; ?>><?php _e('Black and White','flatty'); ?></option>
-                                    <option value="blue" <?php if ($flatty_theme_options['css_style'] == 'blue') echo 'selected="selected"'; ?>><?php _e('Blue','flatty'); ?></option>
+                                    <option value="blue" <?php if ($flatty_theme_options['css_style'] == 'blue') echo 'selected="selected"'; ?>><?php _e('Blue','flatty'); ?> (default)</option>
                                     <option value="green" <?php if ($flatty_theme_options['css_style'] == 'green') echo 'selected="selected"'; ?>><?php _e('Green','flatty'); ?></option>
                                     <option value="red" <?php if ($flatty_theme_options['css_style'] == 'red') echo 'selected="selected"'; ?>><?php _e('Red','flatty'); ?></option>
                                     <option value="salmon" <?php if ($flatty_theme_options['css_style'] == 'salmon') echo 'selected="selected"'; ?>><?php _e('Salmon','flatty'); ?></option>
@@ -143,6 +139,10 @@ class flatty_theme_options_page {
                                     <option value="numbers" <?php if ($flatty_theme_options['pagination_type'] == 'numbers') echo 'selected="selected"'; ?>><?php _e('Numbers','flatty'); ?></option>
                                 </select>
                             </td>
+                        </tr>
+                        <tr valign="top">
+                            <th scope="row"><label for="breadcrumb"><?php _e('Display breadcrumb?','flatty'); ?></label></th>
+                            <td><input name="breadcrumb" type="checkbox" id="breadcrumb" value="1" <?php if ($flatty_theme_options['breadcrumb'] == 1) echo 'checked="checked"'; ?>></td>
                         </tr>
                     </tbody>
                 </table>

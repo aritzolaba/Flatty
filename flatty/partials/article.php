@@ -16,7 +16,6 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} ?>
         <header class="media-body">
 
             <h1 class="media-heading">
-
                 <?php if (is_single() OR is_page()) : ?>
                     <?php the_title(); ?>
                 <?php else : ?>
