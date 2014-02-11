@@ -370,6 +370,7 @@ function flatty_pagination ($before = '', $after = '') {
         }
         if ($start_page <= 0) $start_page = 1;
 
+        echo '<div class="clearfix"></div><br />';
         echo '<div class="btn-toolbar text-center" role="toolbar">';
 
         for ($i = $start_page; $i <= $end_page; $i++) {

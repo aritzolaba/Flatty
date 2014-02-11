@@ -23,22 +23,18 @@ Features
 
 Change log
 ----------
-30-01-2014 - Version 1.1.0 [VERSION NOT UPLOADED TO OFFICIAL REPO BUT FULL WORKING]
-
-- Added styling for the default WordPress widget Categories.
-- Added styling for the navbar dropdowns for all the available color schemes.
-- Fixed calls to style.css and flatty.css to make them overridable by child themes.
-
-31-12-2013 - Version 1.1.0 [VERSION NOT UPLOADED TO OFFICIAL REPO BUT FULL WORKING]
+12-02-2014 - Version 1.1.0
 
 - Added option for displaying article featured images: left/right/none
 - Added option for including Google Analytics code.
 - Added thickbox gallery support to WordPress default galleries, you can now navigate through all images in the gallery using thickbox.
 - Added a custom filter in functions.php to customize the site_title and make it more SEO friendly.
 - Added translation to Basque (Euskera) language.
-- Corrected various styles and added styling for pingbacks in the comment list.
-- Limited media image sizes to the three default WordPress sizes and activated jpeg compression to 75% of quality.
-[EXPERIMENTAL]
+- Added styling for the default WordPress widget Categories.
+- Added styling for the navbar dropdowns for all the available color schemes.
+- Added styling for pingbacks in the comment list.
+- Improved typography and added a new font.
+- Other css improvements and fixes.
 
 24-12-2013 - Version 1.0.4
 

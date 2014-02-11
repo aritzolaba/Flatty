@@ -9,9 +9,11 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} ?>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="<?php echo site_url(); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>">
-            <?php echo esc_attr(get_bloginfo('name')); ?>
-        </a>
+        <?php global $flatty_theme_options; if ($flatty_theme_options['display_blog_title'] == 1) : ?>
+            <a class="navbar-brand" href="<?php echo site_url(); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>">
+                <?php echo esc_attr(get_bloginfo('name')); ?>
+            </a>
+        <?php endif; ?>
         <?php $site_description = esc_attr(get_bloginfo('description')); if (!empty($site_description)) : ?>
             <div class="navbar-text"><?php echo $site_description; ?></div>
         <?php endif; ?>

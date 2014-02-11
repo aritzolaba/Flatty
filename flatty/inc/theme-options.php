@@ -21,6 +21,7 @@ class flatty_theme_options_page {
         $def_theme_options['breadcrumb'] = 1;
         $def_theme_options['pagination_type'] = 'buttons';
         $def_theme_options['google_analytics'] = '';
+        $def_theme_options['display_blog_title'] = 1;
 
         // Social buttons
         $def_theme_options['social_facebook'] = '';
@@ -143,6 +144,10 @@ class flatty_theme_options_page {
                         <tr valign="top">
                             <th scope="row"><label for="breadcrumb"><?php _e('Display breadcrumb?','flatty'); ?></label></th>
                             <td><input name="breadcrumb" type="checkbox" id="breadcrumb" value="1" <?php if ($flatty_theme_options['breadcrumb'] == 1) echo 'checked="checked"'; ?>></td>
+                        </tr>
+                        <tr valign="top">
+                            <th scope="row"><label for="display_blog_title"><?php _e('Display Blog Title?','flatty'); ?></label></th>
+                            <td><input name="display_blog_title" type="checkbox" id="display_blog_title" value="1" <?php if ($flatty_theme_options['display_blog_title'] == 1) echo 'checked="checked"'; ?>></td>
                         </tr>
                     </tbody>
                 </table>

@@ -1,6 +1,6 @@
 <?php
 /*
- * Template Name: One column Empty
+ * Template Name: Flatty - One column Empty
  *
  */
 // Exit if accessed directly
@@ -11,10 +11,12 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} get_header(); ?>
     <?php while (have_posts()) : the_post(); ?>
 
         <article class="well">
-
-            <?php the_content(); ?>
-
+            <section>
+                <?php the_content(); ?>
+            </section>
         </article>
+
+        <?php comments_template( '', true ); ?>
 
     <?php endwhile; ?>
 

@@ -13,6 +13,11 @@ Fonts:
     License: SIL Open Font License, 1.1
     License URI: http://scripts.sil.org/OFL
 
+    Font: Abel
+    Author: MADType
+    License: SIL Open Font License, 1.1
+    License URI: http://scripts.sil.org/OFL
+
 Flatty:
 
     License: GNU General Public License v3 or later
@@ -28,3 +33,10 @@ Font Awesome:
     Font Awesome by Dave Gandy - http://fontawesome.io
     License: SIL Open Font License, 1.1
     License URI: http://scripts.sil.org/OFL
+
+Images:
+
+    License: GNU General Public License v3 or later
+    License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+	

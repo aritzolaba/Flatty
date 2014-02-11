@@ -38,11 +38,15 @@
 
 /* Article */
 article section {
-    font-family: 'Rosario';
-    font-size: 16px;
+    font-family: 'Abel';
+    font-size: 20px;
     line-height: 24px;
-    margin-top: 20px;
+    margin: 20px 0px;
     padding: 0em 1em;
+}
+article section ul li {
+    margin: 5px 0px;
+    list-style-type: square;
 }
 article code {
     margin: 5px 20px;
@@ -63,37 +67,25 @@ article.media .media-object.pull-left {
 article.media .media-object.pull-right {
     margin-left: 20px;
 }
-/*
-article.media {
-    border: 0px;
-}
-
-article.media header .media-heading.text-muted {
-    margin-top: 10px;
-}
-article.media header a {
-    color: #f0f0f0;
-}
-article.media header a:hover {
-    color: #fff;
-}*/
 
 /* Bootstrap Carousel */
+/* Different sizes */
 body article .carousel-inner img {
     margin: auto;
-    max-height: 380px;
+    max-height: 280px;
     width: auto;
 }
 body.single article .carousel-inner img {
     margin: auto;
-    max-height: 540px;
+    max-height: 480px;
     width: auto;
 }
 body.page-template-tpl-one-column-empty-php article .carousel-inner img {
     margin: auto;
-    max-height: 100%;
+    max-height: 600px;
     width: auto;
 }
+
 .carousel-indicators {
     bottom: 0px;
 }
@@ -107,6 +99,17 @@ body.page-template-tpl-one-column-empty-php article .carousel-inner img {
 .carousel-control.left,
 .carousel-control.right {
     background: transparent;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    color: #fff;
+    background: transparent url('../imgs/bg-trans-dark.png') repeat;
+    border-radius: none;
+    font-family: Abel;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #000;
+    text-transform: uppercase;
 }
 
 /* Footer */
@@ -138,6 +141,11 @@ code {
 #comments li .comment-body {
     background: #fbfbfb;
     border: 2px solid #f5f5f5;
+}
+#comments li .comment-body p {
+    background: #fff;
+    margin: 20px -10px;
+    padding: 10px;
 }
 
 /* Headings */
@@ -236,12 +244,20 @@ h1, h2, h3, h4, h5, h6 {
     box-shadhow: none;
 }
 
-/* Widget Title */
+/* Widget Titles */
 .widgettitle {
     background: #333;
     border-bottom: 5px solid #38c;
     color: #f5f5f5;
     font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* Widget Search */
+.well.widget_search {
+    background: transparent;
+    border: 0px;
+    padding: 2px 0px 6px 0px;
 }
 
 /* Widget Categories */

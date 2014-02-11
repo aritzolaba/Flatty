@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flatty 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-28 01:27+0100\n"
-"PO-Revision-Date: 2014-01-28 01:27+0100\n"
+"POT-Creation-Date: 2014-02-11 03:53+0100\n"
+"PO-Revision-Date: 2014-02-11 03:53+0100\n"
 "Last-Translator: \n"
 "Language-Team: flatty\n"
 "MIME-Version: 1.0\n"
@@ -21,17 +21,17 @@ msgid "This post is password protected. Enter the password to view any comments.
 msgstr "Este post es privado. Introduce la contrase&ntilde;a para ver los comentarios."
 
 #: ../comments.php:19
-#: ../partials/article.php:35
+#: ../partials/article.php:34
 msgid "Comments"
 msgstr "Comentarios"
 
 #: ../comments.php:21
-#: ../partials/article.php:36
+#: ../partials/article.php:35
 msgid "1 comment"
 msgstr "1 comentario"
 
 #: ../comments.php:21
-#: ../partials/article.php:36
+#: ../partials/article.php:35
 #, php-format
 msgid "%s comments"
 msgstr "%s comentarios"
@@ -87,11 +87,11 @@ msgstr "Continuar Leyendo"
 msgid "Page %s"
 msgstr "P&aacute;gina %s"
 
-#: ../functions.php:334
+#: ../functions.php:336
 msgid "<i class=\"icon-circle-arrow-left\"></i> OLDER POSTS"
 msgstr "<i class=\"icon-circle-arrow-left\"></i> ANTERIORES"
 
-#: ../functions.php:335
+#: ../functions.php:337
 msgid "NEWER POSTS <i class=\"icon-circle-arrow-right\"></i>"
 msgstr "SIGUIENTES <i class=\"icon-circle-arrow-right\"></i>"
 
@@ -103,118 +103,122 @@ msgstr "Buscar"
 msgid "add widgets here"
 msgstr "A&ntilde;ade widgets aqu&iacute;"
 
-#: ../inc/theme-options.php:71
+#: ../inc/theme-options.php:72
 msgid "Theme Options"
 msgstr "Opciones del tema"
 
-#: ../inc/theme-options.php:109
+#: ../inc/theme-options.php:110
 #, php-format
 msgid "%s Theme Options"
 msgstr "Opciones del tema %s"
 
-#: ../inc/theme-options.php:118
+#: ../inc/theme-options.php:119
 msgid "General options"
 msgstr "Opciones generales"
 
-#: ../inc/theme-options.php:123
-msgid "Display breadcrumb?"
-msgstr "Mostrar breadcrumb?"
-
-#: ../inc/theme-options.php:127
+#: ../inc/theme-options.php:124
 msgid "CSS Style"
 msgstr "Estilo CSS"
 
-#: ../inc/theme-options.php:130
+#: ../inc/theme-options.php:127
 msgid "Black and White"
 msgstr "Blanco y Negro"
 
-#: ../inc/theme-options.php:131
+#: ../inc/theme-options.php:128
 msgid "Blue"
 msgstr "Az&uacute;l"
 
-#: ../inc/theme-options.php:132
+#: ../inc/theme-options.php:129
 msgid "Green"
 msgstr "Verde"
 
-#: ../inc/theme-options.php:133
+#: ../inc/theme-options.php:130
 msgid "Red"
 msgstr "Rojo"
 
-#: ../inc/theme-options.php:134
+#: ../inc/theme-options.php:131
 msgid "Salmon"
 msgstr "Salm&oacute;n"
 
-#: ../inc/theme-options.php:139
+#: ../inc/theme-options.php:136
 msgid "Pagination type"
 msgstr "Tipo de paginaci&oacute;n"
 
-#: ../inc/theme-options.php:142
+#: ../inc/theme-options.php:139
 msgid "Buttons"
 msgstr "Botones"
 
-#: ../inc/theme-options.php:143
+#: ../inc/theme-options.php:140
 msgid "Numbers"
 msgstr "N&uacute;meros"
 
-#: ../inc/theme-options.php:152
+#: ../inc/theme-options.php:145
+msgid "Display breadcrumb?"
+msgstr "Mostrar breadcrumb?"
+
+#: ../inc/theme-options.php:149
+msgid "Display Blog Title?"
+msgstr "Mostrar t&iacute;tulo del blog?"
+
+#: ../inc/theme-options.php:157
 msgid "Article options"
 msgstr "Opciones de los art&iacute;culos"
 
-#: ../inc/theme-options.php:157
+#: ../inc/theme-options.php:162
 msgid "Display post featured images?"
 msgstr "Mostrar im&aacute;genes destacadas?"
 
-#: ../inc/theme-options.php:160
-#: ../inc/theme-options.php:187
+#: ../inc/theme-options.php:165
+#: ../inc/theme-options.php:192
 msgid "Left"
 msgstr "Izquierda"
 
-#: ../inc/theme-options.php:161
-#: ../inc/theme-options.php:188
+#: ../inc/theme-options.php:166
+#: ../inc/theme-options.php:193
 msgid "Right"
 msgstr "Derecha"
 
-#: ../inc/theme-options.php:162
+#: ../inc/theme-options.php:167
 msgid "Do not display"
 msgstr "No mostrar"
 
-#: ../inc/theme-options.php:167
+#: ../inc/theme-options.php:172
 msgid "Display author info?"
 msgstr "Mostrar info del autor?"
 
-#: ../inc/theme-options.php:171
+#: ../inc/theme-options.php:176
 msgid "Display related articles?"
 msgstr "Mostrar art&iacute;culos relacionados?"
 
-#: ../inc/theme-options.php:179
+#: ../inc/theme-options.php:184
 msgid "Sidebar options"
 msgstr "Opciones del panel lateral"
 
-#: ../inc/theme-options.php:184
+#: ../inc/theme-options.php:189
 msgid "Sidebar position"
 msgstr "Posici&oacute;n del panel lateral"
 
-#: ../inc/theme-options.php:193
+#: ../inc/theme-options.php:198
 msgid "Display admin info in sidebar?"
 msgstr "Mostrar info del administrador en el panel lateral?"
 
-#: ../inc/theme-options.php:201
+#: ../inc/theme-options.php:206
 msgid "Social URLs"
 msgstr "URLs sociales"
 
-#: ../inc/theme-options.php:206
+#: ../inc/theme-options.php:211
 msgid "Display social links in footer?"
 msgstr "Mostrar enlaces sociales en el pi&eacute; de p&aacute;gina?"
 
-#: ../inc/theme-options.php:234
+#: ../inc/theme-options.php:239
 msgid "Google Analytics"
 msgstr "Google Analytics"
 
-#: ../inc/theme-options.php:239
+#: ../inc/theme-options.php:244
 msgid "Paste your Google Analytics script code"
 msgstr "Pega aqu&iacute; el c&oacute;digo de Google Analytics"
 
-#: ../inc/theme-options.php:248
+#: ../inc/theme-options.php:253
 msgid "Save Changes"
 msgstr "Guardar cambios"
 
@@ -222,27 +226,28 @@ msgstr "Guardar cambios"
 msgid "Related articles"
 msgstr "Art&iacute;culos relacionados"
 
-#: ../partials/article.php:36
+#: ../partials/article.php:35
 msgid "no comments"
 msgstr "sin comentarios"
 
-#: ../partials/article.php:49
+#: ../partials/article.php:48
 msgid "Edit"
 msgstr "Editar"
 
-#: ../partials/article.php:81
+#: ../partials/article.php:80
 msgid "Next page"
 msgstr "Siguiente"
 
-#: ../partials/article.php:82
+#: ../partials/article.php:81
 msgid "Previous page"
 msgstr "Anterior"
 
-#: ../partials/article.php:86
+#: ../partials/article.php:85
 msgid "Pages:"
 msgstr "P&aacute;ginas:"
 
 #: ../partials/breadcrumb.php:5
+#: ../partials/nothing-found.php:24
 msgid "Home"
 msgstr "Inicio"
 
