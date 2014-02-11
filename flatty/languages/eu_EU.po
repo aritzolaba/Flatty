@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flatty 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-11 03:53+0100\n"
-"PO-Revision-Date: 2014-02-11 03:54+0100\n"
+"POT-Creation-Date: 2014-02-11 18:51+0100\n"
+"PO-Revision-Date: 2014-02-11 18:51+0100\n"
 "Last-Translator: \n"
 "Language-Team: flatty\n"
 "MIME-Version: 1.0\n"
@@ -103,122 +103,114 @@ msgstr "Bilatu"
 msgid "add widgets here"
 msgstr "Widget-ak jarri hemen"
 
-#: ../inc/theme-options.php:72
+#: ../inc/theme-options.php:71
 msgid "Theme Options"
 msgstr "Tema-ren aukerak"
 
-#: ../inc/theme-options.php:110
+#: ../inc/theme-options.php:105
 #, php-format
 msgid "%s Theme Options"
 msgstr "%s temaren aukerak"
 
-#: ../inc/theme-options.php:119
+#: ../inc/theme-options.php:114
 msgid "General options"
 msgstr "Aukera generalak"
 
-#: ../inc/theme-options.php:124
+#: ../inc/theme-options.php:119
 msgid "CSS Style"
 msgstr "CSS estiloa"
 
-#: ../inc/theme-options.php:127
+#: ../inc/theme-options.php:122
 msgid "Black and White"
 msgstr "Zuri beltza"
 
-#: ../inc/theme-options.php:128
+#: ../inc/theme-options.php:123
 msgid "Blue"
 msgstr "Urdina"
 
-#: ../inc/theme-options.php:129
+#: ../inc/theme-options.php:124
 msgid "Green"
 msgstr "Orlegia"
 
-#: ../inc/theme-options.php:130
+#: ../inc/theme-options.php:125
 msgid "Red"
 msgstr "Gorria"
 
-#: ../inc/theme-options.php:131
+#: ../inc/theme-options.php:126
 msgid "Salmon"
 msgstr "Salmon"
 
-#: ../inc/theme-options.php:136
+#: ../inc/theme-options.php:131
 msgid "Pagination type"
 msgstr "Horrialde mota"
 
-#: ../inc/theme-options.php:139
+#: ../inc/theme-options.php:134
 msgid "Buttons"
 msgstr "Botoiak"
 
-#: ../inc/theme-options.php:140
+#: ../inc/theme-options.php:135
 msgid "Numbers"
 msgstr "Zenbakiak"
 
-#: ../inc/theme-options.php:145
+#: ../inc/theme-options.php:140
 msgid "Display breadcrumb?"
 msgstr "Breadcrumb-a aktibatu?"
 
-#: ../inc/theme-options.php:149
+#: ../inc/theme-options.php:144
 msgid "Display Blog Title?"
 msgstr "Erakutsi Blog-aren Izenburua?"
 
-#: ../inc/theme-options.php:157
+#: ../inc/theme-options.php:152
 msgid "Article options"
 msgstr "Sarreren aukerak"
 
-#: ../inc/theme-options.php:162
+#: ../inc/theme-options.php:157
 msgid "Display post featured images?"
 msgstr "Mostrar im&aacute;genes destacadas?"
 
-#: ../inc/theme-options.php:165
-#: ../inc/theme-options.php:192
+#: ../inc/theme-options.php:160
+#: ../inc/theme-options.php:187
 msgid "Left"
 msgstr "Ezkerra"
 
-#: ../inc/theme-options.php:166
-#: ../inc/theme-options.php:193
+#: ../inc/theme-options.php:161
+#: ../inc/theme-options.php:188
 msgid "Right"
 msgstr "Eskuma"
 
-#: ../inc/theme-options.php:167
+#: ../inc/theme-options.php:162
 msgid "Do not display"
 msgstr "Ez erakutsi"
 
-#: ../inc/theme-options.php:172
+#: ../inc/theme-options.php:167
 msgid "Display author info?"
 msgstr "Erakutsi autorearen informazioa?"
 
-#: ../inc/theme-options.php:176
+#: ../inc/theme-options.php:171
 msgid "Display related articles?"
 msgstr "Erakutsi sarrera erlazionatuak?"
 
-#: ../inc/theme-options.php:184
+#: ../inc/theme-options.php:179
 msgid "Sidebar options"
 msgstr "Sidebar aukerak"
 
-#: ../inc/theme-options.php:189
+#: ../inc/theme-options.php:184
 msgid "Sidebar position"
 msgstr "Sidebar posizioa"
 
-#: ../inc/theme-options.php:198
+#: ../inc/theme-options.php:193
 msgid "Display admin info in sidebar?"
 msgstr "Erakutsi administratzailearen informazioa?"
 
-#: ../inc/theme-options.php:206
+#: ../inc/theme-options.php:201
 msgid "Social URLs"
 msgstr "URLs sozialak"
 
-#: ../inc/theme-options.php:211
+#: ../inc/theme-options.php:206
 msgid "Display social links in footer?"
 msgstr "Erakutsi lotura sozialak footer-ean?"
 
-#: ../inc/theme-options.php:239
-msgid "Google Analytics"
-msgstr "Google Analytics"
-
-#: ../inc/theme-options.php:244
-msgid "Paste your Google Analytics script code"
-msgstr "Hemen itsatsi Google Analytics kodea"
-
-#: ../inc/theme-options.php:253
+#: ../inc/theme-options.php:235
 msgid "Save Changes"
 msgstr "Aldaketak Gorde"
 
@@ -282,6 +274,12 @@ msgstr "Ez da ezer aurkitu"
 #: ../partials/nothing-found.php:24
 msgid "Take me home"
 msgstr "Hasierara"
+
+#~ msgid "Google Analytics"
+#~ msgstr "Google Analytics"
+
+#~ msgid "Paste your Google Analytics script code"
+#~ msgstr "Hemen itsatsi Google Analytics kodea"
 
 #~ msgid "Type your \"UA-12345\" account or leave it blank"
 #~ msgstr "Escribe tu cuenta \"UA-12345\" o d&eacute;jalo en blanco"

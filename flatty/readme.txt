@@ -23,6 +23,10 @@ Features
 
 Change log
 ----------
+12-02-2014 - Version 1.1.1
+
+- Removed Google Analytics from theme options.
+
 12-02-2014 - Version 1.1.0
 
 - Added option for displaying article featured images: left/right/none

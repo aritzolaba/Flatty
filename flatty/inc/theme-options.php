@@ -20,7 +20,6 @@ class flatty_theme_options_page {
         $def_theme_options['article_featured_images'] = 'left';
         $def_theme_options['breadcrumb'] = 1;
         $def_theme_options['pagination_type'] = 'buttons';
-        $def_theme_options['google_analytics'] = '';
         $def_theme_options['display_blog_title'] = 1;
 
         // Social buttons
@@ -86,11 +85,7 @@ class flatty_theme_options_page {
             // saved with a 0 value.
             foreach ($flatty_theme_options as $k => $v) :
                 if (!empty($_POST[$k])) :
-                    if ($k == 'google_analytics') {
-                        $flatty_theme_options[$k] = '<script>'.wp_kses($_POST[$k], array()).'</script>';
-                    } else {
-                        $flatty_theme_options[$k] = wp_kses($_POST[$k], array());
-                    }
+                    $flatty_theme_options[$k] = wp_kses($_POST[$k], array());
                 else :
                     $flatty_theme_options[$k] = 0;
                 endif;
@@ -230,19 +225,6 @@ class flatty_theme_options_page {
                         <tr valign="top">
                             <th scope="row"><label for="social_linkedin">LinkedIn</label></th>
                             <td><input name="social_linkedin" type="text" id="social_linkedin" value="<?php if (!empty($flatty_theme_options['social_linkedin'])) echo $flatty_theme_options['social_linkedin']; ?>" class="regular-text" placeholder="http://"></td>
-                        </tr>
-                    </tbody>
-                </table>
-
-                <br />
-
-                <h3 class="title"><?php _e('Google Analytics', 'flatty'); ?></h3>
-
-                <table class="form-table">
-                    <tbody>
-                        <tr valign="top">
-                            <th scope="row"><label for="google_analytics"><?php _e('Paste your Google Analytics script code','flatty'); ?></label></th>
-                            <td><textarea rows="12" style="resize: none; width: 100%;" name="google_analytics" id="google_analytics"><?php if (!empty($flatty_theme_options['google_analytics'])) echo str_replace('\\','',$flatty_theme_options['google_analytics']); ?></textarea></td>
                         </tr>
                     </tbody>
                 </table>
