@@ -43,9 +43,5 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} ?>
 	<script src="<?php echo get_template_directory_uri(); ?>/assets/libs/respond.min.js"></script>
 	<![endif]-->
 
-        <?php // Google Analytics
-        if ($flatty_theme_options['google_analytics'] != '') echo str_replace('\\','',$flatty_theme_options['google_analytics']);
-        ?>
-
     </body>
 </html>
