@@ -21,8 +21,6 @@ query_posts($args);
 
     <?php endwhile; ?>
 
-    <?php if ($flatty_theme_options['blog_column_layout'] == 1) { echo '</div>'; } ?>
-
     <?php if ($wp_query->max_num_pages>1) : ?>
 
         <?php flatty_pagination(); ?>
