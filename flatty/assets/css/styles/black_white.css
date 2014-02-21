@@ -32,6 +32,10 @@ a:hover {
 .navbar-nav>li>.dropdown-menu {
     border-top: 4px solid #fff;
 }
+ul.nav.navbar-nav>li>a:hover {
+    background: #ccc;
+    color: #333;
+}
 .dropdown-menu>li>a:hover {
     background: #222;
     color: #fff;

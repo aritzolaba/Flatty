@@ -8,11 +8,6 @@ Fonts:
     License: SIL Open Font License, 1.1
     License URI: http://scripts.sil.org/OFL
 
-    Font: Rosario
-    Author: Omnibus-Type
-    License: SIL Open Font License, 1.1
-    License URI: http://scripts.sil.org/OFL
-
     Font: Abel
     Author: MADType
     License: SIL Open Font License, 1.1

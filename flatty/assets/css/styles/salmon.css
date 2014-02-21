@@ -24,6 +24,9 @@ a:hover {
 .navbar-nav>li>.dropdown-menu {
     border-top: 4px solid #FA8072;
 }
+ul.nav.navbar-nav>li>a:hover {
+    background: #BA5042;
+}
 .dropdown-menu>li>a:hover {
     background: #FA8072;
 }

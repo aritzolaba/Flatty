@@ -23,6 +23,12 @@ Features
 
 Change log
 ----------
+22-02-2014 - Version 1.1.2
+
+- Deleted "Rosario" font and used "Abel" as main font.
+- Added a new template for displaying the blog in two columns without sidebar.
+- Some fixes in styles.
+
 12-02-2014 - Version 1.1.1
 
 - Removed Google Analytics from theme options.

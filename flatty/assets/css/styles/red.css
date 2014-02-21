@@ -1,4 +1,4 @@
-/* GREEN STYLE */
+/* RED STYLE */
 a {
     color: #C00;
 }
@@ -23,6 +23,9 @@ a:hover {
 }
 .navbar-nav>li>.dropdown-menu {
     border-top: 4px solid #C00;
+}
+ul.nav.navbar-nav>li>a:hover {
+    background: #900;
 }
 .dropdown-menu>li>a:hover {
     background: #C00;
