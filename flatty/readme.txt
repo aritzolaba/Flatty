@@ -23,6 +23,10 @@ Features
 
 Change log
 ----------
+10-09-2014 - Version 1.1.3
+
+- Added French translation, kindly offered by Benjamin Pinoteau
+
 22-02-2014 - Version 1.1.2
 
 - Deleted "Rosario" font and used "Abel" as main font.

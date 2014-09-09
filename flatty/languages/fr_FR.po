@@ -1,0 +1,287 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Flatty 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-11 18:51+0100\n"
+"PO-Revision-Date: 2014-09-07 16:22+0100\n"
+"Last-Translator: Benjamin Pinoteau <zonevirtuel@gmail.com>\n"
+"Language-Team: flatty\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"Language: es_ES\n"
+"X-Generator: Poedit 1.6.9\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../comments.php:10
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+"Cet article est protégé par un mot de passe. Entrez le mot de passe pour "
+"voir les commentaires."
+
+#: ../comments.php:19 ../partials/article.php:34
+msgid "Comments"
+msgstr "Commentaires"
+
+#: ../comments.php:21 ../partials/article.php:35
+msgid "1 comment"
+msgstr "1 commentaire"
+
+#: ../comments.php:21 ../partials/article.php:35
+#, php-format
+msgid "%s comments"
+msgstr "%s commentaires"
+
+#: ../comments.php:54
+msgid "Name"
+msgstr "Nom"
+
+#: ../comments.php:56
+msgid "Email"
+msgstr "Email"
+
+#: ../comments.php:62
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+"Connecté en tant que <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log "
+"out of this account\">Déconnexion?</a>"
+
+#: ../comments.php:63
+msgid "Your email address will not be published. Fields with * are mandatory."
+msgstr ""
+"Votre adresse email ne sera pas publiée. Les champs avec * sont obligatoires."
+
+#: ../functions.php:39
+msgid "Widgets placed here will display in the right sidebar"
+msgstr "Les Widgets placés ici s'afficheront dans la barre de côté"
+
+#: ../functions.php:47
+msgid "Widgets placed here will display in the first footer block"
+msgstr "Les Widgets placés ici s'afficheront dans le 1er bloc en bas de site"
+
+#: ../functions.php:55
+msgid "Widgets placed here will display in the second footer block"
+msgstr "Les Widgets placés ici s'afficheront dans le 2ème bloc en bas de site"
+
+#: ../functions.php:63
+msgid "Widgets placed here will display in the third footer block"
+msgstr "Les Widgets placés ici s'afficheront dans le 3ème bloc en bas de site"
+
+#: ../functions.php:71
+msgid "Flatty Primary Menu"
+msgstr "Menu primaire Flatty"
+
+#: ../functions.php:93
+#, php-format
+msgid "Read more on %s"
+msgstr "En lire plus sur %s"
+
+#: ../functions.php:93
+msgid "Continue Reading"
+msgstr "Continuer à lire"
+
+#: ../functions.php:106
+#, php-format
+msgid "Page %s"
+msgstr "Page %s"
+
+#: ../functions.php:336
+msgid "<i class=\"icon-circle-arrow-left\"></i> OLDER POSTS"
+msgstr "<i class=\"icon-circle-arrow-left\"></i> PUBLICATIONS PLUS ANCIENNES"
+
+#: ../functions.php:337
+msgid "NEWER POSTS <i class=\"icon-circle-arrow-right\"></i>"
+msgstr "PUBLICATION PLUS RECENTES <i class=\"icon-circle-arrow-right\"></i>"
+
+#: ../searchform.php:6
+msgid "Search"
+msgstr "Chercher"
+
+#: ../sidebar.php:6
+msgid "add widgets here"
+msgstr "Ajouter des widgets ici"
+
+#: ../inc/theme-options.php:71
+msgid "Theme Options"
+msgstr "Options du thème"
+
+#: ../inc/theme-options.php:105
+#, php-format
+msgid "%s Theme Options"
+msgstr "Options du Thème %s"
+
+#: ../inc/theme-options.php:114
+msgid "General options"
+msgstr "Options générales"
+
+#: ../inc/theme-options.php:119
+msgid "CSS Style"
+msgstr "Style CSS"
+
+#: ../inc/theme-options.php:122
+msgid "Black and White"
+msgstr "Blanc et noir"
+
+#: ../inc/theme-options.php:123
+msgid "Blue"
+msgstr "Bleu"
+
+#: ../inc/theme-options.php:124
+msgid "Green"
+msgstr "Vert"
+
+#: ../inc/theme-options.php:125
+msgid "Red"
+msgstr "Rouge"
+
+#: ../inc/theme-options.php:126
+msgid "Salmon"
+msgstr "Saumon"
+
+#: ../inc/theme-options.php:131
+msgid "Pagination type"
+msgstr "Type de mise en page"
+
+#: ../inc/theme-options.php:134
+msgid "Buttons"
+msgstr "Bouttons"
+
+#: ../inc/theme-options.php:135
+msgid "Numbers"
+msgstr "Numéros"
+
+#: ../inc/theme-options.php:140
+msgid "Display breadcrumb?"
+msgstr "Afficher le retour à l'accueil?"
+
+#: ../inc/theme-options.php:144
+msgid "Display Blog Title?"
+msgstr "Afficher le titre du site ?"
+
+#: ../inc/theme-options.php:152
+msgid "Article options"
+msgstr "Options des articles"
+
+#: ../inc/theme-options.php:157
+msgid "Display post featured images?"
+msgstr "Afficher les images des posts exclusifs ?"
+
+#: ../inc/theme-options.php:160 ../inc/theme-options.php:187
+msgid "Left"
+msgstr "Gaiche"
+
+#: ../inc/theme-options.php:161 ../inc/theme-options.php:188
+msgid "Right"
+msgstr "Droite"
+
+#: ../inc/theme-options.php:162
+msgid "Do not display"
+msgstr "Ne pas afficher"
+
+#: ../inc/theme-options.php:167
+msgid "Display author info?"
+msgstr "Afficher les infos de l'autheur?"
+
+#: ../inc/theme-options.php:171
+msgid "Display related articles?"
+msgstr "Afficher les sujets en relation?"
+
+#: ../inc/theme-options.php:179
+msgid "Sidebar options"
+msgstr "Options de la barre de côté"
+
+#: ../inc/theme-options.php:184
+msgid "Sidebar position"
+msgstr "Position de la barre de côté"
+
+#: ../inc/theme-options.php:193
+msgid "Display admin info in sidebar?"
+msgstr "Afficher les infos admin dans la barre de côté ?"
+
+#: ../inc/theme-options.php:201
+msgid "Social URLs"
+msgstr "URLs sociales"
+
+#: ../inc/theme-options.php:206
+msgid "Display social links in footer?"
+msgstr "Afficher les liens sociaux en bas du site ?"
+
+#: ../inc/theme-options.php:235
+msgid "Save Changes"
+msgstr "Sauvegarder les changements"
+
+#: ../partials/article-related.php:7
+msgid "Related articles"
+msgstr "Sujets en relation"
+
+#: ../partials/article.php:35
+msgid "no comments"
+msgstr "0 commentaire"
+
+#: ../partials/article.php:48
+msgid "Edit"
+msgstr "Modifier"
+
+#: ../partials/article.php:80
+msgid "Next page"
+msgstr "Page suivante"
+
+#: ../partials/article.php:81
+msgid "Previous page"
+msgstr "Page précédente"
+
+#: ../partials/article.php:85
+msgid "Pages:"
+msgstr "Pages:"
+
+#: ../partials/breadcrumb.php:5 ../partials/nothing-found.php:24
+msgid "Home"
+msgstr "Accueil"
+
+#: ../partials/breadcrumb.php:18
+msgid "About the author"
+msgstr "Au sujet de l'auteur"
+
+#: ../partials/breadcrumb.php:20
+msgid "Search results"
+msgstr "Résultats de recherche"
+
+#: ../partials/breadcrumb.php:29
+msgid "Browsing posts tagged:"
+msgstr "Articles taggués:"
+
+#: ../partials/breadcrumb.php:33
+msgid "Browsing archived posts:"
+msgstr "Articles archivés:"
+
+#: ../partials/navbar.php:7
+msgid "Toggle Navigation"
+msgstr "Changer de navigation"
+
+#: ../partials/nothing-found.php:8
+msgid "Nothing found"
+msgstr "Page introuvable"
+
+#: ../partials/nothing-found.php:16
+msgid "Ops! there is nothing here..."
+msgstr "Cette page n'existe pas, a été déplacée ou supprimée."
+
+#: ../partials/nothing-found.php:24
+msgid "Take me home"
+msgstr "Retour à l'Accueil"
+
+#~ msgid "Google Analytics"
+#~ msgstr "Google Analytics"
+
+#~ msgid "Paste your Google Analytics script code"
+#~ msgstr "Pega aqu&iacute; el c&oacute;digo de Google Analytics"
+
+#~ msgid "Type your \"UA-12345\" account or leave it blank"
+#~ msgstr "Escribe tu cuenta \"UA-12345\" o d&eacute;jalo en blanco"
