@@ -1,12 +1,22 @@
-<?php // Exit if accessed directly
+<?php
+/*
+ * Template Name: Flatty - Frontpage
+ *
+ */
+// Exit if accessed directly
 if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} get_header(); ?>
 
+<?php // Blog Posts Query
+$args = array('paged'=>get_query_var('paged'),'posts_per_page'=>get_query_var('posts_per_page'),'post_type'=> 'post');
+query_posts($args);
+?>
+
 <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('ft-widgets-top-jumbotron-narrow')) : ?>
-    <?php //_e ('add widgets here', 'flatty'); ?>
+	<?php //_e ('add widgets here', 'flatty'); ?>
 <?php endif; ?>
 
 <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('ft-widgets-row-above-content')) : ?>
-    <?php //_e ('add widgets here', 'flatty'); ?>
+	<?php //_e ('add widgets here', 'flatty'); ?>
 <?php endif; ?>
 
 <div class="row">
@@ -15,7 +25,7 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} get_header(); ?>
 
         <?php if ($flatty_theme_options['breadcrumb'] == 1) get_template_part('partials/breadcrumb'); ?>
 
-        <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('ft-widgets-above-content')) : ?>
+        <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('ft-widgets-frontpage-above-content')) : ?>
             <?php //_e ('add widgets here', 'flatty'); ?>
         <?php endif; ?>
 
@@ -25,13 +35,13 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} get_header(); ?>
 
                 <?php get_template_part('partials/article'); ?>
 
-                <?php if ($flatty_theme_options['article_author'] == 1) get_template_part('partials/article-author'); ?>
-
-                <?php if ($flatty_theme_options['article_related'] == 1) get_template_part('partials/article-related'); ?>
-
-                <?php comments_template( '', true ); ?>
-
             <?php endwhile; ?>
+
+            <?php if ($wp_query->max_num_pages>1) : ?>
+
+                <?php flatty_pagination(); ?>
+
+            <?php endif; ?>
 
         <?php else : ?>
 
@@ -40,24 +50,29 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} get_header(); ?>
         <?php endif; ?>
 
 
-        <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('ft-widgets-below-content')) : ?>
+        <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('ft-widgets-frontpage-below-content')) : ?>
             <?php //_e ('add widgets here', 'flatty'); ?>
         <?php endif; ?>
     </div>
 
     <aside class="col-sm-4 col-md-3 <?php if ($flatty_theme_options['sidebar_position'] == 'left') echo 'pull-left'; ?>">
         <?php if ($flatty_theme_options['sidebar_admin'] == 1) get_template_part('partials/sidebar-admin'); ?>
-        <?php get_sidebar(); ?>
+        <?php
+        // Dynamic Sidebar
+        if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('ft-widgets-frontpage-aside')) :
+            _e ('add widgets here', 'flatty');
+        endif;
+        ?>
     </aside>
 
 </div><!-- /row -->
 
-<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('ft-widgets-row-below-content')) : ?>
-    <?php //_e ('add widgets here', 'flatty'); ?>
+<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('ft-widgets-frontpage-row-below-content')) : ?>
+	<?php //_e ('add widgets here', 'flatty'); ?>
 <?php endif; ?>
 
 <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('ft-widgets-mid-jumbotron-narrow')) : ?>
-    <?php //_e ('add widgets here', 'flatty'); ?>
+	<?php //_e ('add widgets here', 'flatty'); ?>
 <?php endif; ?>
 
 <?php get_footer(); ?>

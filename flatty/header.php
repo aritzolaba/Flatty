@@ -22,4 +22,8 @@ wp_head();
 get_template_part('partials/navbar');
 ?>
 
-<div class="container">
+<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('ft-widgets-top-jumbotron')) : ?>
+    <?php //_e ('add widgets here', 'flatty'); ?>
+<?php endif; ?>
+
+<div class="container mainwrap">

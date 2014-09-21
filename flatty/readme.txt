@@ -8,7 +8,7 @@ Features
 - Bootstrap 3.0 and Font Awesome 4.1 included.
 - HTML5shiv.js and respond.min.js are used for IE8 compatibility.
 - Four different styles to choose from.
-- Translation ready. Spanish and Basque translations included.
+- Translation ready. Spanish, Basque, French and Norwegian translations included.
 - Retina ready.
 - Custom background support.
 - Custom menu support with three-level dropdowns.
@@ -17,12 +17,20 @@ Features
 - Category and page hierarchy support in the breadcrumb.
 - Display the author avatar, name and description at the footer of single posts.
 - Thickbox used to display images. Galleries are also displayed with this method.
-- Google Fonts included locally, no Google dependancy!.
-- Widgets: 1 widget in the sidebar and 3 in the footer.
+- Google Fonts included locally, no Google dependency!.
+- Widgets: A total of 14 widget positions. Sidebar, above and below content, 3 in footer. Bootstrap jumbotrons top and mid page.
+- Templates: Two extra templates with their own widget positions for spicing up your site with different layouts on different subpages.
 - Theme options page with several options such as sidebar position (left/right), display breadcrumb, etc.
 
 Change log
 ----------
+20-09-2014 - Version 1.1.4
+
+- Added widgets: Several new widget positions, some with Bootstrap Jumbotron. See screenshot_widget_positions.gif
+- Added templates: Frontpage and About us. Use these with widgets to achieve greater variations between pages of your site
+- Added css: Couple classes to markup for handy hooks such as "main" column, and a couple generic css rules
+- Added Norwegian translation
+
 10-09-2014 - Version 1.1.3
 
 - Added French translation, kindly offered by Benjamin Pinoteau
