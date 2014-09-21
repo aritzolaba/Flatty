@@ -55,7 +55,7 @@ function flatty_setup() {
         register_sidebar(array(
             'name' => "A: Full row above main content",
             'id' => "ft-widgets-row-above-content",
-            'description' => __('Widgets placed here') . __('will display') . __('in full width above breadcrumbs', 'flatty'),
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('in full width above breadcrumbs', 'flatty'),
             'before_widget' => '<div class="row"><div id="%1$s" class="main col-xs-12"><div class="widget %2$s">',
             'after_widget'  => '</div></div></div>'
         ));
