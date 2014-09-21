@@ -3,6 +3,10 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} ?>
 
         </div><!-- .container (initiated at header -->
 
+        <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('ft-widgets-mid-jumbotron')) : ?>
+                <?php //_e ('add widgets here', 'flatty'); ?>
+        <?php endif; ?>
+
         <footer>
             <div class="container">
                 <div class="row">
@@ -34,8 +38,16 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} ?>
                     </div>
 
                 </div>
+
+                <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('ft-widgets-row-footer')) : ?>
+                    <?php //_e ('add widgets here', 'flatty'); ?>
+                <?php endif; ?>
             </div>
         </footer>
+
+        <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('ft-widgets-bottom-jumbotron')) : ?>
+            <?php //_e ('add widgets here', 'flatty'); ?>
+        <?php endif; ?>
 
         <?php wp_footer(); ?>
 

@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flatty 1.1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-11 18:51+0100\n"
-"PO-Revision-Date: 2014-09-20 22:04+0100\n"
+"POT-Creation-Date: 2014-09-21 23:07+0100\n"
+"PO-Revision-Date: 2014-09-21 23:10+0100\n"
 "Last-Translator: CCData.no\n"
 "Language-Team: flatty\n"
 "MIME-Version: 1.0\n"
@@ -21,17 +21,14 @@ msgid "This post is password protected. Enter the password to view any comments.
 msgstr "Dette innlegget er passordbeskyttet. Angi passord for å lese."
 
 #: ../comments.php:19
-#: ../partials/article.php:34
 msgid "Comments"
 msgstr "Kommentarer"
 
 #: ../comments.php:21
-#: ../partials/article.php:35
 msgid "1 comment"
 msgstr "1 kommentar"
 
 #: ../comments.php:21
-#: ../partials/article.php:35
 #, php-format
 msgid "%s comments"
 msgstr "%s kommentarer"
@@ -53,45 +50,179 @@ msgstr "Innlogget som <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Logg u
 msgid "Your email address will not be published. Fields with * are mandatory."
 msgstr "Epostadressen din blir ikke publisert. Felter merket * er påkrevd."
 
-#: ../functions.php:39
-msgid "Widgets placed here will display in the right sidebar"
-msgstr "Widgeter plassert her vil vises i høyre sidebar"
+#: ../functions.php:40
+#: ../functions.php:49
+#: ../functions.php:58
+#: ../functions.php:67
+#: ../functions.php:76
+#: ../functions.php:85
+#: ../functions.php:94
+#: ../functions.php:103
+#: ../functions.php:112
+#: ../functions.php:121
+#: ../functions.php:129
+#: ../functions.php:137
+#: ../functions.php:146
+#: ../functions.php:156
+#: ../functions.php:165
+#: ../functions.php:174
+#: ../functions.php:183
+#: ../functions.php:192
+#: ../functions.php:201
+#: ../functions.php:210
+#: ../functions.php:219
+#: ../functions.php:228
+#: ../functions.php:237
+#: ../functions.php:246
+msgid "Widgets placed here"
+msgstr "Widgeter plassert her"
 
-#: ../functions.php:47
-msgid "Widgets placed here will display in the first footer block"
-msgstr "Widgeter plassert her vil vises i første felt i footer"
+#: ../functions.php:40
+#: ../functions.php:49
+#: ../functions.php:58
+#: ../functions.php:67
+#: ../functions.php:76
+#: ../functions.php:85
+#: ../functions.php:94
+#: ../functions.php:103
+#: ../functions.php:112
+#: ../functions.php:121
+#: ../functions.php:129
+#: ../functions.php:137
+#: ../functions.php:146
+#: ../functions.php:156
+#: ../functions.php:165
+#: ../functions.php:174
+#: ../functions.php:183
+#: ../functions.php:192
+#: ../functions.php:201
+#: ../functions.php:210
+#: ../functions.php:219
+#: ../functions.php:228
+#: ../functions.php:237
+#: ../functions.php:246
+msgid "will display"
+msgstr "vil vises"
 
-#: ../functions.php:55
-msgid "Widgets placed here will display in the second footer block"
-msgstr "Widgeter plassert her vil vises i andre felt i footer"
+#: ../functions.php:40
+msgid "in a jumbotron below navbar"
+msgstr "i en jumbotron under toppmenyen"
 
-#: ../functions.php:63
-msgid "Widgets placed here will display in the third footer block"
-msgstr "Widgeter plassert her vil vises i tredje felt i footer"
+#: ../functions.php:49
+msgid "in a narrow jumbotron above breadcrumbs"
+msgstr "i en smal jumbotron over brødsmulestien"
 
-#: ../functions.php:71
+#: ../functions.php:58
+msgid "in full width above breadcrumbs"
+msgstr "i full bredde over brødsmulestien"
+
+#: ../functions.php:67
+msgid "above content, in main column"
+msgstr "over innholdet i hovedkolonnen"
+
+#: ../functions.php:76
+msgid "in the right sidebar"
+msgstr "i høyre sidebar"
+
+#: ../functions.php:85
+msgid "below content, in main column"
+msgstr "under innholdet i hovedkolonnen"
+
+#: ../functions.php:94
+msgid "in full width below content"
+msgstr "i full bredde under innholdet"
+
+#: ../functions.php:103
+msgid "in a narrow jumbotron below content"
+msgstr "i en jumbotron under innholdet"
+
+#: ../functions.php:112
+msgid "in a jumbotron above footer"
+msgstr "i en jumbotron over footeren"
+
+#: ../functions.php:121
+msgid "in the first footer block"
+msgstr "i første felt i footer"
+
+#: ../functions.php:129
+msgid "in the second footer block"
+msgstr "i andre felt i footer"
+
+#: ../functions.php:137
+msgid "in the third footer block"
+msgstr "i tredje felt i footer"
+
+#: ../functions.php:146
+msgid "in full at the bottom of the footer"
+msgstr "i full bredde nederst i footeren"
+
+#: ../functions.php:156
+msgid "in a jumbotron below footer"
+msgstr "i en jumbotron under footeren"
+
+#: ../functions.php:165
+msgid "in full width above breadcrumbs of pages with \"Frontpage\" template"
+msgstr "i full bredde over brødsmulestien på sider med \"Frontpage\" malen"
+
+#: ../functions.php:174
+msgid "above content of pages with \"Frontpage\" template"
+msgstr "over innholdet på sider med \"Frontpage\" malen"
+
+#: ../functions.php:183
+msgid "in the right sidebar of pages with \"Frontpage\" template"
+msgstr "i høyre sidebar på sider med \"Frontpage\" malen"
+
+#: ../functions.php:192
+msgid "below content of pages with \"Frontpage\" template"
+msgstr "under innholdet på sider med \"Frontpage\" malen"
+
+#: ../functions.php:201
+msgid "in full width below content of pages with \"Frontpage\" template"
+msgstr "i full bredde under innholdet på sider med \"Frontpage\" malen"
+
+#: ../functions.php:210
+msgid "in full width above breadcrumbs of pages with \"About us\" template"
+msgstr "i full bredde over brødsmulestien på sider med \"About us\" malen"
+
+#: ../functions.php:219
+msgid "above content of pages with \"About us\" template"
+msgstr "over innholdet på sider med \"About us\" malen"
+
+#: ../functions.php:228
+msgid "in the right sidebar of pages with \"About us\" template"
+msgstr "i høyre sidebar på sider med \"About us\" malen"
+
+#: ../functions.php:237
+msgid "below content of pages with \"About us\" template"
+msgstr "under innholdet på sider med \"About us\" malen"
+
+#: ../functions.php:246
+msgid "in full width below content of pages with \"About us\" template"
+msgstr "i full bredde under innholdet på sider med \"About us\" malen"
+
+#: ../functions.php:255
 msgid "Flatty Primary Menu"
 msgstr "Flatty hovedmeny"
 
-#: ../functions.php:93
+#: ../functions.php:277
 #, php-format
 msgid "Read more on %s"
 msgstr "Les mer om %s"
 
-#: ../functions.php:93
+#: ../functions.php:277
 msgid "Continue Reading"
 msgstr "Les videre"
 
-#: ../functions.php:106
+#: ../functions.php:290
 #, php-format
 msgid "Page %s"
 msgstr "Side %s"
 
-#: ../functions.php:336
+#: ../functions.php:520
 msgid "<i class=\"icon-circle-arrow-left\"></i> OLDER POSTS"
 msgstr "<i class=\"icon-circle-arrow-left\"></i> ELDRE INNLEGG"
 
-#: ../functions.php:337
+#: ../functions.php:521
 msgid "NEWER POSTS <i class=\"icon-circle-arrow-right\"></i>"
 msgstr "NYERE INNLEGG <i class=\"icon-circle-arrow-right\"></i>"
 
@@ -100,6 +231,8 @@ msgid "Search"
 msgstr "Søk"
 
 #: ../sidebar.php:6
+#: ../tpl-about-us.php:58
+#: ../tpl-frontpage.php:63
 msgid "add widgets here"
 msgstr "Widget-ak jarri hemen"
 
@@ -141,7 +274,6 @@ msgid "Salmon"
 msgstr "Laks"
 
 #: ../inc/theme-options.php:131
-#, fuzzy
 msgid "Pagination type"
 msgstr "Type sidetall"
 
@@ -276,9 +408,12 @@ msgstr "Oops, ingenting her.."
 msgid "Take me home"
 msgstr "Til forsiden"
 
+#~ msgid "Widgets placed here will display in the right sidebar"
+#~ msgstr "Widgeter plassert her vil vises i høyre sidebar"
 #~ msgid "Google Analytics"
 #~ msgstr "Google Analytics"
 #~ msgid "Paste your Google Analytics script code"
 #~ msgstr "Fyll inn din Google Analytics kode"
 #~ msgid "Type your \"UA-12345\" account or leave it blank"
 #~ msgstr "Fyll inn din \"UA-12345\" kode eller la stå blank"
+

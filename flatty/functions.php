@@ -32,38 +32,222 @@ function flatty_setup() {
 
     // Widget areas
     if (function_exists('register_sidebar')) :
+
+        // Top Jumbo
+        register_sidebar(array(
+            'name' => "A: Top Jumbotron",
+            'id' => "ft-widgets-top-jumbotron",
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('in a jumbotron below navbar', 'flatty'),
+            'before_widget' => '<div id="%1$s" class="jumbotron"><div class="widget %2$s">',
+            'after_widget'  => '</div></div>'
+        ));
+
+        // Top Jumbo narrow
+        register_sidebar(array(
+            'name' => "A: Top Jumbotron Narrow",
+            'id' => "ft-widgets-top-jumbotron-narrow",
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('in a narrow jumbotron above breadcrumbs', 'flatty'),
+            'before_widget' => '<div id="%1$s" class="jumbotron widget %2$s">',
+            'after_widget'  => '</div>'
+        ));
+
+        // Full row above content
+        register_sidebar(array(
+            'name' => "A: Full row above main content",
+            'id' => "ft-widgets-row-above-content",
+            'description' => __('Widgets placed here') . __('will display') . __('in full width above breadcrumbs', 'flatty'),
+            'before_widget' => '<div class="row"><div id="%1$s" class="main col-xs-12"><div class="widget %2$s">',
+            'after_widget'  => '</div></div></div>'
+        ));
+
+        // above content
+        register_sidebar(array(
+            'name' => "A: Above main content",
+            'id' => "ft-widgets-above-content",
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('above content, in main column', 'flatty'),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>'
+        ));
+
         // Sidebar right
         register_sidebar(array(
-            'name' => "Sidebar right",
+            'name' => "A: Sidebar right",
             'id' => "ft-widgets-aside-right",
-            'description' => __('Widgets placed here will display in the right sidebar', 'flatty'),
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('in the right sidebar', 'flatty'),
             'before_widget' => '<div id="%1$s" class="well well-sm widget %2$s">',
             'after_widget'  => '</div>'
         ));
+
+        // Below content
+        register_sidebar(array(
+            'name' => "A: Below main content",
+            'id' => "ft-widgets-below-content",
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('below content, in main column', 'flatty'),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>'
+        ));
+
+        // Full row below content
+        register_sidebar(array(
+            'name' => "A: Full row below main content",
+            'id' => "ft-widgets-row-below-content",
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('in full width below content', 'flatty'),
+            'before_widget' => '<div class="row"><div id="%1$s" class="main col-xs-12"><div class="widget %2$s">',
+            'after_widget'  => '</div></div></div>'
+        ));
+
+        // Mid Jumbo narrow
+        register_sidebar(array(
+            'name' => "A: Mid Jumbotron Narrow",
+            'id' => "ft-widgets-mid-jumbotron-narrow",
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('in a narrow jumbotron below content', 'flatty'),
+            'before_widget' => '<div id="%1$s" class="jumbotron widget %2$s">',
+            'after_widget'  => '</div>'
+        ));
+
+        // Mid Jumbo
+        register_sidebar(array(
+            'name' => "A: Mid Jumbotron",
+            'id' => "ft-widgets-mid-jumbotron",
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('in a jumbotron above footer', 'flatty'),
+            'before_widget' => '<div id="%1$s" class="jumbotron"><div class="widget %2$s">',
+            'after_widget'  => '</div></div>'
+        ));
+
         // Footer Block 1
         register_sidebar(array(
-            'name' => "Footer Block 1",
+            'name' => "A: Footer Block 1",
             'id' => "ft-widgets-footer-block-1",
-            'description' => __('Widgets placed here will display in the first footer block', 'flatty'),
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('in the first footer block', 'flatty'),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>'
         ));
         // Footer Block 2
         register_sidebar(array(
-            'name' => "Footer Block 2",
+            'name' => "A: Footer Block 2",
             'id' => "ft-widgets-footer-block-2",
-            'description' => __('Widgets placed here will display in the second footer block', 'flatty'),
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('in the second footer block', 'flatty'),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>'
         ));
         // Footer Block 3
         register_sidebar(array(
-            'name' => "Footer Block 3",
+            'name' => "A: Footer Block 3",
             'id' => "ft-widgets-footer-block-3",
-            'description' => __('Widgets placed here will display in the third footer block', 'flatty'),
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('in the third footer block', 'flatty'),
             'before_widget' => '<div id="%1$s" class="widget %2$s">',
             'after_widget'  => '</div>'
         ));
+
+        // Footer full row
+        register_sidebar(array(
+            'name' => "A: Footer full row",
+            'id' => "ft-widgets-row-footer",
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('in full at the bottom of the footer', 'flatty'),
+            'before_widget' => '<div class="row"><div id="%1$s" class="main col-xs-12"><div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div></div></div>'
+        ));
+	
+
+        // Bottom Jumbo
+        register_sidebar(array(
+            'name' => "A: Bottom Jumbotron",
+            'id' => "ft-widgets-bottom-jumbotron",
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('in a jumbotron below footer', 'flatty'),
+            'before_widget' => '<div id="%1$s" class="jumbotron"><div class="widget %2$s">',
+            'after_widget'  => '</div></div>'
+        ));
+
+        // Frontpage: Full row above content
+        register_sidebar(array(
+            'name' => "Frontpage: Full row above main content",
+            'id' => "ft-widgets-frontpage-row-above-content",
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('in full width above breadcrumbs of pages with "Frontpage" template', 'flatty'),
+            'before_widget' => '<div class="row"><div id="%1$s" class="main col-xs-12"><div class="widget %2$s">',
+            'after_widget'  => '</div></div></div>'
+        ));
+
+        // Frontpage: Above content
+        register_sidebar(array(
+            'name' => "Frontpage: Above main content",
+            'id' => "ft-widgets-frontpage-above-content",
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('above content of pages with "Frontpage" template', 'flatty'),
+            'before_widget' => '<div class="row"><div id="%1$s" class="main col-xs-12"><div class="widget %2$s">',
+            'after_widget'  => '</div></div></div>'
+        ));
+	
+        // Frontpage: Sidebar
+        register_sidebar(array(
+            'name' => "Frontpage: Sidebar right",
+            'id' => "ft-widgets-frontpage-aside",
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('in the right sidebar of pages with "Frontpage" template', 'flatty'),
+            'before_widget' => '<div id="%1$s" class="well well-sm widget %2$s">',
+            'after_widget'  => '</div>'
+        ));
+
+        // Frontpage: Below content
+        register_sidebar(array(
+            'name' => "Frontpage: Below main content",
+            'id' => "ft-widgets-frontpage-below-content",
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('below content of pages with "Frontpage" template', 'flatty'),
+            'before_widget' => '<div class="row"><div id="%1$s" class="main col-xs-12"><div class="widget %2$s">',
+            'after_widget'  => '</div></div></div>'
+        ));
+
+        // Frontpage: Full row below content
+        register_sidebar(array(
+            'name' => "Frontpage: Full row below main content",
+            'id' => "ft-widgets-frontpage-row-below-content",
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('in full width below content of pages with "Frontpage" template', 'flatty'),
+            'before_widget' => '<div class="row"><div id="%1$s" class="main col-xs-12"><div class="widget %2$s">',
+            'after_widget'  => '</div></div></div>'
+        ));
+
+        // About us: Full row above content
+        register_sidebar(array(
+            'name' => "About us: Full row above main content",
+            'id' => "ft-widgets-about-row-above-content",
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('in full width above breadcrumbs of pages with "About us" template', 'flatty'),
+            'before_widget' => '<div class="row"><div id="%1$s" class="main col-xs-12"><div class="widget %2$s">',
+            'after_widget'  => '</div></div></div>'
+        ));
+
+        // About us: Above content
+        register_sidebar(array(
+            'name' => "About us: Above main content",
+            'id' => "ft-widgets-about-above-content",
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('above content of pages with "About us" template', 'flatty'),
+            'before_widget' => '<div class="row"><div id="%1$s" class="main col-xs-12"><div class="widget %2$s">',
+            'after_widget'  => '</div></div></div>'
+        ));
+
+        // About us: Sidebar
+        register_sidebar(array(
+            'name' => "About us: Sidebar right",
+            'id' => "ft-widgets-about-aside",
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('in the right sidebar of pages with "About us" template', 'flatty'),
+            'before_widget' => '<div id="%1$s" class="well well-sm widget %2$s">',
+            'after_widget'  => '</div>'
+        ));
+
+        // About us: Below content
+        register_sidebar(array(
+            'name' => "About us: Below main content",
+            'id' => "ft-widgets-about-below-content",
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('below content of pages with "About us" template', 'flatty'),
+            'before_widget' => '<div class="row"><div id="%1$s" class="main col-xs-12"><div class="widget %2$s">',
+            'after_widget'  => '</div></div></div>'
+        ));
+
+        // About us: Full row below content
+        register_sidebar(array(
+            'name' => "About us: Full row below main content",
+            'id' => "ft-widgets-about-row-below-content",
+            'description' => __('Widgets placed here', 'flatty') . __('will display', 'flatty') . __('in full width below content of pages with "About us" template', 'flatty'),
+            'before_widget' => '<div class="row"><div id="%1$s" class="main col-xs-12"><div class="widget %2$s">',
+            'after_widget'  => '</div></div></div>'
+        ));
+
     endif;
 
     // Nav Menu (Custom menu support)
