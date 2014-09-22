@@ -3,6 +3,8 @@ Flatty
 
 A clean HTML5, responsive and retina-ready theme created using Bootstrap 3.0. Customizable layout with two columns (left or right), custom background and a theme options page.
 
+**[DEMO](http://dev.olabaworks.com/flatty-demo/)**
+
 Features
 --------
 - Bootstrap 3.0 and Font Awesome 4.1 included.
