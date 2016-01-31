@@ -4,7 +4,7 @@ Theme URI: http://www.olabaworks.com/productos/flatty/
 Author: Aritz Olabarrieta
 Author URI: http://www.olabaworks.com
 Description: A clean HTML5, responsive and retina-ready theme created using Bootstrap 3.0 and Font Awesome 4. Customizable layout with two columns (left or right), custom background and a theme options page. Gallery post types displayed using Bootstrap's Carousel and thickbox.
-Version: 1.1.4
+Version: 1.1.3
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: white, black, blue, two-columns, right-sidebar, custom-header, custom-background, translation-ready, featured-images
@@ -38,45 +38,6 @@ label {
 }
 .nav-pills a {
     text-shadow: none;
-}
-
-.widget ul, .widget ol, .widget dl {
-    overflow: auto;
-}
-
-dt {
-    margin: 1em 0 0;
-}
-
-body > .jumbotron {
-    margin: -1em auto; /* Make it flush/tangent navbar + footer */
-}
-
-.container.mainwrap {
-    margin: 3em auto; /* To space it away from navbar + footer */
-    overflow: auto;
-}
-
-body > footer {
-    margin: 0 auto !important; /* Override so jumbotron can tangent it */
-}
-
-
-/* To visualize widget positions */
-div.templatedemo {
-    min-height: 2em;
-    width: 100%;
-    display: block;
-    padding: 0 1em 0;
-    color: blue;
-    text-shadow: 0 0 5px #fff;
-    background: repeating-linear-gradient(
-        45deg,
-        #ddd,
-        #ddd 2px,
-        #fff 2px,
-        #fff 20px
-    );
 }
 
 /*********************************************************************

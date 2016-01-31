@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Flatty 1.1.4\n"
+"Project-Id-Version: Flatty 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-22 00:22+0100\n"
-"PO-Revision-Date: 2014-09-22 00:47+0100\n"
+"POT-Creation-Date: 2014-02-11 18:51+0100\n"
+"PO-Revision-Date: 2014-02-11 18:51+0100\n"
 "Last-Translator: \n"
 "Language-Team: flatty\n"
 "MIME-Version: 1.0\n"
@@ -21,14 +21,17 @@ msgid "This post is password protected. Enter the password to view any comments.
 msgstr "Este post es privado. Introduce la contrase&ntilde;a para ver los comentarios."
 
 #: ../comments.php:19
+#: ../partials/article.php:34
 msgid "Comments"
 msgstr "Comentarios"
 
 #: ../comments.php:21
+#: ../partials/article.php:35
 msgid "1 comment"
 msgstr "1 comentario"
 
 #: ../comments.php:21
+#: ../partials/article.php:35
 #, php-format
 msgid "%s comments"
 msgstr "%s comentarios"
@@ -50,179 +53,45 @@ msgstr "Identificado como <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"De
 msgid "Your email address will not be published. Fields with * are mandatory."
 msgstr "Tu direcci&oacute;n de correo no ser&aacute; publicada. Los campos con * son obligatorios."
 
-#: ../functions.php:40
-#: ../functions.php:49
-#: ../functions.php:58
-#: ../functions.php:67
-#: ../functions.php:76
-#: ../functions.php:85
-#: ../functions.php:94
-#: ../functions.php:103
-#: ../functions.php:112
-#: ../functions.php:121
-#: ../functions.php:129
-#: ../functions.php:137
-#: ../functions.php:146
-#: ../functions.php:156
-#: ../functions.php:165
-#: ../functions.php:174
-#: ../functions.php:183
-#: ../functions.php:192
-#: ../functions.php:201
-#: ../functions.php:210
-#: ../functions.php:219
-#: ../functions.php:228
-#: ../functions.php:237
-#: ../functions.php:246
-msgid "Widgets placed here"
-msgstr "Los widgets situados aqu&iacute;"
+#: ../functions.php:39
+msgid "Widgets placed here will display in the right sidebar"
+msgstr "Los widgets que dejes aqu&iacute; se mostrar&aacute;n en la sidebar derecha"
 
-#: ../functions.php:40
-#: ../functions.php:49
-#: ../functions.php:58
-#: ../functions.php:67
-#: ../functions.php:76
-#: ../functions.php:85
-#: ../functions.php:94
-#: ../functions.php:103
-#: ../functions.php:112
-#: ../functions.php:121
-#: ../functions.php:129
-#: ../functions.php:137
-#: ../functions.php:146
-#: ../functions.php:156
-#: ../functions.php:165
-#: ../functions.php:174
-#: ../functions.php:183
-#: ../functions.php:192
-#: ../functions.php:201
-#: ../functions.php:210
-#: ../functions.php:219
-#: ../functions.php:228
-#: ../functions.php:237
-#: ../functions.php:246
-msgid "will display"
-msgstr "se mostrar&aacute;n"
+#: ../functions.php:47
+msgid "Widgets placed here will display in the first footer block"
+msgstr "Los widgets que dejes aqu&iacute; se mostrar&aacute;n en el primer bloque del footer"
 
-#: ../functions.php:40
-msgid "in a jumbotron below navbar"
-msgstr "en el jumbotron debajo de la navbar"
+#: ../functions.php:55
+msgid "Widgets placed here will display in the second footer block"
+msgstr "Los widgets que dejes aqu&iacute; se mostrar&aacute;n en el segundo bloque del footer"
 
-#: ../functions.php:49
-msgid "in a narrow jumbotron above breadcrumbs"
-msgstr "en el jumbotron estrecho encima del breadcrumb"
+#: ../functions.php:63
+msgid "Widgets placed here will display in the third footer block"
+msgstr "Los widgets que dejes aqu&iacute; se mostrar&aacute;n en el tercer bloque del footer"
 
-#: ../functions.php:58
-msgid "in full width above breadcrumbs"
-msgstr "A lo ancho encima del breadcrumb"
-
-#: ../functions.php:67
-msgid "above content, in main column"
-msgstr "encima del contenido, en la columna central"
-
-#: ../functions.php:76
-msgid "in the right sidebar"
-msgstr "en la sidebar derecha"
-
-#: ../functions.php:85
-msgid "below content, in main column"
-msgstr "debajo del contenido, en la columna central"
-
-#: ../functions.php:94
-msgid "in full width below content"
-msgstr "ancho completo debajo del contenido"
-
-#: ../functions.php:103
-msgid "in a narrow jumbotron below content"
-msgstr "en un jumbotron estrecho debajo del contenido"
-
-#: ../functions.php:112
-msgid "in a jumbotron above footer"
-msgstr "en un jumbotron encima del footer"
-
-#: ../functions.php:121
-msgid "in the first footer block"
-msgstr "en el primer bloque del footer"
-
-#: ../functions.php:129
-msgid "in the second footer block"
-msgstr "en el segundo bloque del footer"
-
-#: ../functions.php:137
-msgid "in the third footer block"
-msgstr "en el tercer bloque del footer"
-
-#: ../functions.php:146
-msgid "in full at the bottom of the footer"
-msgstr "ancho completo bajo el footer"
-
-#: ../functions.php:156
-msgid "in a jumbotron below footer"
-msgstr "en un jumbotron bajo el footer"
-
-#: ../functions.php:165
-msgid "in full width above breadcrumbs of pages with \"Frontpage\" template"
-msgstr "a ancho completo encima del breadcrumb de las p&aacute;ginas con el template \"Frontpage\""
-
-#: ../functions.php:174
-msgid "above content of pages with \"Frontpage\" template"
-msgstr "encima del contenido de las p&aacute;ginas con el template \"Frontpage\""
-
-#: ../functions.php:183
-msgid "in the right sidebar of pages with \"Frontpage\" template"
-msgstr "en la sidebar derecha de las p&aacute;ginas con el template \"Frontpage\""
-
-#: ../functions.php:192
-msgid "below content of pages with \"Frontpage\" template"
-msgstr "debajo del contenido de las p&aacute;ginas con el template \"Frontpage\""
-
-#: ../functions.php:201
-msgid "in full width below content of pages with \"Frontpage\" template"
-msgstr "ancho completo debajo del contenido de las p&aacute;ginas con el template \"Frontpage\""
-
-#: ../functions.php:210
-msgid "in full width above breadcrumbs of pages with \"About us\" template"
-msgstr "ancho completo encima del breadcrumb de las p&aacute;ginas con el template \"About us\""
-
-#: ../functions.php:219
-msgid "above content of pages with \"About us\" template"
-msgstr "encima del contenido de las p&aacute;ginas con el template \"About us\""
-
-#: ../functions.php:228
-msgid "in the right sidebar of pages with \"About us\" template"
-msgstr "en la sidebar derecha de las p&aacute;ginas con el template \"About us\""
-
-#: ../functions.php:237
-msgid "below content of pages with \"About us\" template"
-msgstr "debajo del contenido de las p&aacute;ginas con el template \"About us\""
-
-#: ../functions.php:246
-msgid "in full width below content of pages with \"About us\" template"
-msgstr "ancho completo debajo del contenido de las p&aacute;ginas con el template \"About us\""
-
-#: ../functions.php:255
+#: ../functions.php:71
 msgid "Flatty Primary Menu"
 msgstr "Men&uacute; principal de flatty"
 
-#: ../functions.php:277
+#: ../functions.php:93
 #, php-format
 msgid "Read more on %s"
 msgstr "Leer m&aacute;s sobre %s"
 
-#: ../functions.php:277
+#: ../functions.php:93
 msgid "Continue Reading"
 msgstr "Continuar Leyendo"
 
-#: ../functions.php:290
+#: ../functions.php:106
 #, php-format
 msgid "Page %s"
 msgstr "P&aacute;gina %s"
 
-#: ../functions.php:520
+#: ../functions.php:336
 msgid "<i class=\"icon-circle-arrow-left\"></i> OLDER POSTS"
 msgstr "<i class=\"icon-circle-arrow-left\"></i> ANTERIORES"
 
-#: ../functions.php:521
+#: ../functions.php:337
 msgid "NEWER POSTS <i class=\"icon-circle-arrow-right\"></i>"
 msgstr "SIGUIENTES <i class=\"icon-circle-arrow-right\"></i>"
 
@@ -231,8 +100,6 @@ msgid "Search"
 msgstr "Buscar"
 
 #: ../sidebar.php:6
-#: ../tpl-about-us.php:58
-#: ../tpl-frontpage.php:63
 msgid "add widgets here"
 msgstr "A&ntilde;ade widgets aqu&iacute;"
 
@@ -407,11 +274,6 @@ msgstr "Vaya!, parece que no hay nada aqu&iacute;..."
 #: ../partials/nothing-found.php:24
 msgid "Take me home"
 msgstr "Volver al inicio"
-
-#~ msgid "Widgets placed here will display in the right sidebar"
-#~ msgstr ""
-#~ "Los widgets que dejes aqu&iacute; se mostrar&aacute;n en la sidebar "
-#~ "derecha"
 
 #~ msgid "Google Analytics"
 #~ msgstr "Google Analytics"

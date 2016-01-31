@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flatty 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-22 00:43+0100\n"
-"PO-Revision-Date: 2014-09-22 00:47+0100\n"
+"POT-Creation-Date: 2014-02-11 18:51+0100\n"
+"PO-Revision-Date: 2014-02-11 18:51+0100\n"
 "Last-Translator: \n"
 "Language-Team: flatty\n"
 "MIME-Version: 1.0\n"
@@ -21,14 +21,17 @@ msgid "This post is password protected. Enter the password to view any comments.
 msgstr "Sarrera hau pribatua da. Sartu pasahitza iruzkinak ikusteko."
 
 #: ../comments.php:19
+#: ../partials/article.php:34
 msgid "Comments"
 msgstr "Iruzkinak"
 
 #: ../comments.php:21
+#: ../partials/article.php:35
 msgid "1 comment"
 msgstr "Iruzkin bat"
 
 #: ../comments.php:21
+#: ../partials/article.php:35
 #, php-format
 msgid "%s comments"
 msgstr "%s iruzkin"
@@ -50,179 +53,45 @@ msgstr "<a href=\"%1$s\">%2$s</a> bezala identifikatuta. <a href=\"%3$s\" title=
 msgid "Your email address will not be published. Fields with * are mandatory."
 msgstr "Zure posta elektronikoa ez da publikatuko. * duten eremuak derrigorrezkoak dira."
 
-#: ../functions.php:40
-#: ../functions.php:49
-#: ../functions.php:58
-#: ../functions.php:67
-#: ../functions.php:76
-#: ../functions.php:85
-#: ../functions.php:94
-#: ../functions.php:103
-#: ../functions.php:112
-#: ../functions.php:121
-#: ../functions.php:129
-#: ../functions.php:137
-#: ../functions.php:146
-#: ../functions.php:156
-#: ../functions.php:165
-#: ../functions.php:174
-#: ../functions.php:183
-#: ../functions.php:192
-#: ../functions.php:201
-#: ../functions.php:210
-#: ../functions.php:219
-#: ../functions.php:228
-#: ../functions.php:237
-#: ../functions.php:246
-msgid "Widgets placed here"
-msgstr "Hemen jarritako widget-ak"
+#: ../functions.php:39
+msgid "Widgets placed here will display in the right sidebar"
+msgstr "Hemen utzitako widgetak eskumako sidebar-ean erakutsiko dira"
 
-#: ../functions.php:40
-#: ../functions.php:49
-#: ../functions.php:58
-#: ../functions.php:67
-#: ../functions.php:76
-#: ../functions.php:85
-#: ../functions.php:94
-#: ../functions.php:103
-#: ../functions.php:112
-#: ../functions.php:121
-#: ../functions.php:129
-#: ../functions.php:137
-#: ../functions.php:146
-#: ../functions.php:156
-#: ../functions.php:165
-#: ../functions.php:174
-#: ../functions.php:183
-#: ../functions.php:192
-#: ../functions.php:201
-#: ../functions.php:210
-#: ../functions.php:219
-#: ../functions.php:228
-#: ../functions.php:237
-#: ../functions.php:246
-msgid "will display"
-msgstr "agertzen dira"
+#: ../functions.php:47
+msgid "Widgets placed here will display in the first footer block"
+msgstr "Hemen utzitako widgetak footer-en lehen blokean erakutsiko dira"
 
-#: ../functions.php:40
-msgid "in a jumbotron below navbar"
-msgstr "jumbotron batetan, navbaren azpian"
+#: ../functions.php:55
+msgid "Widgets placed here will display in the second footer block"
+msgstr "Hemen utzitako widgetak footer-en bigarren blokean erakutsiko dira"
 
-#: ../functions.php:49
-msgid "in a narrow jumbotron above breadcrumbs"
-msgstr "jumbotron estu batetan, breadcrumb goikaldean"
+#: ../functions.php:63
+msgid "Widgets placed here will display in the third footer block"
+msgstr "Hemen utzitako widgetak footer-en hirugarren blokean erakutsiko dira"
 
-#: ../functions.php:58
-msgid "in full width above breadcrumbs"
-msgstr "guztiz zabalduta breadcrumb goikaldean"
-
-#: ../functions.php:67
-msgid "above content, in main column"
-msgstr "edukiaren goikaldean"
-
-#: ../functions.php:76
-msgid "in the right sidebar"
-msgstr "eskumako sidebar-ean"
-
-#: ../functions.php:85
-msgid "below content, in main column"
-msgstr "edukiaren azpian"
-
-#: ../functions.php:94
-msgid "in full width below content"
-msgstr "guztiz zabalduta edukiaren azpian"
-
-#: ../functions.php:103
-msgid "in a narrow jumbotron below content"
-msgstr "jumbotron estu batetan, edukiaren azpian"
-
-#: ../functions.php:112
-msgid "in a jumbotron above footer"
-msgstr "jumbotron batean, footer goikaldean"
-
-#: ../functions.php:121
-msgid "in the first footer block"
-msgstr "lehen footer blokean"
-
-#: ../functions.php:129
-msgid "in the second footer block"
-msgstr "bigarren footer blokean"
-
-#: ../functions.php:137
-msgid "in the third footer block"
-msgstr "hirugarren footer blokean"
-
-#: ../functions.php:146
-msgid "in full at the bottom of the footer"
-msgstr "guztiz zabalduta, footer azpian"
-
-#: ../functions.php:156
-msgid "in a jumbotron below footer"
-msgstr "jumbotron batean, footer azpian"
-
-#: ../functions.php:165
-msgid "in full width above breadcrumbs of pages with \"Frontpage\" template"
-msgstr "guztiz zabalduta \"Frontpage\" template-a erabiltzen duten horrialdeen breadcrumb-aren goikaldean"
-
-#: ../functions.php:174
-msgid "above content of pages with \"Frontpage\" template"
-msgstr "\"Frontpage\" template-a erabiltzen duten horrialdeen edukiaren goikaldean"
-
-#: ../functions.php:183
-msgid "in the right sidebar of pages with \"Frontpage\" template"
-msgstr "\"Frontpage\" template-a erabiltzen duten horrialdeen eskumako sidebar-ean"
-
-#: ../functions.php:192
-msgid "below content of pages with \"Frontpage\" template"
-msgstr "\"Frontpage\" template-a erabiltzen duten horrialdeen edukiaren azpian"
-
-#: ../functions.php:201
-msgid "in full width below content of pages with \"Frontpage\" template"
-msgstr "guztiz zabalduta, \"Frontpage\" template-a erabiltzen duten horrialdeen edukiaren azpian"
-
-#: ../functions.php:210
-msgid "in full width above breadcrumbs of pages with \"About us\" template"
-msgstr "guztiz zabalduta \"About us\" template-a erabiltzen duten horrialdeen breadcrumb-aren goikaldean"
-
-#: ../functions.php:219
-msgid "above content of pages with \"About us\" template"
-msgstr "\"About us\" template-a erabiltzen duten horrialdeen edukiaren goikaldean"
-
-#: ../functions.php:228
-msgid "in the right sidebar of pages with \"About us\" template"
-msgstr "\"About us\" template-a erabiltzen duten horrialdeen eskumako sidebar-ean"
-
-#: ../functions.php:237
-msgid "below content of pages with \"About us\" template"
-msgstr "\"About us\" template-a erabiltzen duten horrialdeen edukiaren azpian"
-
-#: ../functions.php:246
-msgid "in full width below content of pages with \"About us\" template"
-msgstr "guztiz zabalduta, \"About us\" template-a erabiltzen duten horrialdeen edukiaren azpian"
-
-#: ../functions.php:255
+#: ../functions.php:71
 msgid "Flatty Primary Menu"
 msgstr "Flatty Menu nagusia"
 
-#: ../functions.php:277
+#: ../functions.php:93
 #, php-format
 msgid "Read more on %s"
 msgstr "Geihago irakurri %s-ri buruz"
 
-#: ../functions.php:277
+#: ../functions.php:93
 msgid "Continue Reading"
 msgstr "Jarraitu irakurtzen"
 
-#: ../functions.php:290
+#: ../functions.php:106
 #, php-format
 msgid "Page %s"
 msgstr "%s Horria"
 
-#: ../functions.php:520
+#: ../functions.php:336
 msgid "<i class=\"icon-circle-arrow-left\"></i> OLDER POSTS"
 msgstr "<i class=\"icon-circle-arrow-left\"></i> ZAHARRAGOAK"
 
-#: ../functions.php:521
+#: ../functions.php:337
 msgid "NEWER POSTS <i class=\"icon-circle-arrow-right\"></i>"
 msgstr "BERRIAGOAK <i class=\"icon-circle-arrow-right\"></i>"
 
@@ -231,8 +100,6 @@ msgid "Search"
 msgstr "Bilatu"
 
 #: ../sidebar.php:6
-#: ../tpl-about-us.php:58
-#: ../tpl-frontpage.php:63
 msgid "add widgets here"
 msgstr "Widget-ak jarri hemen"
 
@@ -407,9 +274,6 @@ msgstr "Ez da ezer aurkitu"
 #: ../partials/nothing-found.php:24
 msgid "Take me home"
 msgstr "Hasierara"
-
-#~ msgid "Widgets placed here will display in the right sidebar"
-#~ msgstr "Hemen utzitako widgetak eskumako sidebar-ean erakutsiko dira"
 
 #~ msgid "Google Analytics"
 #~ msgstr "Google Analytics"

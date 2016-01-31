@@ -189,6 +189,7 @@ h1,h2 {
 }
 .navbar-text {
     font-family: 'Abel';
+    line-height: 20px;
     margin-left: 4px;
 }
 .navbar-nav>li.current-menu-item>a,
@@ -227,7 +228,7 @@ ul.nav.navbar-nav>li>a {
 /* Sidebar Admin */
 .sidebar-admin.well {
     color: #fff;
-    background: #111;
+    background: #222;
     border: 1px solid #111;
 }
 .sidebar-admin .lead {
@@ -250,13 +251,13 @@ ul.nav.navbar-nav>li>a {
 /* Wells */
 .well {
     background: #fff;
-    border: 1px solid #fff;
+    border: 1px solid transparent;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
-    box-shadhow: none;
+    box-shadow: none;
 }
 
 /* Widget Titles */

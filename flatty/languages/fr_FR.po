@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flatty 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-22 00:45+0100\n"
-"PO-Revision-Date: 2014-09-22 00:47+0100\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2014-02-11 18:51+0100\n"
+"PO-Revision-Date: 2014-09-07 16:22+0100\n"
+"Last-Translator: Benjamin Pinoteau <zonevirtuel@gmail.com>\n"
 "Language-Team: flatty\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,18 +17,21 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../comments.php:10
-msgid "This post is password protected. Enter the password to view any comments."
-msgstr "Cet article est protégé par un mot de passe. Entrez le mot de passe pour voir les commentaires."
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+"Cet article est protégé par un mot de passe. Entrez le mot de passe pour "
+"voir les commentaires."
 
-#: ../comments.php:19
+#: ../comments.php:19 ../partials/article.php:34
 msgid "Comments"
 msgstr "Commentaires"
 
-#: ../comments.php:21
+#: ../comments.php:21 ../partials/article.php:35
 msgid "1 comment"
 msgstr "1 commentaire"
 
-#: ../comments.php:21
+#: ../comments.php:21 ../partials/article.php:35
 #, php-format
 msgid "%s comments"
 msgstr "%s commentaires"
@@ -43,186 +46,57 @@ msgstr "Email"
 
 #: ../comments.php:62
 #, php-format
-msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
-msgstr "Connecté en tant que <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Déconnexion?</a>"
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+"Connecté en tant que <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log "
+"out of this account\">Déconnexion?</a>"
 
 #: ../comments.php:63
 msgid "Your email address will not be published. Fields with * are mandatory."
-msgstr "Votre adresse email ne sera pas publiée. Les champs avec * sont obligatoires."
-
-#: ../functions.php:40
-#: ../functions.php:49
-#: ../functions.php:58
-#: ../functions.php:67
-#: ../functions.php:76
-#: ../functions.php:85
-#: ../functions.php:94
-#: ../functions.php:103
-#: ../functions.php:112
-#: ../functions.php:121
-#: ../functions.php:129
-#: ../functions.php:137
-#: ../functions.php:146
-#: ../functions.php:156
-#: ../functions.php:165
-#: ../functions.php:174
-#: ../functions.php:183
-#: ../functions.php:192
-#: ../functions.php:201
-#: ../functions.php:210
-#: ../functions.php:219
-#: ../functions.php:228
-#: ../functions.php:237
-#: ../functions.php:246
-msgid "Widgets placed here"
-msgstr "Les Widgets placés ici"
-
-#: ../functions.php:40
-#: ../functions.php:49
-#: ../functions.php:58
-#: ../functions.php:67
-#: ../functions.php:76
-#: ../functions.php:85
-#: ../functions.php:94
-#: ../functions.php:103
-#: ../functions.php:112
-#: ../functions.php:121
-#: ../functions.php:129
-#: ../functions.php:137
-#: ../functions.php:146
-#: ../functions.php:156
-#: ../functions.php:165
-#: ../functions.php:174
-#: ../functions.php:183
-#: ../functions.php:192
-#: ../functions.php:201
-#: ../functions.php:210
-#: ../functions.php:219
-#: ../functions.php:228
-#: ../functions.php:237
-#: ../functions.php:246
-msgid "will display"
-msgstr "s'afficheront"
-
-#: ../functions.php:40
-msgid "in a jumbotron below navbar"
 msgstr ""
+"Votre adresse email ne sera pas publiée. Les champs avec * sont obligatoires."
 
-#: ../functions.php:49
-msgid "in a narrow jumbotron above breadcrumbs"
-msgstr ""
+#: ../functions.php:39
+msgid "Widgets placed here will display in the right sidebar"
+msgstr "Les Widgets placés ici s'afficheront dans la barre de côté"
 
-#: ../functions.php:58
-msgid "in full width above breadcrumbs"
-msgstr ""
+#: ../functions.php:47
+msgid "Widgets placed here will display in the first footer block"
+msgstr "Les Widgets placés ici s'afficheront dans le 1er bloc en bas de site"
 
-#: ../functions.php:67
-msgid "above content, in main column"
-msgstr ""
+#: ../functions.php:55
+msgid "Widgets placed here will display in the second footer block"
+msgstr "Les Widgets placés ici s'afficheront dans le 2ème bloc en bas de site"
 
-#: ../functions.php:76
-msgid "in the right sidebar"
-msgstr ""
+#: ../functions.php:63
+msgid "Widgets placed here will display in the third footer block"
+msgstr "Les Widgets placés ici s'afficheront dans le 3ème bloc en bas de site"
 
-#: ../functions.php:85
-msgid "below content, in main column"
-msgstr ""
-
-#: ../functions.php:94
-msgid "in full width below content"
-msgstr ""
-
-#: ../functions.php:103
-msgid "in a narrow jumbotron below content"
-msgstr ""
-
-#: ../functions.php:112
-msgid "in a jumbotron above footer"
-msgstr ""
-
-#: ../functions.php:121
-msgid "in the first footer block"
-msgstr "dans le 1er bloc en bas de site"
-
-#: ../functions.php:129
-msgid "in the second footer block"
-msgstr "dans le 2ème bloc en bas de site"
-
-#: ../functions.php:137
-msgid "in the third footer block"
-msgstr "dans le 3ème bloc en bas de site"
-
-#: ../functions.php:146
-msgid "in full at the bottom of the footer"
-msgstr ""
-
-#: ../functions.php:156
-msgid "in a jumbotron below footer"
-msgstr ""
-
-#: ../functions.php:165
-msgid "in full width above breadcrumbs of pages with \"Frontpage\" template"
-msgstr ""
-
-#: ../functions.php:174
-msgid "above content of pages with \"Frontpage\" template"
-msgstr ""
-
-#: ../functions.php:183
-msgid "in the right sidebar of pages with \"Frontpage\" template"
-msgstr ""
-
-#: ../functions.php:192
-msgid "below content of pages with \"Frontpage\" template"
-msgstr ""
-
-#: ../functions.php:201
-msgid "in full width below content of pages with \"Frontpage\" template"
-msgstr ""
-
-#: ../functions.php:210
-msgid "in full width above breadcrumbs of pages with \"About us\" template"
-msgstr ""
-
-#: ../functions.php:219
-msgid "above content of pages with \"About us\" template"
-msgstr ""
-
-#: ../functions.php:228
-msgid "in the right sidebar of pages with \"About us\" template"
-msgstr ""
-
-#: ../functions.php:237
-msgid "below content of pages with \"About us\" template"
-msgstr ""
-
-#: ../functions.php:246
-msgid "in full width below content of pages with \"About us\" template"
-msgstr ""
-
-#: ../functions.php:255
+#: ../functions.php:71
 msgid "Flatty Primary Menu"
 msgstr "Menu primaire Flatty"
 
-#: ../functions.php:277
+#: ../functions.php:93
 #, php-format
 msgid "Read more on %s"
 msgstr "En lire plus sur %s"
 
-#: ../functions.php:277
+#: ../functions.php:93
 msgid "Continue Reading"
 msgstr "Continuer à lire"
 
-#: ../functions.php:290
+#: ../functions.php:106
 #, php-format
 msgid "Page %s"
 msgstr "Page %s"
 
-#: ../functions.php:520
+#: ../functions.php:336
 msgid "<i class=\"icon-circle-arrow-left\"></i> OLDER POSTS"
 msgstr "<i class=\"icon-circle-arrow-left\"></i> PUBLICATIONS PLUS ANCIENNES"
 
-#: ../functions.php:521
+#: ../functions.php:337
 msgid "NEWER POSTS <i class=\"icon-circle-arrow-right\"></i>"
 msgstr "PUBLICATION PLUS RECENTES <i class=\"icon-circle-arrow-right\"></i>"
 
@@ -231,8 +105,6 @@ msgid "Search"
 msgstr "Chercher"
 
 #: ../sidebar.php:6
-#: ../tpl-about-us.php:58
-#: ../tpl-frontpage.php:63
 msgid "add widgets here"
 msgstr "Ajouter des widgets ici"
 
@@ -301,13 +173,11 @@ msgstr "Options des articles"
 msgid "Display post featured images?"
 msgstr "Afficher les images des posts exclusifs ?"
 
-#: ../inc/theme-options.php:160
-#: ../inc/theme-options.php:187
+#: ../inc/theme-options.php:160 ../inc/theme-options.php:187
 msgid "Left"
 msgstr "Gaiche"
 
-#: ../inc/theme-options.php:161
-#: ../inc/theme-options.php:188
+#: ../inc/theme-options.php:161 ../inc/theme-options.php:188
 msgid "Right"
 msgstr "Droite"
 
@@ -371,8 +241,7 @@ msgstr "Page précédente"
 msgid "Pages:"
 msgstr "Pages:"
 
-#: ../partials/breadcrumb.php:5
-#: ../partials/nothing-found.php:24
+#: ../partials/breadcrumb.php:5 ../partials/nothing-found.php:24
 msgid "Home"
 msgstr "Accueil"
 
@@ -407,9 +276,6 @@ msgstr "Cette page n'existe pas, a été déplacée ou supprimée."
 #: ../partials/nothing-found.php:24
 msgid "Take me home"
 msgstr "Retour à l'Accueil"
-
-#~ msgid "Widgets placed here will display in the right sidebar"
-#~ msgstr "Les Widgets placés ici s'afficheront dans la barre de côté"
 
 #~ msgid "Google Analytics"
 #~ msgstr "Google Analytics"

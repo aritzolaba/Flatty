@@ -1,23 +1,11 @@
 <?php // Exit if accessed directly
 if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} get_header(); ?>
 
-<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('ft-widgets-top-jumbotron-narrow')) : ?>
-    <?php //_e ('add widgets here', 'flatty'); ?>
-<?php endif; ?>
-
-<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('ft-widgets-row-above-content')) : ?>
-    <?php //_e ('add widgets here', 'flatty'); ?>
-<?php endif; ?>
-
 <div class="row">
 
-    <div class="main col-sm-8 col-md-9 <?php if ($flatty_theme_options['sidebar_position'] == 'left') echo 'pull-right'; ?>">
+    <div class="col-sm-8 col-md-9 <?php if ($flatty_theme_options['sidebar_position'] == 'left') echo 'pull-right'; ?>">
 
         <?php if ($flatty_theme_options['breadcrumb'] == 1) get_template_part('partials/breadcrumb'); ?>
-
-        <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('ft-widgets-above-content')) : ?>
-            <?php //_e ('add widgets here', 'flatty'); ?>
-        <?php endif; ?>
 
         <?php if (have_posts()) : ?>
 
@@ -39,10 +27,6 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} get_header(); ?>
 
         <?php endif; ?>
 
-
-        <?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('ft-widgets-below-content')) : ?>
-            <?php //_e ('add widgets here', 'flatty'); ?>
-        <?php endif; ?>
     </div>
 
     <aside class="col-sm-4 col-md-3 <?php if ($flatty_theme_options['sidebar_position'] == 'left') echo 'pull-left'; ?>">
@@ -50,14 +34,6 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} get_header(); ?>
         <?php get_sidebar(); ?>
     </aside>
 
-</div><!-- /row -->
-
-<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('ft-widgets-row-below-content')) : ?>
-    <?php //_e ('add widgets here', 'flatty'); ?>
-<?php endif; ?>
-
-<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('ft-widgets-mid-jumbotron-narrow')) : ?>
-    <?php //_e ('add widgets here', 'flatty'); ?>
-<?php endif; ?>
+</div><!-- .row -->
 
 <?php get_footer(); ?>
