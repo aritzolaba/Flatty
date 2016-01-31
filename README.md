@@ -26,6 +26,10 @@ Features
 
 Change log
 ----------
+16-01-2016 - Version 1.1.5
+
+- Some styling fixes in the navbar, checked full compatibility with WordPress 4.4.1. No notices or warnings in code.
+
 20-09-2014 - Version 1.1.4
 
 - Added widgets: Several new widget positions, some with Bootstrap Jumbotron. See screenshot_widget_positions.gif
