@@ -8,7 +8,7 @@ Features
 - Bootstrap 3.0 and Font Awesome 4.1 included.
 - HTML5shiv.js and respond.min.js are used for IE8 compatibility.
 - Four different styles to choose from.
-- Translation ready. Spanish and Basque translations included.
+- Translation ready. Spanish, Basque, Norwegian and French translations included.
 - Retina ready.
 - Custom background support.
 - Custom menu support with three-level dropdowns.
@@ -17,15 +17,19 @@ Features
 - Category and page hierarchy support in the breadcrumb.
 - Display the author avatar, name and description at the footer of single posts.
 - Thickbox used to display images. Galleries are also displayed with this method.
-- Google Fonts included locally, no Google dependancy!.
+- Google Fonts included locally, no Google dependency!.
 - Widgets: 1 widget in the sidebar and 3 in the footer.
 - Theme options page with several options such as sidebar position (left/right), display breadcrumb, etc.
+- Templates: a boxed blog layout template and one column template are included
 
 Change log
 ----------
-16-01-2016 - Version 1.1.4
+15-12-2016 - Version 1.1.5
 
-- Some styling fixes in the navbar, checked full compatibility with WordPress 4.4.1. No notices or warnings in code.
+- Home link fixed in navbar. home_url() used instead of site_url(). Thanks to Leslie P. for the advise.
+- Styling fixes: fixes in navbar, removed border-radius of elements, improved comment post container style.
+- Language files revised to match WordPress locales. Norwegian translation by Chris (ccondrup).
+- Checked full compatibility with WordPress 4.7. No notices or warnings in code.
 
 10-09-2014 - Version 1.1.3
 

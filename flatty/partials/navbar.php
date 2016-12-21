@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} ?>
             <span class="icon-bar"></span>
         </button>
         <?php global $flatty_theme_options; if ($flatty_theme_options['display_blog_title'] == 1) : ?>
-            <a class="navbar-brand" href="<?php echo site_url(); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>">
+            <a class="navbar-brand" href="<?php echo home_url(); ?>" title="<?php echo esc_attr(get_bloginfo('name')); ?>">
                 <?php echo esc_attr(get_bloginfo('name')); ?>
             </a>
         <?php endif; ?>

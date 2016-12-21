@@ -8,9 +8,8 @@
 a {
     color: #fff;
 }
-a:hover {
+a:hover, a:focus {
     color: #fff;
-    text-decoration: underline;
 }
 .navbar,
 .widgettitle {
@@ -41,7 +40,8 @@ ul.nav.navbar-nav>li>a:hover {
     color: #fff;
 }
 a.btn,
-button.btn {
+button.btn,
+.btn-primary {
     color: #222;
     background: #eee;
     border-color: #ccc;
@@ -49,7 +49,9 @@ button.btn {
 a.btn:hover,
 button.btn:hover,
 a.btn.active,
-button.btn.active {
+button.btn.active,
+.btn-primary:hover,
+.btn-primary.active {
     color: #fff;
     background: #999;
     border-color: #888;

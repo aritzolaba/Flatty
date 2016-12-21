@@ -2,239 +2,108 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flatty 1.1.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-09-22 00:47+0100\n"
-"PO-Revision-Date: 2014-09-22 00:47+0100\n"
+"POT-Creation-Date: 2016-12-21 17:13+0100\n"
+"PO-Revision-Date: 2016-12-21 17:14+0100\n"
 "Last-Translator: \n"
 "Language-Team: flatty\n"
+"Language: nb_NO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Norwegian Bokmal\n"
-"X-Poedit-Country: NORWAY\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-KeywordsList: _e;__\n"
 "X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: ..\n"
-
-#: ../comments.php:10
-msgid "This post is password protected. Enter the password to view any comments."
-msgstr "Dette innlegget er passordbeskyttet. Angi passord for å lese."
-
-#: ../comments.php:19
-msgid "Comments"
-msgstr "Kommentarer"
-
-#: ../comments.php:21
-msgid "1 comment"
-msgstr "1 kommentar"
-
-#: ../comments.php:21
-#, php-format
-msgid "%s comments"
-msgstr "%s kommentarer"
-
-#: ../comments.php:54
-msgid "Name"
-msgstr "Navn"
-
-#: ../comments.php:56
-msgid "Email"
-msgstr "Epost"
-
-#: ../comments.php:62
-#, php-format
-msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
-msgstr "Innlogget som <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Logg ut\">Logg ut</a>"
-
-#: ../comments.php:63
-msgid "Your email address will not be published. Fields with * are mandatory."
-msgstr "Epostadressen din blir ikke publisert. Felter merket * er påkrevd."
-
-#: ../functions.php:40
-#: ../functions.php:49
-#: ../functions.php:58
-#: ../functions.php:67
-#: ../functions.php:76
-#: ../functions.php:85
-#: ../functions.php:94
-#: ../functions.php:103
-#: ../functions.php:112
-#: ../functions.php:121
-#: ../functions.php:129
-#: ../functions.php:137
-#: ../functions.php:146
-#: ../functions.php:156
-#: ../functions.php:165
-#: ../functions.php:174
-#: ../functions.php:183
-#: ../functions.php:192
-#: ../functions.php:201
-#: ../functions.php:210
-#: ../functions.php:219
-#: ../functions.php:228
-#: ../functions.php:237
-#: ../functions.php:246
-msgid "Widgets placed here"
-msgstr "Widgeter plassert her"
-
-#: ../functions.php:40
-#: ../functions.php:49
-#: ../functions.php:58
-#: ../functions.php:67
-#: ../functions.php:76
-#: ../functions.php:85
-#: ../functions.php:94
-#: ../functions.php:103
-#: ../functions.php:112
-#: ../functions.php:121
-#: ../functions.php:129
-#: ../functions.php:137
-#: ../functions.php:146
-#: ../functions.php:156
-#: ../functions.php:165
-#: ../functions.php:174
-#: ../functions.php:183
-#: ../functions.php:192
-#: ../functions.php:201
-#: ../functions.php:210
-#: ../functions.php:219
-#: ../functions.php:228
-#: ../functions.php:237
-#: ../functions.php:246
-msgid "will display"
-msgstr "vil vises"
-
-#: ../functions.php:40
-msgid "in a jumbotron below navbar"
-msgstr "i en jumbotron under toppmenyen"
-
-#: ../functions.php:49
-msgid "in a narrow jumbotron above breadcrumbs"
-msgstr "i en smal jumbotron over brødsmulestien"
-
-#: ../functions.php:58
-msgid "in full width above breadcrumbs"
-msgstr "i full bredde over brødsmulestien"
-
-#: ../functions.php:67
-msgid "above content, in main column"
-msgstr "over innholdet i hovedkolonnen"
-
-#: ../functions.php:76
-msgid "in the right sidebar"
-msgstr "i høyre sidebar"
-
-#: ../functions.php:85
-msgid "below content, in main column"
-msgstr "under innholdet i hovedkolonnen"
-
-#: ../functions.php:94
-msgid "in full width below content"
-msgstr "i full bredde under innholdet"
-
-#: ../functions.php:103
-msgid "in a narrow jumbotron below content"
-msgstr "i en jumbotron under innholdet"
-
-#: ../functions.php:112
-msgid "in a jumbotron above footer"
-msgstr "i en jumbotron over footeren"
-
-#: ../functions.php:121
-msgid "in the first footer block"
-msgstr "i første felt i footer"
-
-#: ../functions.php:129
-msgid "in the second footer block"
-msgstr "i andre felt i footer"
-
-#: ../functions.php:137
-msgid "in the third footer block"
-msgstr "i tredje felt i footer"
-
-#: ../functions.php:146
-msgid "in full at the bottom of the footer"
-msgstr "i full bredde nederst i footeren"
-
-#: ../functions.php:156
-msgid "in a jumbotron below footer"
-msgstr "i en jumbotron under footeren"
-
-#: ../functions.php:165
-msgid "in full width above breadcrumbs of pages with \"Frontpage\" template"
-msgstr "i full bredde over brødsmulestien på sider med \"Frontpage\" malen"
-
-#: ../functions.php:174
-msgid "above content of pages with \"Frontpage\" template"
-msgstr "over innholdet på sider med \"Frontpage\" malen"
-
-#: ../functions.php:183
-msgid "in the right sidebar of pages with \"Frontpage\" template"
-msgstr "i høyre sidebar på sider med \"Frontpage\" malen"
-
-#: ../functions.php:192
-msgid "below content of pages with \"Frontpage\" template"
-msgstr "under innholdet på sider med \"Frontpage\" malen"
-
-#: ../functions.php:201
-msgid "in full width below content of pages with \"Frontpage\" template"
-msgstr "i full bredde under innholdet på sider med \"Frontpage\" malen"
-
-#: ../functions.php:210
-msgid "in full width above breadcrumbs of pages with \"About us\" template"
-msgstr "i full bredde over brødsmulestien på sider med \"About us\" malen"
-
-#: ../functions.php:219
-msgid "above content of pages with \"About us\" template"
-msgstr "over innholdet på sider med \"About us\" malen"
-
-#: ../functions.php:228
-msgid "in the right sidebar of pages with \"About us\" template"
-msgstr "i høyre sidebar på sider med \"About us\" malen"
-
-#: ../functions.php:237
-msgid "below content of pages with \"About us\" template"
-msgstr "under innholdet på sider med \"About us\" malen"
-
-#: ../functions.php:246
-msgid "in full width below content of pages with \"About us\" template"
-msgstr "i full bredde under innholdet på sider med \"About us\" malen"
-
-#: ../functions.php:255
-msgid "Flatty Primary Menu"
-msgstr "Flatty hovedmeny"
-
-#: ../functions.php:277
-#, php-format
-msgid "Read more on %s"
-msgstr "Les mer om %s"
-
-#: ../functions.php:277
-msgid "Continue Reading"
-msgstr "Les videre"
-
-#: ../functions.php:290
-#, php-format
-msgid "Page %s"
-msgstr "Side %s"
-
-#: ../functions.php:520
-msgid "<i class=\"icon-circle-arrow-left\"></i> OLDER POSTS"
-msgstr "<i class=\"icon-circle-arrow-left\"></i> ELDRE INNLEGG"
-
-#: ../functions.php:521
-msgid "NEWER POSTS <i class=\"icon-circle-arrow-right\"></i>"
-msgstr "NYERE INNLEGG <i class=\"icon-circle-arrow-right\"></i>"
 
 #: ../searchform.php:6
 msgid "Search"
 msgstr "Søk"
 
 #: ../sidebar.php:6
-#: ../tpl-about-us.php:58
-#: ../tpl-frontpage.php:63
 msgid "add widgets here"
 msgstr "Widget-ak jarri hemen"
+
+#: ../functions.php:39
+msgid "Widgets placed here will display in the right sidebar"
+msgstr "Widgeter plassert her vil vises i høyre sidebar"
+
+#: ../functions.php:47
+msgid "Widgets placed here will display in the first footer block"
+msgstr "Widgeter plassert her vil vises i høyre footer"
+
+#: ../functions.php:55
+msgid "Widgets placed here will display in the second footer block"
+msgstr "Widgeter plassert her vil vises i høyre footer 2"
+
+#: ../functions.php:63
+msgid "Widgets placed here will display in the third footer block"
+msgstr "Widgeter plassert her vil vises i høyre footer 3"
+
+#: ../functions.php:71
+msgid "Flatty Primary Menu"
+msgstr "Flatty hovedmeny"
+
+#: ../functions.php:93
+#, php-format
+msgid "Read more on %s"
+msgstr "Les mer om %s"
+
+#: ../functions.php:93
+msgid "Continue Reading"
+msgstr "Les videre"
+
+#: ../functions.php:106
+#, php-format
+msgid "Page %s"
+msgstr "Side %s"
+
+#: ../functions.php:336
+msgid "<i class=\"icon-circle-arrow-left\"></i> OLDER POSTS"
+msgstr "<i class=\"icon-circle-arrow-left\"></i> ELDRE INNLEGG"
+
+#: ../functions.php:337
+msgid "NEWER POSTS <i class=\"icon-circle-arrow-right\"></i>"
+msgstr "NYERE INNLEGG <i class=\"icon-circle-arrow-right\"></i>"
+
+#: ../comments.php:10
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr "Dette innlegget er passordbeskyttet. Angi passord for å lese."
+
+#: ../comments.php:19 ../partials/article.php:34
+msgid "Comments"
+msgstr "Kommentarer"
+
+#: ../comments.php:21 ../partials/article.php:35
+msgid "1 comment"
+msgstr "1 kommentar"
+
+#: ../comments.php:21 ../partials/article.php:35
+#, php-format
+msgid "%s comments"
+msgstr "%s kommentarer"
+
+#: ../comments.php:52
+msgid "Name"
+msgstr "Navn"
+
+#: ../comments.php:54
+msgid "Email"
+msgstr "Epost"
+
+#: ../comments.php:60
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+"Innlogget som <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Logg ut"
+"\">Logg ut</a>"
+
+#: ../comments.php:61
+msgid "Your email address will not be published. Fields with * are mandatory."
+msgstr "Epostadressen din blir ikke publisert. Felter merket * er påkrevd."
 
 #: ../inc/theme-options.php:71
 msgid "Theme Options"
@@ -301,13 +170,11 @@ msgstr "Valg artikler"
 msgid "Display post featured images?"
 msgstr "Vise fremhevede bilder?"
 
-#: ../inc/theme-options.php:160
-#: ../inc/theme-options.php:187
+#: ../inc/theme-options.php:160 ../inc/theme-options.php:187
 msgid "Left"
 msgstr "Venstre"
 
-#: ../inc/theme-options.php:161
-#: ../inc/theme-options.php:188
+#: ../inc/theme-options.php:161 ../inc/theme-options.php:188
 msgid "Right"
 msgstr "Høyre"
 
@@ -347,9 +214,41 @@ msgstr "Vise linker til sosiale media i footer?"
 msgid "Save Changes"
 msgstr "Lagre endringer"
 
-#: ../partials/article-related.php:7
-msgid "Related articles"
-msgstr "Relaterte artikler"
+#: ../partials/breadcrumb.php:5 ../partials/nothing-found.php:24
+msgid "Home"
+msgstr "Hjem"
+
+#: ../partials/breadcrumb.php:18
+msgid "About the author"
+msgstr "Om forfatteren"
+
+#: ../partials/breadcrumb.php:20
+msgid "Search results"
+msgstr "Søkeresultater"
+
+#: ../partials/breadcrumb.php:29
+msgid "Browsing posts tagged:"
+msgstr "Innlegg tagget:"
+
+#: ../partials/breadcrumb.php:33
+msgid "Browsing archived posts:"
+msgstr "Arkiverte innlegg:"
+
+#: ../partials/nothing-found.php:8
+msgid "Nothing found"
+msgstr "Ingenting funnet"
+
+#: ../partials/nothing-found.php:16
+msgid "Ops! there is nothing here..."
+msgstr "Oops, ingenting her.."
+
+#: ../partials/nothing-found.php:24
+msgid "Take me home"
+msgstr "Til forsiden"
+
+#: ../partials/navbar.php:7
+msgid "Toggle Navigation"
+msgstr "Vis/skjul meny"
 
 #: ../partials/article.php:35
 msgid "no comments"
@@ -371,45 +270,87 @@ msgstr "Forrige side"
 msgid "Pages:"
 msgstr "Sider:"
 
-#: ../partials/breadcrumb.php:5
-#: ../partials/nothing-found.php:24
-msgid "Home"
-msgstr "Hjem"
+#: ../partials/article-related.php:7
+msgid "Related articles"
+msgstr "Relaterte artikler"
 
-#: ../partials/breadcrumb.php:18
-msgid "About the author"
-msgstr "Om forfatteren"
+#~ msgid "Widgets placed here"
+#~ msgstr "Widgeter plassert her"
 
-#: ../partials/breadcrumb.php:20
-msgid "Search results"
-msgstr "Søkeresultater"
+#~ msgid "will display"
+#~ msgstr "vil vises"
 
-#: ../partials/breadcrumb.php:29
-msgid "Browsing posts tagged:"
-msgstr "Innlegg tagget:"
+#~ msgid "in a jumbotron below navbar"
+#~ msgstr "i en jumbotron under toppmenyen"
 
-#: ../partials/breadcrumb.php:33
-msgid "Browsing archived posts:"
-msgstr "Arkiverte innlegg:"
+#~ msgid "in a narrow jumbotron above breadcrumbs"
+#~ msgstr "i en smal jumbotron over brødsmulestien"
 
-#: ../partials/navbar.php:7
-msgid "Toggle Navigation"
-msgstr "Vis/skjul meny"
+#~ msgid "in full width above breadcrumbs"
+#~ msgstr "i full bredde over brødsmulestien"
 
-#: ../partials/nothing-found.php:8
-msgid "Nothing found"
-msgstr "Ingenting funnet"
+#~ msgid "above content, in main column"
+#~ msgstr "over innholdet i hovedkolonnen"
 
-#: ../partials/nothing-found.php:16
-msgid "Ops! there is nothing here..."
-msgstr "Oops, ingenting her.."
+#~ msgid "in the right sidebar"
+#~ msgstr "i høyre sidebar"
 
-#: ../partials/nothing-found.php:24
-msgid "Take me home"
-msgstr "Til forsiden"
+#~ msgid "below content, in main column"
+#~ msgstr "under innholdet i hovedkolonnen"
 
-#~ msgid "Widgets placed here will display in the right sidebar"
-#~ msgstr "Widgeter plassert her vil vises i høyre sidebar"
+#~ msgid "in full width below content"
+#~ msgstr "i full bredde under innholdet"
+
+#~ msgid "in a narrow jumbotron below content"
+#~ msgstr "i en jumbotron under innholdet"
+
+#~ msgid "in a jumbotron above footer"
+#~ msgstr "i en jumbotron over footeren"
+
+#~ msgid "in the first footer block"
+#~ msgstr "i første felt i footer"
+
+#~ msgid "in the second footer block"
+#~ msgstr "i andre felt i footer"
+
+#~ msgid "in the third footer block"
+#~ msgstr "i tredje felt i footer"
+
+#~ msgid "in full at the bottom of the footer"
+#~ msgstr "i full bredde nederst i footeren"
+
+#~ msgid "in a jumbotron below footer"
+#~ msgstr "i en jumbotron under footeren"
+
+#~ msgid "in full width above breadcrumbs of pages with \"Frontpage\" template"
+#~ msgstr "i full bredde over brødsmulestien på sider med \"Frontpage\" malen"
+
+#~ msgid "above content of pages with \"Frontpage\" template"
+#~ msgstr "over innholdet på sider med \"Frontpage\" malen"
+
+#~ msgid "in the right sidebar of pages with \"Frontpage\" template"
+#~ msgstr "i høyre sidebar på sider med \"Frontpage\" malen"
+
+#~ msgid "below content of pages with \"Frontpage\" template"
+#~ msgstr "under innholdet på sider med \"Frontpage\" malen"
+
+#~ msgid "in full width below content of pages with \"Frontpage\" template"
+#~ msgstr "i full bredde under innholdet på sider med \"Frontpage\" malen"
+
+#~ msgid "in full width above breadcrumbs of pages with \"About us\" template"
+#~ msgstr "i full bredde over brødsmulestien på sider med \"About us\" malen"
+
+#~ msgid "above content of pages with \"About us\" template"
+#~ msgstr "over innholdet på sider med \"About us\" malen"
+
+#~ msgid "in the right sidebar of pages with \"About us\" template"
+#~ msgstr "i høyre sidebar på sider med \"About us\" malen"
+
+#~ msgid "below content of pages with \"About us\" template"
+#~ msgstr "under innholdet på sider med \"About us\" malen"
+
+#~ msgid "in full width below content of pages with \"About us\" template"
+#~ msgstr "i full bredde under innholdet på sider med \"About us\" malen"
 
 #~ msgid "Google Analytics"
 #~ msgstr "Google Analytics"

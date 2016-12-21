@@ -103,7 +103,7 @@ function flatty_title($output) {
     $site_description = get_bloginfo('description', 'display');
     if ($site_description && (is_home() || is_front_page())) echo ' - '.$site_description;
     // Add a page number if necessary
-    if (!empty($paged) && ($paged >= 2 || $page >= 2)) echo ' - ' . sprintf(__('Page %s', 'olabaworks'), max($paged, $page));
+    if (!empty($paged) && ($paged >= 2 || $page >= 2)) echo ' - ' . sprintf(__('Page %s', 'flatty'), max($paged, $page));
 }
 add_filter('wp_title', 'flatty_title');
 

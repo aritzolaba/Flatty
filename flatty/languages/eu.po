@@ -2,56 +2,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Flatty 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-02-11 18:51+0100\n"
-"PO-Revision-Date: 2014-02-11 18:51+0100\n"
+"POT-Creation-Date: 2016-12-21 17:05+0100\n"
+"PO-Revision-Date: 2016-12-21 17:05+0100\n"
 "Last-Translator: \n"
 "Language-Team: flatty\n"
+"Language: eu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Basque\n"
-"X-Poedit-Country: SPAIN\n"
-"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: _e;__\n"
 "X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../comments.php:10
-msgid "This post is password protected. Enter the password to view any comments."
-msgstr "Sarrera hau pribatua da. Sartu pasahitza iruzkinak ikusteko."
+#: ../searchform.php:6
+msgid "Search"
+msgstr "Bilatu"
 
-#: ../comments.php:19
-#: ../partials/article.php:34
-msgid "Comments"
-msgstr "Iruzkinak"
-
-#: ../comments.php:21
-#: ../partials/article.php:35
-msgid "1 comment"
-msgstr "Iruzkin bat"
-
-#: ../comments.php:21
-#: ../partials/article.php:35
-#, php-format
-msgid "%s comments"
-msgstr "%s iruzkin"
-
-#: ../comments.php:54
-msgid "Name"
-msgstr "Izena"
-
-#: ../comments.php:56
-msgid "Email"
-msgstr "posta elektronikoa"
-
-#: ../comments.php:62
-#, php-format
-msgid "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of this account\">Log out?</a>"
-msgstr "<a href=\"%1$s\">%2$s</a> bezala identifikatuta. <a href=\"%3$s\" title=\"Saioa itzi\">Saioa itzi?</a>"
-
-#: ../comments.php:63
-msgid "Your email address will not be published. Fields with * are mandatory."
-msgstr "Zure posta elektronikoa ez da publikatuko. * duten eremuak derrigorrezkoak dira."
+#: ../sidebar.php:6
+msgid "add widgets here"
+msgstr "Widget-ak jarri hemen"
 
 #: ../functions.php:39
 msgid "Widgets placed here will display in the right sidebar"
@@ -95,13 +66,46 @@ msgstr "<i class=\"icon-circle-arrow-left\"></i> ZAHARRAGOAK"
 msgid "NEWER POSTS <i class=\"icon-circle-arrow-right\"></i>"
 msgstr "BERRIAGOAK <i class=\"icon-circle-arrow-right\"></i>"
 
-#: ../searchform.php:6
-msgid "Search"
-msgstr "Bilatu"
+#: ../comments.php:10
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr "Sarrera hau pribatua da. Sartu pasahitza iruzkinak ikusteko."
 
-#: ../sidebar.php:6
-msgid "add widgets here"
-msgstr "Widget-ak jarri hemen"
+#: ../comments.php:19 ../partials/article.php:34
+msgid "Comments"
+msgstr "Iruzkinak"
+
+#: ../comments.php:21 ../partials/article.php:35
+msgid "1 comment"
+msgstr "Iruzkin bat"
+
+#: ../comments.php:21 ../partials/article.php:35
+#, php-format
+msgid "%s comments"
+msgstr "%s iruzkin"
+
+#: ../comments.php:52
+msgid "Name"
+msgstr "Izena"
+
+#: ../comments.php:54
+msgid "Email"
+msgstr "posta elektronikoa"
+
+#: ../comments.php:60
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+"<a href=\"%1$s\">%2$s</a> bezala identifikatuta. <a href=\"%3$s\" title="
+"\"Saioa itzi\">Saioa itzi?</a>"
+
+#: ../comments.php:61
+msgid "Your email address will not be published. Fields with * are mandatory."
+msgstr ""
+"Zure posta elektronikoa ez da publikatuko. * duten eremuak derrigorrezkoak "
+"dira."
 
 #: ../inc/theme-options.php:71
 msgid "Theme Options"
@@ -168,13 +172,11 @@ msgstr "Sarreren aukerak"
 msgid "Display post featured images?"
 msgstr "Mostrar im&aacute;genes destacadas?"
 
-#: ../inc/theme-options.php:160
-#: ../inc/theme-options.php:187
+#: ../inc/theme-options.php:160 ../inc/theme-options.php:187
 msgid "Left"
 msgstr "Ezkerra"
 
-#: ../inc/theme-options.php:161
-#: ../inc/theme-options.php:188
+#: ../inc/theme-options.php:161 ../inc/theme-options.php:188
 msgid "Right"
 msgstr "Eskuma"
 
@@ -214,9 +216,41 @@ msgstr "Erakutsi lotura sozialak footer-ean?"
 msgid "Save Changes"
 msgstr "Aldaketak Gorde"
 
-#: ../partials/article-related.php:7
-msgid "Related articles"
-msgstr "Sarrera erlazionatuak"
+#: ../partials/breadcrumb.php:5 ../partials/nothing-found.php:24
+msgid "Home"
+msgstr "Hasiera"
+
+#: ../partials/breadcrumb.php:18
+msgid "About the author"
+msgstr "Autoreari buruz"
+
+#: ../partials/breadcrumb.php:20
+msgid "Search results"
+msgstr "Bilaketa emaitzak"
+
+#: ../partials/breadcrumb.php:29
+msgid "Browsing posts tagged:"
+msgstr "Etiketa:"
+
+#: ../partials/breadcrumb.php:33
+msgid "Browsing archived posts:"
+msgstr "Artxibatutako sarrerak"
+
+#: ../partials/nothing-found.php:8
+msgid "Nothing found"
+msgstr "Ez da ezer aurkitu"
+
+#: ../partials/nothing-found.php:16
+msgid "Ops! there is nothing here..."
+msgstr "Ez da ezer aurkitu"
+
+#: ../partials/nothing-found.php:24
+msgid "Take me home"
+msgstr "Hasierara"
+
+#: ../partials/navbar.php:7
+msgid "Toggle Navigation"
+msgstr "Menua erakutsi"
 
 #: ../partials/article.php:35
 msgid "no comments"
@@ -238,42 +272,9 @@ msgstr "Aurrekoa"
 msgid "Pages:"
 msgstr "Horriak:"
 
-#: ../partials/breadcrumb.php:5
-#: ../partials/nothing-found.php:24
-msgid "Home"
-msgstr "Hasiera"
-
-#: ../partials/breadcrumb.php:18
-msgid "About the author"
-msgstr "Autoreari buruz"
-
-#: ../partials/breadcrumb.php:20
-msgid "Search results"
-msgstr "Bilaketa emaitzak"
-
-#: ../partials/breadcrumb.php:29
-msgid "Browsing posts tagged:"
-msgstr "Etiketa:"
-
-#: ../partials/breadcrumb.php:33
-msgid "Browsing archived posts:"
-msgstr "Artxibatutako sarrerak"
-
-#: ../partials/navbar.php:7
-msgid "Toggle Navigation"
-msgstr "Menua erakutsi"
-
-#: ../partials/nothing-found.php:8
-msgid "Nothing found"
-msgstr "Ez da ezer aurkitu"
-
-#: ../partials/nothing-found.php:16
-msgid "Ops! there is nothing here..."
-msgstr "Ez da ezer aurkitu"
-
-#: ../partials/nothing-found.php:24
-msgid "Take me home"
-msgstr "Hasierara"
+#: ../partials/article-related.php:7
+msgid "Related articles"
+msgstr "Sarrera erlazionatuak"
 
 #~ msgid "Google Analytics"
 #~ msgstr "Google Analytics"

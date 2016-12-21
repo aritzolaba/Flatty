@@ -45,8 +45,6 @@ if (!defined('ABSPATH')) {echo '<h1>Forbidden</h1>'; exit();} ?>
 
         <?php endif; ?>
 
-        <div class="clearfix"></div><br />
-
         <?php
         // Comment Form
         $aria_req = ( $req ? " aria-required='true'" : '' );

@@ -2,7 +2,7 @@
 a {
     color: #C00;
 }
-a:hover {
+a:hover, a:focus {
     color: #DF4926;
 }
 .navbar,
@@ -31,14 +31,17 @@ ul.nav.navbar-nav>li>a:hover {
     background: #C00;
 }
 a.btn,
-button.btn {
+button.btn,
+.btn-primary {
     background: #C00;
     border-color: #C00;
 }
 a.btn:hover,
 button.btn:hover,
 a.btn.active,
-button.btn.active {
+button.btn.active,
+.btn-primary:hover,
+.btn-primary.active {
     background: #B00;
     border-color: #B00;
 }
